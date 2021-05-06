@@ -21,6 +21,8 @@ Hints:
     * 3rd table
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> type(result) is pd.DataFrame
     True
     >>> len(result) > 0

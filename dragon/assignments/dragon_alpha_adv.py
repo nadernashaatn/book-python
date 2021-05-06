@@ -143,7 +143,9 @@ Hints:
     point
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
     >>> from random import seed; seed(0)
+
     >>> dragon = Dragon(name='Wawelski', position_x=50, position_y=120)
     >>> dragon @ Point(x=10, y=20)
     >>> dragon >> Direction(left=10, down=20)

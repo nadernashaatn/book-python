@@ -23,8 +23,11 @@ Polish:
     7. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> type(result)
     <class 'numpy.ndarray'>
+
     >>> result
     array([[ 1.41421356,  2.73205081],
            [45.254834  ,  0.        ]])

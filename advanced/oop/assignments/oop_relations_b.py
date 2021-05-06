@@ -20,6 +20,8 @@ Polish:
     5. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> assert type(result) is list
 
     >>> assert all(type(astro) is Astronaut

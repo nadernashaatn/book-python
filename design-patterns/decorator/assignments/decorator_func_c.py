@@ -23,6 +23,8 @@ Polish:
     6. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> @check
     ... def echo(text):
     ...     print(text)

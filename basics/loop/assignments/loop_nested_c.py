@@ -41,8 +41,11 @@ References:
         URL: http://er.jsc.nasa.gov/seh/ricetalk.htm
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> type(result)
     <class 'dict'>
+
     >>> print(result)  # doctest: +NORMALIZE_WHITESPACE
     {'sentences': 7,
      'words': 71,

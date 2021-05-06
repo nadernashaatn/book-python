@@ -24,6 +24,8 @@ Polish:
     7. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> assert type(result) is list, \
     'Result must be a list'
 

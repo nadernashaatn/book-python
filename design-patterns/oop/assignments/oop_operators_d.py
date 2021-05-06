@@ -17,6 +17,8 @@ Polish:
     4. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> astro = Astronaut('Jan Twardowski', missions=[
     ...     Mission(1969, 'Apollo 11'),
     ...     Mission(2024, 'Artemis 3'),

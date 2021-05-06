@@ -31,6 +31,8 @@ Hints:
     * Add newline `\n` at the end of line and file
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> result = open(FILE).read()
     >>> print(result)
     Sepal length,Sepal width,Petal length,Petal width,Species

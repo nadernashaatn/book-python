@@ -22,6 +22,8 @@ Hints:
     * `try ... except`
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> assert type(result) is list, \
     'Variable `result` has invalid type, must be a list'
 
@@ -41,8 +43,8 @@ from datetime import datetime
 
 DATA = [
     '1957-10-04 19:28:34',  # Sputnik launch (first satellite in space)
-    '1961-04-12T06:07',  # Gagarin launch (first human in space)
-    'July 21st, 1969 2:56:15 am',  # Armstrong first step on the Moon
+    '1961-04-12 06:07',  # Gagarin launch (first human in space)
+    '1969-07-21T02:56:15',  # Armstrong first step on the Moon
 ]
 
 result = ...  # list[datetime]: DATA elements in datetime format
@@ -56,8 +58,8 @@ for line in DATA:
         result.append(date)
     except ValueError:
         try:
-            date = datetime.strptime(line, '%Y-%m-%dT%H:%M')
+            date = datetime.strptime(line, '%Y-%m-%d %H:%M')
             result.append(date)
         except ValueError:
-            date = datetime.strptime(line, '%B %dst, %Y %I:%M:%S %p')
+            date = datetime.strptime(line, '%Y-%m-%dT%H:%M:%S')
             result.append(date)

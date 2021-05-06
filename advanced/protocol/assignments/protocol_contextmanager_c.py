@@ -26,7 +26,9 @@ Hint:
     * `ctrl+c` or stop button kills infinite loop
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
     >>> from inspect import isclass, ismethod
+
     >>> assert isclass(File)
     >>> assert hasattr(File, 'append')
     >>> assert hasattr(File, 'AUTOSAVE_SECONDS')

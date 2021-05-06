@@ -1,5 +1,7 @@
 """
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> sorted(result)
     [3, 17, 25, 27, 33, 49]
 """

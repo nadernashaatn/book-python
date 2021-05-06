@@ -21,6 +21,8 @@ Polish:
     X. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> a = (1, 0)
     >>> b = (0, 1)
     >>> euclidean_distance(a, b)

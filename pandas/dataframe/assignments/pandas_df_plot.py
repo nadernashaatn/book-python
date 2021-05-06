@@ -33,6 +33,8 @@ Hints:
     * `pd.Series.resample('H').sum()`
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> type(result) is pd.Series
     True
     >>> pd.set_option('display.width', 500)

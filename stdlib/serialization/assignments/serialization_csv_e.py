@@ -29,6 +29,8 @@ Hints:
     * For Python before 3.8: `dict(OrderedDict)`
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> result = open(FILE).read()
     >>> print(result)
     sepal_length,sepal_width,petal_length,petal_width,species

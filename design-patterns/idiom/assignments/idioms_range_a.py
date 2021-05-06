@@ -30,7 +30,9 @@ Hint:
     * `if len(args) == ...`
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
     >>> from inspect import isfunction
+
     >>> assert isfunction(myrange)
 
     >>> myrange(0, 10, 2)

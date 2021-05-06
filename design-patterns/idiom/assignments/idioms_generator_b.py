@@ -32,16 +32,20 @@ Hint:
     * `bool('0') is True`
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
     >>> from sys import getsizeof
     >>> from inspect import isfunction, isgeneratorfunction
+
     >>> assert isfunction(function)
     >>> assert isgeneratorfunction(generator)
     >>> fun = function(DATA)
     >>> gen = generator(DATA)
+
     >>> list(fun)
     ['root', 'bin', 'daemon', 'adm', 'shutdown', 'halt', 'nobody', 'sshd']
     >>> list(gen)
     ['root', 'bin', 'daemon', 'adm', 'shutdown', 'halt', 'nobody', 'sshd']
+
     >>> getsizeof(fun)
     120
     >>> getsizeof(gen)

@@ -24,6 +24,8 @@ Polish:
     5. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> assert type(result) is float, \
     'Variable `result` has invalid type, must be a float'
 

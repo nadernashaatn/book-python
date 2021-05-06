@@ -31,6 +31,8 @@ Hints:
     * `type(obj)`
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> isnumeric()
     False
     >>> isnumeric(0)

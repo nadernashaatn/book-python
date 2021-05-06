@@ -139,7 +139,9 @@ Hints:
     * `randint` returns random integer between a and b (including both ends!)
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
     >>> from random import seed; seed(0)
+
     >>> wawelski = Dragon(name='Wawelski', position_x=50, position_y=120)
     >>> wawelski.set_position(x=10, y=20)
     >>> wawelski.move(left=10, down=20)

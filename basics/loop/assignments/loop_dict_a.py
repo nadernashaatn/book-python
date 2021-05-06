@@ -14,8 +14,11 @@ Polish:
     2. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> type(result)
     <class 'dict'>
+
     >>> result  # doctest: +NORMALIZE_WHITESPACE
     {'Doctorate': '6',
      'Prof-school': '6',

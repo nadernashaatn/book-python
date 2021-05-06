@@ -14,8 +14,8 @@ Polish:
     2. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
-    >>> from inspect import isclass
     >>> import sys; sys.tracebacklimit = 0
+    >>> from inspect import isclass
 
     >>> assert isclass(Scientist)
     >>> assert isclass(Engineer)

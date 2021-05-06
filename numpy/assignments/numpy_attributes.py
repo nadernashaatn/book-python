@@ -27,8 +27,11 @@ Polish:
     X. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> type(result) is dict
     True
+
     >>> result  # doctest: +NORMALIZE_WHITESPACE
     {'number of dimensions': 2,
      'number of elements': 6,

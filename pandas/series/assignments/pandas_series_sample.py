@@ -35,6 +35,8 @@ Hints:
     * `np.random.randn(n)`
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> type(result) is dict
     True
     >>> result  # doctest: +NORMALIZE_WHITESPACE

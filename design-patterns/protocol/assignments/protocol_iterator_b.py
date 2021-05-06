@@ -21,7 +21,9 @@ Polish:
     6. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
     >>> from inspect import isclass, ismethod
+
     >>> assert isclass(Range)
 
     >>> r = Range(0, 0, 0)

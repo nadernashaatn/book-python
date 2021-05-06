@@ -32,8 +32,10 @@ Hints:
     #  'b': <class 'int'>,
     #  'c': <class 'float'>,
     #  'return': <class 'bool'>}
-s
+
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> @typecheck
     ... def echo(a: str, b: int, c: float = 0.0) -> bool:
     ...     return bool(a * b)

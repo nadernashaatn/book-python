@@ -17,6 +17,8 @@ Polish:
     5. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> place1 = GeographicCoordinate(50, 120, 8000)
     >>> place1
     Latitude: 50, Longitude: 120, Elevation: 8000

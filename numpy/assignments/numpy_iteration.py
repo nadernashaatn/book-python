@@ -20,6 +20,8 @@ Hints:
     * `number % 2 == 0`
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> type(result) is list
     True
     >>> result

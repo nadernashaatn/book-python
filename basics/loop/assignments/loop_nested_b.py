@@ -18,6 +18,8 @@ Hints:
     * Compare solutions with :ref:`Micro-benchmarking use case`
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> result is not Ellipsis
     True
     >>> type(result) in (set, list, tuple, frozenset)

@@ -19,6 +19,8 @@ Polish:
     X. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> type(result_ravel) is np.ndarray
     True
     >>> type(result_flatten) is np.ndarray

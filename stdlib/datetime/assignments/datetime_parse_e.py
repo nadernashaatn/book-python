@@ -22,6 +22,8 @@ Hints:
     * `try ... except`
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> assert type(result) is list, \
     'Variable `result` has invalid type, must be a list'
 

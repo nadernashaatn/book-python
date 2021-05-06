@@ -17,6 +17,8 @@ Polish:
     4. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> Mission(2035, 'Ares 3') == Mission(2035, 'Ares 3')
     True
     >>> Mission(2035, 'Ares 3') == Mission(1973, 'Apollo 18')

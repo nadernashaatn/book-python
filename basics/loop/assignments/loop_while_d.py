@@ -34,8 +34,8 @@ Hints:
     * `mean = sum(...) / len(...)`
 
 Tests:
-    >>> from statistics import mean
     >>> import sys; sys.tracebacklimit = 0
+    >>> from statistics import mean
 
     >>> type(grades)
     <class 'list'>

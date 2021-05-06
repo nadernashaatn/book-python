@@ -23,6 +23,8 @@ Polish:
     X. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> mul_ab(a, b)  # doctest: +NORMALIZE_WHITESPACE
     Traceback (most recent call last):
     ValueError: operands could not be broadcast together with shapes (4,4) (4,2)

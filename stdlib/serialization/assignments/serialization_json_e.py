@@ -1,6 +1,6 @@
 """
 * Assignment: Serialization JSON HTTP
-* Complexity: hard
+* Complexity: easy
 * Lines of code: 15 lines
 * Time: 13 min
 
@@ -23,6 +23,8 @@ Polish:
     6. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> type(result)
     <class 'list'>
     >>> len(result) > 0
@@ -33,10 +35,10 @@ Tests:
     >>> result[0]  # doctest: +NORMALIZE_WHITESPACE
     User(login='mojombo',
          id=1,
-         url='https://api.github.com/users/mojombo',
          node_id='MDQ6VXNlcjE=',
          avatar_url='https://avatars.githubusercontent.com/u/1?v=4',
          gravatar_id='',
+         url='https://api.github.com/users/mojombo',
          html_url='https://github.com/mojombo',
          followers_url='https://api.github.com/users/mojombo/followers',
          following_url='https://api.github.com/users/mojombo/following{/other_user}',
@@ -53,26 +55,30 @@ Tests:
 
 
 # Given
-from dataclasses import dataclass
 import requests
+
+
+DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/json/github-users.json'
+DATA = requests.get(DATA).json()
+result: list = []
 
 
 class User:
     pass
 
 
-DATA = requests.get('https://api.github.com/users').json()
-
-
 # Solution
+from dataclasses import dataclass
+
+
 @dataclass
 class User:
     login: str
     id: int
-    url: str
     node_id: str
     avatar_url: str
     gravatar_id: str
+    url: str
     html_url: str
     followers_url: str
     following_url: str
@@ -87,6 +93,5 @@ class User:
     site_admin: bool
 
 
-result = [User(**user)
-          for user in DATA]
+result = [User(**user) for user in DATA]
 

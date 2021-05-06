@@ -1,5 +1,7 @@
 """
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> result
     {'sin': 0.02, 'cos': 1.0, 'tg': 0.02, 'ctg': 0.02, 'PI': 3.14}
 """

@@ -32,6 +32,8 @@ Hints:
     * `globals()[classname]`
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> result  # doctest: +NORMALIZE_WHITESPACE
     [Virginica(5.8, 2.7, 5.1, 1.9),
      Setosa(5.1, 3.5, 1.4, 0.2),

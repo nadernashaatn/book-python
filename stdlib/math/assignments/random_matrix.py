@@ -1,5 +1,7 @@
 """
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> result  # doctest: +NORMALIZE_WHITESPACE
     [[6, 6, 0, 4, 8, 7, 6, 4, 7, 5, 9, 3, 8, 2, 4, 2],
      [1, 9, 4, 8, 9, 2, 4, 1, 1, 5, 7, 8, 1, 5, 6, 5],

@@ -19,6 +19,8 @@ Polish:
     5. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> type(result_ceil) is np.ndarray
     True
     >>> type(result_floor) is np.ndarray

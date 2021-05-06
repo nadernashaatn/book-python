@@ -19,7 +19,9 @@ Polish:
     5. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
     >>> from inspect import isabstract
+
     >>> assert isabstract(IrisAbstract)
     >>> assert hasattr(IrisAbstract, '__init__')
     >>> assert hasattr(IrisAbstract, 'mean')

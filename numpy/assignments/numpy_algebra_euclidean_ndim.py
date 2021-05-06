@@ -27,6 +27,8 @@ Hints:
     * `for n1,n2 in zip(a,b)`
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> euclidean_distance((0,0,1,0,1), (1,1))
     Traceback (most recent call last):
     ValueError: Points must be in the same dimensions

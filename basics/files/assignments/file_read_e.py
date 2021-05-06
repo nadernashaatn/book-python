@@ -36,6 +36,8 @@ Hints:
     * `ip = 'IPv4' if '.' in ip else 'IPv6'`
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> result  # doctest: +NORMALIZE_WHITESPACE
     [{'ip': '127.0.0.1', 'hostnames': ['localhost', 'astromatt'], 'protocol': 'IPv4'},
      {'ip': '10.13.37.1', 'hostnames': ['nasa.gov', 'esa.int', 'roscosmos.ru'], 'protocol': 'IPv4'},

@@ -21,6 +21,8 @@ Polish:
     6. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> assert type(gagarin_age) is int, \
     'Variable `gagarin_age` has invalid type, must be a int'
 

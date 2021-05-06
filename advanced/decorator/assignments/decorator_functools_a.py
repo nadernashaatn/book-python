@@ -15,6 +15,8 @@ Polish:
     3. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> @mydecorator
     ... def hello():
     ...     '''Hello Docstring'''

@@ -21,6 +21,8 @@ Polish:
     X. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> assert callable(check)
     >>> assert callable(check(lambda x: x))
     >>> result = check(lambda x: x).__call__()

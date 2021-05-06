@@ -20,8 +20,11 @@ Polish:
     5. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> type(result)
     <class 'str'>
+
     >>> result
     'zazolc gesla jazn'
 """

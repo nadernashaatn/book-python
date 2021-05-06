@@ -18,6 +18,8 @@ Hints:
     * Use selection with `alt` key in your IDE
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> type(result) is pd.DataFrame
     True
     >>> pd.set_option('display.width', 500)

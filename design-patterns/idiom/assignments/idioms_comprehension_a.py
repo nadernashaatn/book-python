@@ -15,8 +15,11 @@ Polish:
     3. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> assert type(result) is list
     >>> assert all(type(x) is int for x in result)
+
     >>> result
     [6, 8, 10, 12, 14, 16, 18]
 """

@@ -42,15 +42,19 @@ Serialization
 * ``json`` - has relations
 * ``csv`` - non-relational format
 
-.. figure:: img/oop-relations-serialize-dbdump.png
-.. figure:: img/oop-relations-serialize-ffill1.png
-.. figure:: img/oop-relations-serialize-ffill2.png
-.. figure:: img/oop-relations-serialize-uniqid.png
-.. figure:: img/oop-relations-serialize-colattr.png
-.. figure:: img/oop-relations-serialize-colobj.png
-.. figure:: img/oop-relations-serialize-colcls.png
-.. figure:: img/oop-relations-serialize-split.png
-.. figure:: img/oop-relations-serialize-hybrid.png
+.. figure:: img/oop-relations-flat-attrs.png
+.. figure:: img/oop-relations-flat-norel.png
+.. figure:: img/oop-relations-ffill-dash.png
+.. figure:: img/oop-relations-ffill-duplicate.png
+.. figure:: img/oop-relations-ffill-empty.png
+.. figure:: img/oop-relations-ffill-uniqid.png
+.. figure:: img/oop-relations-rel-has.png
+.. figure:: img/oop-relations-rel-m2m.png
+.. figure:: img/oop-relations-rel-m2o.png
+.. figure:: img/oop-relations-serialize-cls.png
+.. figure:: img/oop-relations-serialize-clsattr.png
+.. figure:: img/oop-relations-serialize-obj.png
+.. figure:: img/oop-relations-serialize-objattr.png
 
 
 Assignments

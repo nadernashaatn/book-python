@@ -33,6 +33,8 @@ Extra Task:
     4. Pogrupuj dane po `type` i `status`, wypisz statystyki opisowe a następnie je transponuj
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> type(result) is pd.DataFrame
     True
     >>> pd.set_option('display.width', 500)

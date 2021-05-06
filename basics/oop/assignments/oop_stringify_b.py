@@ -16,6 +16,8 @@ Polish:
     3. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> result = [Iris(X,y) for *X,y in DATA]
     >>> result  # doctest: +NORMALIZE_WHITESPACE
     [Iris(features=[4.7, 3.2, 1.3, 0.2], label='setosa'),

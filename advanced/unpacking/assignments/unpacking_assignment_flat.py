@@ -22,6 +22,8 @@ Hints:
     * Use `str.split()` without any argument
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> type(ip)
     <class 'str'>
     >>> type(hosts)

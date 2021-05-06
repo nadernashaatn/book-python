@@ -20,6 +20,8 @@ Hints:
     * `str.endswith()`
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> type(result)
     <class 'list'>
     >>> len(result) > 0

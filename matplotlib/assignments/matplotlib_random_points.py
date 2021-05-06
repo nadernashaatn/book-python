@@ -34,6 +34,8 @@ Hints:
     * argument `color='red'` w funkcji `plt.plot`
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> random.seed(1); random_point((0,0), std=0.2)
     (0.2576369506310926, 0.2898891217399542)
 

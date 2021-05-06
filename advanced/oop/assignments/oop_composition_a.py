@@ -17,7 +17,9 @@ Polish:
     4. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
     >>> from inspect import isclass
+
     >>> assert isclass(Habitat)
     >>> assert isclass(Astronaut)
     >>> assert isclass(Rocket)

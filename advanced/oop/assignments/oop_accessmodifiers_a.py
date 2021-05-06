@@ -23,6 +23,8 @@ Polish:
     7. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> DATA = [Iris(5.8, 2.7, 5.1, 1.9, 'virginica'),
     ...         Iris(5.1, 3.5, 1.4, 0.2, 'setosa'),
     ...         Iris(5.7, 2.8, 4.1, 1.3, 'versicolor')]

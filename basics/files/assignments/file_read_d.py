@@ -32,6 +32,8 @@ Hints:
     * `str.split()`
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> result  # doctest: +NORMALIZE_WHITESPACE
     {'127.0.0.1': ['localhost'],
      '10.13.37.1': ['nasa.gov', 'esa.int', 'roscosmos.ru'],

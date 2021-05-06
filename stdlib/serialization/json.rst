@@ -3,7 +3,7 @@ Serialization JSON
 
 
 JSON Syntax
--------------------------------------------------------------------------------
+-----------
 * JavaScript Object Notation
 * JSON format is similar to ``dict`` notation in Python
 * Differences:
@@ -80,7 +80,7 @@ JSON or Python ``list[dict]``?:
 
 
 Mapping to JSON
--------------------------------------------------------------------------------
+---------------
 * ``json.dumps(DATA: dict) -> str``
 * ``json.loads(DATA: str) -> dict``
 
@@ -119,7 +119,7 @@ Deserializing mapping from JSON:
 
 
 Sequence to JSON
--------------------------------------------------------------------------------
+----------------
 * ``json.dumps(data: Sequence[dict]) -> str``
 * ``json.loads(data: str) -> list[dict]``
 
@@ -191,7 +191,7 @@ Serializing sequence to JSON:
 
 
 Write JSON File
--------------------------------------------------------------------------------
+---------------
 * ``json.dump(data: dict, file: TextIOWrapper) -> None``
 * file extension ``.json``
 
@@ -216,7 +216,7 @@ Serialize to JSON:
 
 
 Read JSON File
--------------------------------------------------------------------------------
+--------------
 * ``json.load(file: TextIOWrapper) -> dict``
 * file extension ``.json``
 
@@ -244,7 +244,7 @@ Serialize to JSON:
 
 
 Datetime to JSON
--------------------------------------------------------------------------------
+----------------
 * problem with ``date``, ``datetime``, ``time``
 
 Exception during encoding datetime:
@@ -319,7 +319,7 @@ Encoder will be used, when standard procedure fails:
 
 
 JSON to Datetime
--------------------------------------------------------------------------------
+----------------
 Simple loading returns ``str`` not ``datetime`` or ``date``:
 
 .. code-block:: python
@@ -396,23 +396,17 @@ Decoding ``datetime`` and ``date``:
 
     FILE = '_temporary.json'
 
-    DATA = {"mission": "Ares 3",
-            "launch_date": datetime(2035, 6, 29, tzinfo=timezone.utc),
-            "destination": 'Mars',
-            "destination_landing": datetime(2035, 11, 7, tzinfo=timezone.utc),
-            "destination_location": "Acidalia Planitia",
-            "crew": [{"astronaut": 'Melissa Lewis',
-                      "date_of_birth": date(1995, 7, 15)},
-                     {"astronaut": 'Rick Martinez',
-                      "date_of_birth": date(1996, 1, 21)},
-                     {"astronaut": 'Alex Vogel',
-                      "date_of_birth": date(1994, 11, 15)},
-                     {"astronaut": 'Chris Beck',
-                      "date_of_birth": date(1999, 8, 2)},
-                     {"astronaut": 'Beth Johansen',
-                      "date_of_birth": date(2006, 5, 9)},
-                     {"astronaut": 'Mark Watney',
-                      "date_of_birth": date(1994, 10, 12)}]}
+    DATA = {'mission': 'Ares 3',
+            'launch_date': datetime(2035, 6, 29, tzinfo=timezone.utc),
+            'destination': 'Mars',
+            'destination_landing': datetime(2035, 11, 7, tzinfo=timezone.utc),
+            'destination_location': 'Acidalia Planitia',
+            'crew': [{'astronaut': 'Melissa Lewis', 'date_of_birth': date(1995, 7, 15)},
+                     {'astronaut': 'Rick Martinez', 'date_of_birth': date(1996, 1, 21)},
+                     {'astronaut': 'Alex Vogel', 'date_of_birth': date(1994, 11, 15)},
+                     {'astronaut': 'Chris Beck', 'date_of_birth': date(1999, 8, 2)},
+                     {'astronaut': 'Beth Johansen', 'date_of_birth': date(2006, 5, 9)},
+                     {'astronaut': 'Mark Watney', 'date_of_birth': date(1994, 10, 12)}]}
 
 
     class MyEncoder(json.JSONEncoder):
@@ -476,7 +470,7 @@ Decoding ``datetime`` and ``date``:
 
 
 Python Object to JSON
--------------------------------------------------------------------------------
+---------------------
 Encoding nested objects with relations to JSON:
 
 .. code-block:: python
@@ -500,18 +494,20 @@ Encoding nested objects with relations to JSON:
 
     CREW = [
         Astronaut('Melissa Lewis', []),
+
         Astronaut('Mark Watney', missions=[
-                Mission(2035, 'Ares 3')]),
+            Mission(2035, 'Ares 3')]),
+
         Astronaut('Jan Twardowski', missions=[
-                Mission(1969, 'Apollo 18'),
-                Mission(2024, 'Artemis 3')]),
+            Mission(1969, 'Apollo 18'),
+            Mission(2024, 'Artemis 3')]),
     ]
 
 
     class MyEncoder(json.JSONEncoder):
         def default(self, obj):
-            result = obj.__dict__
-            result['__class_name__'] = obj.__class__.__name__
+            result = vars(obj)
+            result['__type__'] = obj.__class__.__name__
             return result
 
 
@@ -521,15 +517,15 @@ Encoding nested objects with relations to JSON:
     print(result)
     # [
     #   {
-    #     "__class_name__": "Astronaut",
+    #     "__type__": "Astronaut",
     #     "missions": [],
     #     "name": "Melissa Lewis"
     #   },
     #   {
-    #     "__class_name__": "Astronaut",
+    #     "__type__": "Astronaut",
     #     "missions": [
     #       {
-    #         "__class_name__": "Mission",
+    #         "__type__": "Mission",
     #         "name": "Ares 3",
     #         "year": 2035
     #       }
@@ -537,15 +533,15 @@ Encoding nested objects with relations to JSON:
     #     "name": "Mark Watney"
     #   },
     #   {
-    #     "__class_name__": "Astronaut",
+    #     "__type__": "Astronaut",
     #     "missions": [
     #       {
-    #         "__class_name__": "Mission",
+    #         "__type__": "Mission",
     #         "name": "Apollo 18",
     #         "year": 1969
     #       },
     #       {
-    #         "__class_name__": "Mission",
+    #         "__type__": "Mission",
     #         "name": "Artemis 3",
     #         "year": 2024
     #       }
@@ -556,7 +552,7 @@ Encoding nested objects with relations to JSON:
 
 
 JSON to Python Object
--------------------------------------------------------------------------------
+---------------------
  Encoding nested objects with relations to JSON:
 
 .. code-block:: python
@@ -566,11 +562,11 @@ JSON to Python Object
 
 
     DATA = """[
-        {"__class_name__": "Astronaut", "name": "Melissa Lewis", "missions": []},
-        {"__class_name__": "Astronaut", "name": "Mark Watney", "missions": [{"__class_name__": "Mission", "name": "Ares 3", "year": 2035}]},
-        {"__class_name__": "Astronaut", "name": "Jan Twardowski", "missions": [
-            {"__class_name__": "Mission", "name": "Apollo 18", "year": 1969},
-            {"__class_name__": "Mission", "name": "Artemis 3", "year": 2024}]}]"""
+        {"__type__": "Astronaut", "name": "Melissa Lewis", "missions": []},
+        {"__type__": "Astronaut", "name": "Mark Watney", "missions": [{"__type__": "Mission", "name": "Ares 3", "year": 2035}]},
+        {"__type__": "Astronaut", "name": "Jan Twardowski", "missions": [
+            {"__type__": "Mission", "name": "Apollo 18", "year": 1969},
+            {"__type__": "Mission", "name": "Artemis 3", "year": 2024}]}]"""
 
 
     @dataclass
@@ -590,7 +586,7 @@ JSON to Python Object
             super().__init__(object_hook=self.default)
 
         def default(self, obj):
-            class_name = obj.pop('__class_name__')
+            clsname = obj.pop('__type__')
             cls = globals()[class_name]
             return cls(**obj)
 
@@ -609,7 +605,7 @@ JSON to Python Object
 
 
 Pretty Printing JSON
--------------------------------------------------------------------------------
+--------------------
 * JSON can be minified to save space for network transmission
 * It is not very readable
 
@@ -653,7 +649,7 @@ Pretty Printing JSON:
 
 
 Assignments
--------------------------------------------------------------------------------
+-----------
 .. literalinclude:: assignments/serialization_json_a.py
     :caption: :download:`Solution <assignments/serialization_json_a.py>`
     :end-before: # Solution

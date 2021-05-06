@@ -26,6 +26,8 @@ Polish:
     3. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> result( (3,6,0) )
     Traceback (most recent call last):
     AssertionError: Python 3.7+ required

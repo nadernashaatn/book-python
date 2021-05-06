@@ -25,6 +25,8 @@ Polish:
     8. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> result  # doctest: +NORMALIZE_WHITESPACE
     [User(username='commander', password='pbkdf2_sha256$120000$gvEBNiCeTrYa0$5C+NiCeTrYsha1PHogqvXNiCeTrY0CRSLYYAA90=', firstname='Иван', lastname='Иванович', email='', date_joined=datetime.datetime(1970, 1, 1, 0, 0, tzinfo=datetime.timezone.utc), last_login=datetime.datetime(1970, 1, 1, 0, 0, tzinfo=datetime.timezone.utc), is_superuser=False, is_staff=True, is_active=True, groups=[1], user_permissions=[{'eclss': ['add', 'modify', 'view']}, {'communication': ['add', 'modify', 'view']}, {'medical': ['add', 'modify', 'view']}, {'science': ['add', 'modify', 'view']}]),
      User(username='executive-officer', password='pbkdf2_sha256$120000$eUNiCeTrYHoh$X32NiCeTrYZOWFdBcVT1l3NiCeTrY4WJVhr+cKg=', firstname='José', lastname='Jiménez', email='', date_joined=datetime.datetime(1970, 1, 1, 0, 0, tzinfo=datetime.timezone.utc), last_login=None, is_superuser=False, is_staff=True, is_active=True, groups=[1], user_permissions=[{'eclss': ['add', 'modify', 'view']}, {'communication': ['add', 'modify', 'view']}, {'medical': ['add', 'modify', 'view']}, {'science': ['add', 'modify', 'view']}]),

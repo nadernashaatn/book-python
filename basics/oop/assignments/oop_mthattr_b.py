@@ -54,8 +54,11 @@ Hints:
     * `{mean=:.2f}`
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> setosa = Iris(5.1, 3.5, 1.4, 0.2, 'setosa')
     >>> virginica = Iris(5.8, 2.7, 5.1, 1.9, 'virginica')
+
     >>> setosa.show()
     'total=10.20 mean=2.55 setosa'
     >>> virginica.show()

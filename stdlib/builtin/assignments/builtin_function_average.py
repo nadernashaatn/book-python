@@ -27,6 +27,8 @@ Polish:
     9. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> result  # doctest: +NORMALIZE_WHITESPACE
     {'Sepal length': 5.666666666666667,
      'Sepal width': 3.0500000000000003,

@@ -21,7 +21,9 @@ Polish:
     6. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
     >>> from inspect import isfunction
+
     >>> assert callable(set_position)
     >>> assert isfunction(set_position)
 

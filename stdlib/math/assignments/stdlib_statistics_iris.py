@@ -57,6 +57,8 @@ Given:
                 (4.6, 3.1, 1.5, 0.2, 'setosa')]
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> result  # doctest: +NORMALIZE_WHITESPACE
     {'virginica': {'Sepal length': {'values': [5.8, 6.3, 7.6, 4.9, 7.1, 6.5, 6.3],
                                     'mean': 6.357142857142857,

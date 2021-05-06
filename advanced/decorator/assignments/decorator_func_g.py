@@ -19,7 +19,9 @@ Polish:
     5. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
     >>> from inspect import isfunction
+
     >>> assert isfunction(numeric)
     >>> assert isfunction(numeric(lambda: None))
 

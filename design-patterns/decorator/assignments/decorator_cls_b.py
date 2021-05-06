@@ -24,6 +24,8 @@ Hints:
     * `path = Path(CURRENT_DIR, filename)`
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> @Abspath
     ... def display(path):
     ...     return str(path)

@@ -14,7 +14,7 @@ English:
         b. Use `,` to separate mission fields
         c. Use `;` to separate missions
         d. Use Unix `\n` newline
-        e. Sort fieldnames
+        e. Sort `fieldnames` using `sorted()`
     6. Run doctests - all must succeed
 
 Polish:
@@ -27,7 +27,7 @@ Polish:
         b. Użyj `,` do oddzielania pól mission
         c. Użyj `;` do oddzielenia missions
         d. Użyj zakończenia linii Unix `\n`
-        e. Posortuj fieldnames
+        e. Posortuj `fieldnames` używając `sorted()`
     6. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
@@ -35,6 +35,8 @@ Hints:
     * For Python before 3.8: `dict(OrderedDict)`
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> result = open(FILE).read()
     >>> print(result)
     "lastname","missions","name"
@@ -76,11 +78,10 @@ CREW = [
     Astronaut('Melissa', 'Lewis'),
 ]
 
-result: list
+result: list = []
+
 
 # Solution
-result = list()
-
 for member in CREW:
     astronaut = vars(member)
     missions = [','.join(str(x) for x in vars(mission).values())
@@ -88,6 +89,7 @@ for member in CREW:
     astronaut['missions'] = ';'.join(missions)
     result.append(astronaut)
 
+fieldnames = sorted(result[0].keys())
 
 # result = [astronaut | {'missions': ';'.join(values)}
 #           for member in CREW
@@ -96,8 +98,7 @@ for member in CREW:
 #                           for mission in astronaut.pop('missions')]) or True]
 
 
-
 with open(FILE, mode='w') as file:
-    writer = csv.DictWriter(file, fieldnames=sorted(result[0].keys()), quoting=csv.QUOTE_ALL)
+    writer = csv.DictWriter(file, fieldnames=fieldnames, quoting=csv.QUOTE_ALL)
     writer.writeheader()
     writer.writerows(result)

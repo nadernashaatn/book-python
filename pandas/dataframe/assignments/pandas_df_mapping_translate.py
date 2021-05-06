@@ -25,6 +25,8 @@ Hints:
     * `pd.to_datetime()`
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> type(result) is pd.DataFrame
     True
     >>> pd.set_option('display.width', 500)

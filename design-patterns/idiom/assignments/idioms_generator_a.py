@@ -33,8 +33,10 @@ Polish:
     8. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
     >>> from sys import getsizeof
     >>> from inspect import isfunction, isgeneratorfunction
+
     >>> assert isfunction(function)
     >>> assert isgeneratorfunction(generator)
 

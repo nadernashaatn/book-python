@@ -19,6 +19,8 @@ Hints:
     * Define `Mission.__repr__()`
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> melissa = Astronaut('Melissa Lewis')
     >>> print(f'Commander: \\n{melissa}\\n')  # doctest: +NORMALIZE_WHITESPACE
     Commander:

@@ -17,6 +17,8 @@ Polish:
     X. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> trigonometry(180)  # doctest: +NORMALIZE_WHITESPACE
     {'rad': 3.141592653589793,
      'sin': 1.2246467991473532e-16,

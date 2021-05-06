@@ -28,6 +28,8 @@ Hint:
     * `str.split()`
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> type(result)
     <class 'list'>
     >>> all(type(x) is str for x in result)

@@ -14,10 +14,13 @@ Polish:
     2. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> result is not Ellipsis
     True
     >>> type(result)
     <class 'float'>
+
     >>> result
     5.911111111111111
 """

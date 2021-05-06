@@ -20,6 +20,8 @@ Hints:
     * Add newline `\n` at the end of line and file
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> open(FILE).read()
     'hello\\nworld\\n'
     >>> from os import remove; remove(FILE)

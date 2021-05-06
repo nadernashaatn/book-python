@@ -6,20 +6,22 @@
 
 English:
     1. Use data from "Given" section (see below)
-    2. Save data to file in JSON format
-    3. Read data from file
+    2. Save data to `FILE` in JSON format
+    3. Read data from `FILE`
     4. Recreate data structure
     5. Run doctests - all must succeed
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Zapisz dane do pliku w formacie JSON
-    3. Odczytaj dane z pliku
+    2. Zapisz dane do `FILE` w formacie JSON
+    3. Odczytaj dane z `FILE`
     4. Odtwórz strukturę danych
     5. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
     >>> from inspect import isclass
+
     >>> isclass(Encoder)
     True
     >>> isclass(Decoder)
@@ -62,18 +64,17 @@ from datetime import datetime, date, timezone
 import json
 
 FILE = '_temporary.json'
-
-DATA = {"mission": "Ares 3",
-        "launch_date": datetime(2035, 6, 29, tzinfo=timezone.utc),
-        "destination": 'Mars',
-        "destination_landing": datetime(2035, 11, 7, tzinfo=timezone.utc),
-        "destination_location": "Acidalia Planitia",
-        "crew": [{"astronaut": 'Melissa Lewis', "date_of_birth": date(1995, 7, 15)},
-                 {"astronaut": 'Rick Martinez', "date_of_birth": date(1996, 1, 21)},
-                 {"astronaut": 'Alex Vogel', "date_of_birth": date(1994, 11, 15)},
-                 {"astronaut": 'Chris Beck', "date_of_birth": date(1999, 8, 2)},
-                 {"astronaut": 'Beth Johansen', "date_of_birth": date(2006, 5, 9)},
-                 {"astronaut": 'Mark Watney', "date_of_birth": date(1994, 10, 12)}]}
+DATA = {'mission': 'Ares 3',
+        'launch_date': datetime(2035, 6, 29, tzinfo=timezone.utc),
+        'destination': 'Mars',
+        'destination_landing': datetime(2035, 11, 7, tzinfo=timezone.utc),
+        'destination_location': 'Acidalia Planitia',
+        'crew': [{'astronaut': 'Melissa Lewis', 'date_of_birth': date(1995, 7, 15)},
+                 {'astronaut': 'Rick Martinez', 'date_of_birth': date(1996, 1, 21)},
+                 {'astronaut': 'Alex Vogel', 'date_of_birth': date(1994, 11, 15)},
+                 {'astronaut': 'Chris Beck', 'date_of_birth': date(1999, 8, 2)},
+                 {'astronaut': 'Beth Johansen', 'date_of_birth': date(2006, 5, 9)},
+                 {'astronaut': 'Mark Watney', 'date_of_birth': date(1994, 10, 12)}]}
 
 
 class Encoder(json.JSONEncoder):
@@ -96,21 +97,13 @@ class Encoder(json.JSONEncoder):
 
 
 class Decoder(json.JSONDecoder):
-    date_of_birth: date
-    launch_date: datetime
-    destination_landing: datetime
-
     def __init__(self) -> None:
-        super().__init__(object_hook=lambda data: {
-                field: getattr(self, method)(value)
-                for field, value in data.items()
-                if (method := self.__annotations__.get(field, str).__name__)})
+        super().__init__(object_hook=self.default)
 
-    def datetime(self, value: str) -> date:
-        return datetime.fromisoformat(value)
-
-    def date(self, value: str) -> date:
-        return datetime.fromisoformat(value).date()
-
-    def str(self, value: str) -> str:
-        return value
+    def default(self, data: dict) -> dict:
+        for key, value in data.items():
+            if key in ['destination_landing', 'launch_date']:
+                data[key] = datetime.fromisoformat(value)
+            elif key == 'date_of_birth':
+                data[key] = datetime.fromisoformat(value).date()
+        return data

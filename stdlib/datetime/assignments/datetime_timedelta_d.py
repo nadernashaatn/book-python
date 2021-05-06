@@ -31,6 +31,8 @@ Given:
     * 15 seconds
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> assert type(result) is dict, \
     'Variable `result` has invalid type, must be a dict'
 

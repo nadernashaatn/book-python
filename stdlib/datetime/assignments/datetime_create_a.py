@@ -23,6 +23,8 @@ Polish:
     X. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> assert type(d) is date, \
     'Variable `dt` has invalid type, must be a date'
 

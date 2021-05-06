@@ -20,7 +20,9 @@ Polish:
     5. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
     >>> from inspect import isfunction
+
     >>> isfunction(echo)
     True
     >>> type(echo(0,0)) is tuple

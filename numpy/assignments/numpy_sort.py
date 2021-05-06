@@ -20,6 +20,8 @@ Hints:
     * `.sort()` returns `None`
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> type(result_sort) is np.ndarray
     True
     >>> type(result_flip) is np.ndarray

@@ -22,8 +22,8 @@ Polish:
     6. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
-    >>> from inspect import isclass, ismethod
     >>> import sys; sys.tracebacklimit = 0
+    >>> from inspect import isclass, ismethod
 
     >>> assert isclass(Calculator)
     >>> calc = Calculator()

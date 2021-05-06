@@ -18,6 +18,8 @@ Hints:
     * type cast to `list()` before calculating mean to expand generator
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> type(result) is float
     True
     >>> result

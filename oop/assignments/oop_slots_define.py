@@ -20,6 +20,8 @@ Polish:
     5. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> result = [Iris(*row) for row in DATA[1:]]
     >>> result  # doctest: +NORMALIZE_WHITESPACE
     [Iris(5.8, 2.7, 5.1, 1.9, 'virginica'),

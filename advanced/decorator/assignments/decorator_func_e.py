@@ -27,9 +27,9 @@ Polish:
     X. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
     >>> from timeit import timeit
-    >>> from sys import setrecursionlimit
-    >>> setrecursionlimit(5000)
+    >>> sys.setrecursionlimit(5000)
 
     >>> @cache
     ... def fn1(n):

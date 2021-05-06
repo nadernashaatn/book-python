@@ -29,6 +29,8 @@ Polish:
     6. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> mark = Astronaut('Mark Watney', 36, 170)
 
     >>> melissa = Astronaut('Melissa Lewis', 44, 170)

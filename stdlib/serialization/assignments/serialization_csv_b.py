@@ -32,6 +32,8 @@ Hint:
     * For Python before 3.8: `dict(OrderedDict)`
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> result = open(FILE).read()
     >>> print(result)   # doctest: +NORMALIZE_WHITESPACE
     "firstname","lastname"
@@ -46,9 +48,6 @@ Tests:
 
 
 # Given
-from csv import DictWriter, QUOTE_ALL
-
-
 FILE = r'_temporary.csv'
 DATA = [{'firstname': 'Jan', 'lastname': 'Twardowski'},
         {'firstname': 'José', 'lastname': 'Jiménez'},
@@ -58,14 +57,13 @@ DATA = [{'firstname': 'Jan', 'lastname': 'Twardowski'},
 
 
 # Solution
+from csv import DictWriter, QUOTE_ALL
+
+
 with open(FILE, mode='w', encoding='utf-8') as file:
-    data = DictWriter(
-        f=file,
-        fieldnames=['firstname', 'lastname'],
-        delimiter=',',
-        quotechar='"',
-        quoting=QUOTE_ALL,
-        lineterminator='\n')
+    data = DictWriter(file, fieldnames=['firstname', 'lastname'],
+                      delimiter=',', quotechar='"', quoting=QUOTE_ALL,
+                      lineterminator='\n')
 
     data.writeheader()
     data.writerows(DATA)

@@ -18,6 +18,8 @@ Hints:
     * 1 m = 100 cm
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> result = Distance(meters=1337)
     >>> format(result, 'km')
     '1.337'

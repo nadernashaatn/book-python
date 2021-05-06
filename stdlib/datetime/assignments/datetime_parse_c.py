@@ -30,6 +30,8 @@ Hints:
     * Use `%#I` on Windows to remove leading zero
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> assert type(result) is datetime, \
     'Variable `result` has invalid type, must be a datetime'
 

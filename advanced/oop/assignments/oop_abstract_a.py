@@ -21,6 +21,8 @@ Polish:
     6. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> iris = Iris()
     Traceback (most recent call last):
     TypeError: Can't instantiate abstract class Iris with abstract method get_name

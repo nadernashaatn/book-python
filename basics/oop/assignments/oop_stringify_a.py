@@ -16,6 +16,8 @@ Polish:
     3. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> for *features, label in DATA:
     ...     iris = Iris(features, label)
     ...     print(iris)

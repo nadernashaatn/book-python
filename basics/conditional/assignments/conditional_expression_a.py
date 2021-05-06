@@ -36,8 +36,8 @@ References:
         Journal of Hypertension. vol 71. pages 1269–1324. 2018. doi: 10.1161/HYP.0000000000000066
 
 Tests:
-    TODO: Better Tests
     >>> import sys; sys.tracebacklimit = 0
+    TODO: Better Tests
 
     >>> assert result is not Ellipsis, 'Assignment solution must be in `result` instead of ... (Ellipsis)'
     >>> assert type(result) is str, 'Variable `result` has invalid type, should be str'

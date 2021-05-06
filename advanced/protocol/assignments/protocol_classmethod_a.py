@@ -31,6 +31,7 @@ Hints:
     * `CSVMixin.from_csv()` should remove newline `\n` at the end of line
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
     >>> from dataclasses import dataclass
 
     >>> @dataclass

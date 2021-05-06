@@ -21,12 +21,14 @@ Hints:
     * `mean = sum() / len()`
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+    >>> from inspect import isfunction
+
     >>> assert issubclass(Setosa, IrisInterface)
     >>> assert hasattr(Setosa, 'mean')
     >>> assert hasattr(Setosa, 'sum')
     >>> assert hasattr(Setosa, 'len')
 
-    >>> from inspect import isfunction
     >>> assert isfunction(Setosa.mean)
     >>> assert isfunction(Setosa.sum)
     >>> assert isfunction(Setosa.len)

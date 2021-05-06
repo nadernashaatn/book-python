@@ -20,6 +20,8 @@ Hints:
     * `sum(...) / len(...)`
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> mean(1)
     1.0
     >>> mean(1, 3)

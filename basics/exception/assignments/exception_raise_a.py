@@ -22,6 +22,8 @@ Polish:
     3. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> result(1)
     >>> result(0)
     >>> result(-1)

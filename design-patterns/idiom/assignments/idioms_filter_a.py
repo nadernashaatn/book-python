@@ -27,6 +27,8 @@ Hints:
     * ZeroDivisionError: division by zero
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> result
     11502.0
 """

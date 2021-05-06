@@ -21,6 +21,8 @@ Hints:
     * Add newline `\n` at the end of line and file
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> open(FILE).read()
     '5.1,3.5,1.4,0.2,setosa\\n'
     >>> from os import remove; remove(FILE)

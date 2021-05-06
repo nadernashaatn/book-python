@@ -33,7 +33,9 @@ Polish:
     8. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
     >>> from inspect import isclass, ismethod
+
     >>> assert isclass(Point)
     >>> assert isclass(Movable)
     >>> assert hasattr(Point, 'x')

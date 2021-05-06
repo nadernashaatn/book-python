@@ -3,7 +3,7 @@ Serialization CSV
 
 
 Rationale
--------------------------------------------------------------------------------
+---------
 * CSV - Comma Separated Values
 * CSV - Character Separated Values
 
@@ -39,7 +39,7 @@ CSV file with mixed values (numeric and strings). First line is a header.:
 
 
 Encoding
--------------------------------------------------------------------------------
+--------
 * ``utf-8`` - international standard (should be always used!)
 * ``iso-8859-1`` - ISO standard for Western Europe and USA
 * ``iso-8859-2`` - ISO standard for Central Europe (including Poland)
@@ -55,7 +55,7 @@ Encoding
 
 
 Quoting
--------------------------------------------------------------------------------
+-------
 * ``csv.QUOTE_ALL`` (safest)
 * ``csv.QUOTE_MINIMAL``
 * ``csv.QUOTE_NONE``
@@ -99,7 +99,7 @@ Quoting
 
 
 Quotechar
--------------------------------------------------------------------------------
+---------
 * ``"`` - quote char (best)
 * ``'`` - apostrophe
 
@@ -141,7 +141,7 @@ Quotechar
     /5.7/,/2.8/,/4.1/,/1.3/,/versicolor/
 
 Delimiter
--------------------------------------------------------------------------------
+---------
 ``delimiter=','``:
 
 .. code-block:: text
@@ -180,14 +180,14 @@ Delimiter
 
 
 Lineterminator
--------------------------------------------------------------------------------
+--------------
 * ``\r\n`` - New line on Windows
 * ``\n`` - New line on ``*nix``
 * ``*nix`` operating systems: Linux, macOS, BSD and other POSIX compliant OSes (excluding Windows)
 
 
 Dialects
--------------------------------------------------------------------------------
+--------
 .. code-block:: text
 
     1,2 and 2,5 -> 1,2;2,5  # delimiter=';'
@@ -215,7 +215,7 @@ Dialects
 
 
 Reader Object
--------------------------------------------------------------------------------
+-------------
 Read data from CSV file using ``csv.reader()``:
 
 .. code-block:: python
@@ -242,7 +242,7 @@ Read data from CSV file using ``csv.reader()``:
 
 
 Writer Object
--------------------------------------------------------------------------------
+-------------
 Writing data to CSV file using ``csv.writer()``:
 
 .. code-block:: python
@@ -267,7 +267,7 @@ Writing data to CSV file using ``csv.writer()``:
 
 
 DictReader
--------------------------------------------------------------------------------
+----------
 Read data from CSV file using ``csv.DictReader()``:
 
 .. code-block:: python
@@ -364,7 +364,7 @@ Read data from CSV file using ``csv.DictReader()``. While giving custom names no
 
 
 DictWriter
--------------------------------------------------------------------------------
+----------
 * Remember to add ``mode='w'`` to ``open()`` function
 * Default encoding is ``encoding='utf-8'``
 
@@ -426,7 +426,7 @@ Write data to CSV file using ``csv.DictWriter()``:
 
 
 Parsing Non-CSV Files
--------------------------------------------------------------------------------
+---------------------
 Parsing ``/etc/passwd`` file with ``csv.DictReader()``:
 
 .. code-block:: python
@@ -489,7 +489,7 @@ Parsing Java properties file with ``csv.DictReader()``:
 
 
 Use Cases
--------------------------------------------------------------------------------
+---------
 .. code-block:: python
 
     import csv
@@ -512,46 +512,24 @@ Use Cases
 
 
 Serialization
--------------------------------------------------------------------------------
-.. figure:: img/csv-relations-serialize-dbdump.png
-
-    Relational files or database dump
-
-.. figure:: img/csv-relations-serialize-ffill1.png
-
-    Ffill - Forward fill
-
-.. figure:: img/csv-relations-serialize-ffill2.png
-
-    Fill in specified columns
-
-.. figure:: img/csv-relations-serialize-uniqid.png
-
-    Data duplication with unique ID
-
-.. figure:: img/csv-relations-serialize-colattr.png
-
-    Each relations attribute adds one column
-
-.. figure:: img/csv-relations-serialize-colobj.png
-
-    Each relations instance adds one column
-
-.. figure:: img/csv-relations-serialize-colcls.png
-
-    Each relations class adds one column
-
-.. figure:: img/csv-relations-serialize-split.png
-
-    Relations attributes split into columns
-
-.. figure:: img/csv-relations-serialize-hybrid.png
-
-    Hybrid compact and separate columns
+-------------
+.. figure:: img/csv-relations-flat-attrs.png
+.. figure:: img/csv-relations-flat-norel.png
+.. figure:: img/csv-relations-ffill-dash.png
+.. figure:: img/csv-relations-ffill-duplicate.png
+.. figure:: img/csv-relations-ffill-empty.png
+.. figure:: img/csv-relations-ffill-uniqid.png
+.. figure:: img/csv-relations-rel-has.png
+.. figure:: img/csv-relations-rel-m2m.png
+.. figure:: img/csv-relations-rel-m2o.png
+.. figure:: img/csv-relations-serialize-cls.png
+.. figure:: img/csv-relations-serialize-clsattr.png
+.. figure:: img/csv-relations-serialize-obj.png
+.. figure:: img/csv-relations-serialize-objattr.png
 
 
 Good Practices
--------------------------------------------------------------------------------
+--------------
 * Always specify:
 
     * ``delimiter=','`` to  ``csv.DictReader()`` object
@@ -562,7 +540,7 @@ Good Practices
 
 
 Assignments
--------------------------------------------------------------------------------
+-----------
 .. literalinclude:: assignments/serialization_csv_a.py
     :caption: :download:`Solution <assignments/serialization_csv_a.py>`
     :end-before: # Solution

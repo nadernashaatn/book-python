@@ -27,6 +27,8 @@ Polish:
     X. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> is_bracket_balanced('{}')
     True
     >>> is_bracket_balanced('()')

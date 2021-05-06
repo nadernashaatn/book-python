@@ -22,6 +22,8 @@ Hints:
     * `result[:, 0]`
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> type(result) is np.ndarray
     True
     >>> result

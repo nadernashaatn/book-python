@@ -17,6 +17,8 @@ Polish:
     4. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> result  # doctest: +NORMALIZE_WHITESPACE
     [Astronaut(name='Jan Twardowski', missions=[Mission(year=1969, name='Apollo 18'), Mission(year=2024, name='Artemis 3')]),
      Astronaut(name='Mark Watney', missions=[Mission(year=2035, name='Ares 3')]),

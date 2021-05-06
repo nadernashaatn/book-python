@@ -36,6 +36,8 @@ Polish:
 
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> assert type(result) is timedelta, \
     'Variable `result` has invalid type, must be a timedelta'
 

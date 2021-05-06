@@ -8,30 +8,32 @@ English:
     1. Use data from "Given" section (see below)
     2. Using `csv.DictWriter()` write variable schema data to CSV file
     3. `fieldnames` must be automatically generated from `DATA`
-    4. `fieldnames` must always be in the same order
-    5. Non functional requirements:
+    4. Non functional requirements:
         a. All fields must be enclosed by double quote `"` character
         b. Use `;` to separate columns
         c. Use `utf-8` encoding
         d. Use Unix `\n` newline
-    6. Run doctests - all must succeed
+        e. Sort `fieldnames` using `sorted()`
+    5. Run doctests - all must succeed
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
     2. Za pomocą `csv.DictWriter()` zapisz do pliku CSV dane o zmiennej strukturze
     3. `fieldnames` musi być generowane automatycznie na podstawie `DATA`
-    4. `fieldnames` ma być zawsze w takiej samej kolejności
-    5. Wymagania niefunkcjonalne:
+    4. Wymagania niefunkcjonalne:
         a. Wszystkie pola muszą być otoczone znakiem cudzysłowu `"`
         b. Użyj `,` do oddzielenia kolumn
         c. Użyj kodowania `utf-8`
         d. Użyj zakończenia linii Unix `\n`
-    6. Uruchom doctesty - wszystkie muszą się powieść
+        e. Posortuj `fieldnames` używając `sorted()`
+    5. Uruchom doctesty - wszystkie muszą się powieść
 
 Hint:
     * For Python before 3.8: `dict(OrderedDict)`
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> result = open(FILE).read()
     >>> print(result)
     "Petal length","Petal width","Sepal length","Sepal width","Species"
@@ -48,8 +50,6 @@ Tests:
 
 
 # Given
-from csv import DictWriter, QUOTE_ALL
-
 FILE = r'_temporary.csv'
 DATA = [{'Sepal length': 5.1, 'Sepal width': 3.5, 'Species': 'setosa'},
         {'Petal length': 4.1, 'Petal width': 1.3, 'Species': 'versicolor'},
@@ -60,10 +60,13 @@ DATA = [{'Sepal length': 5.1, 'Sepal width': 3.5, 'Species': 'setosa'},
 
 
 # Solution
-fieldnames = set()
+from csv import DictWriter, QUOTE_ALL
 
+
+fieldnames = set()
 for row in DATA:
     fieldnames.update(row.keys())
+
 
 with open(FILE, mode='w') as file:
     data = DictWriter(

@@ -19,6 +19,8 @@ Polish:
     X. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> db = sqlite3.connect(FILE)
     >>> result = db.execute('SELECT * FROM apollo11')
     >>> list(result)  # doctest: +NORMALIZE_WHITESPACE

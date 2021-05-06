@@ -28,6 +28,8 @@ Polish:
     X. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> result['armstrong']
     <re.Match object; span=(80, 94), match='Neil Armstrong'>
     >>> result['aldrin']

@@ -17,6 +17,8 @@ Polish:
     4. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> position = Position()
     >>> position
     Position(x=0, y=0)

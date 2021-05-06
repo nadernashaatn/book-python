@@ -22,6 +22,8 @@ Polish:
     6. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> watney = Astronaut('Watney', 'Ares 3')
     >>> watney.show()
     'Watney, Ares 3'

@@ -30,11 +30,13 @@ Example:
     |   Ź   |    z   |
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+    >>> import string
+
     >>> type(result)
     <class 'str'>
     >>> result not in PL.keys()
     True
-    >>> import string
     >>> result in string.ascii_letters
     True
 """

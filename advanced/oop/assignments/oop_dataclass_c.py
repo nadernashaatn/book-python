@@ -27,6 +27,8 @@ Polish:
     9. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> result  # doctest: +NORMALIZE_WHITESPACE
     [User(firstname='Melissa', lastname='Lewis', role='commander', username='mlewis', password='pbkdf2_sha256$120000$gvEBNiCeTrYa0$5C+NiCeTrYsha1PHogqvXNiCeTrY0CRSLYYAA90=', email='melissa.lewis@nasa.gov', date_of_birth=datetime.date(1995, 7, 15), last_login=datetime.datetime(1970, 1, 1, 0, 0, tzinfo=datetime.timezone.utc), is_active=True, is_staff=True, is_superuser=False, user_permissions=[{'eclss': ['add', 'modify', 'view']}, {'communication': ['add', 'modify', 'view']}, {'medical': ['add', 'modify', 'view']}, {'science': ['add', 'modify', 'view']}]),
      User(firstname='Rick', lastname='Martinez', role='pilot', username='rmartinez', password='pbkdf2_sha256$120000$aXNiCeTrY$UfCJrBh/qhXohNiCeTrYH8nsdANiCeTrYnShs9M/c=', email='rick.martinez@ansa.gov', date_of_birth=datetime.date(1996, 1, 21), last_login=None, is_active=True, is_staff=True, is_superuser=False, user_permissions=[{'communication': ['add', 'view']}, {'eclss': ['add', 'modify', 'view']}, {'science': ['add', 'modify', 'view']}]),

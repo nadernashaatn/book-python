@@ -19,7 +19,9 @@ Polish:
     5. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
     >>> from inspect import isfunction
+
     >>> isfunction(number_to_str)
     True
     >>> number_to_str(1969)  # doctest: +SKIP

@@ -23,6 +23,8 @@ Polish:
     5. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> type(result)
     <class 'dict'>
     >>> '00' not in result
@@ -34,6 +36,7 @@ Tests:
     >>> assert all(type(x) is str for x in result.keys())
     >>> assert all(type(x) is str for x in result.values())
     >>> assert all(len(x) == 2 for x in result.keys())
+
     >>> result  # doctest: +NORMALIZE_WHITESPACE
     {'01': 'January',
      '02': 'February',

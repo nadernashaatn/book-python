@@ -10,7 +10,7 @@ English:
     3. Create `result: list[dict]`
         a. key - name from the header
         b. value - measurement or species
-    4. Write structure to file `iris_serialize.json` in JSON format
+    4. Write structure to file `FILE` in JSON format
     5. Run doctests - all must succeed
 
 Polish:
@@ -19,10 +19,12 @@ Polish:
     3. Wygeneruj `result: list[dict]`
         a. klucz - nazwa z nagłówka
         b. wartość - wyniki pomiarów lub gatunek
-    4. Zapisz strukturę do pliku `iris_serialize.json` w formacie JSON
+    4. Zapisz strukturę do pliku `FILE` w formacie JSON
     5. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> type(result)
     <class 'list'>
     >>> len(result) > 0
@@ -47,10 +49,7 @@ Tests:
 
 
 # Given
-import json
-
 FILE = '_temporary.json'
-
 DATA = [('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
         (5.8, 2.7, 5.1, 1.9, 'virginica'),
         (5.1, 3.5, 1.4, 0.2, 'setosa'),
@@ -64,8 +63,9 @@ DATA = [('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'
 
 
 # Solution
-header, *data = DATA
+import json
 
+header, *data = DATA
 result = [dict(zip(header, row))
           for row in data]
 

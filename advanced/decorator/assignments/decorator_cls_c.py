@@ -30,6 +30,8 @@ Hints:
     * `echo.__annotations__`
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> @TypeCheck
     ... def echo(a: str, b: int, c: float = 0.0) -> bool:
     ...     return bool(a * b)

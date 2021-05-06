@@ -30,7 +30,9 @@ Hints:
     * ZeroDivisionError: division by zero
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
     >>> from inspect import isfunction
+
     >>> isfunction(odd)
     True
     >>> isfunction(cube)

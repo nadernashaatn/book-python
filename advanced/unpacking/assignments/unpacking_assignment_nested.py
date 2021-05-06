@@ -17,6 +17,8 @@ Polish:
     4. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> type(header)
     <class 'tuple'>
     >>> type(data)

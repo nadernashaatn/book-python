@@ -30,6 +30,8 @@ Polish:
     10. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> result
     'Mike'
 """

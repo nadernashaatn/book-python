@@ -24,6 +24,8 @@ Hints:
     * `np.random.randint(..., ..., size=...)`
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> type(result) is pd.Series
     True
     >>> result

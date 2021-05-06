@@ -18,6 +18,10 @@ Polish:
     4. Zbierz dane do `result: list[dict]`
     6. Uruchom doctesty - wszystkie muszą się powieść
 
+Hint:
+    * Note, that last time has no seconds
+    * This is not bug, time without seconds is in NASA history records [1]
+
 References:
     [1] National Aeronautics and Space Administration.
         Apollo 11 timeline.
@@ -27,9 +31,11 @@ References:
 Hints:
     * `str.splitlines()`
     * `str.split(maxsplit)`
-    * ` try ... except ValueError`
+    * `try ... except ValueError`
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> assert type(result) is list, \
     'Variable `result` has invalid type, must be a list'
 

@@ -25,6 +25,8 @@ Polish:
     5. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> pt = Point(x=1, y=2, z=3)
     >>> pt.x, pt.y, pt.z
     (1, 2, 3)

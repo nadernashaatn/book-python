@@ -16,6 +16,8 @@ Polish:
     3. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> type(result)
     <class 'dict'>
     >>> all(type(x) is str for x in result.keys())
@@ -32,6 +34,7 @@ Tests:
     ...  and 1.9 in result.values()
     ...  and 'virginica' in result.values())
     True
+
     >>> result  # doctest: +NORMALIZE_WHITESPACE
     {'Sepal length': 5.8,
      'Sepal width': 2.7,

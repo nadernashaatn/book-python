@@ -23,6 +23,8 @@ Hints:
     * `Stop` or `Ctrl+C` kills infinite loop
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> type(result)
     <class 'str'>
     >>> result

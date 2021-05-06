@@ -32,6 +32,8 @@ Hints:
     * `np.zeros(shape, dtype)`
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> type(result) is np.ndarray
     True
     >>> result

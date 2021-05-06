@@ -29,7 +29,9 @@ Polish:
     10. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
     >>> from inspect import isfunction
+
     >>> assert isfunction(hello)
     >>> assert isfunction(result)
     >>> assert not hasattr(__name__, 'check')

@@ -35,6 +35,8 @@ Polish:
     X. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> stats(sepal_length)
     {'mean': 5.833333333333333, 'stdev': 0.9084785816591018, 'median': 5.7, 'variance': 0.8253333333333333}
     >>> stats(sepal_width)

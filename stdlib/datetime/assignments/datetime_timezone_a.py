@@ -48,6 +48,7 @@ Extra Task:
     6. South Pole (Henryk Arctowski Polish Antarctic Station)
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
     >>> from pytz.tzinfo import DstTzInfo, BaseTzInfo
 
     >>> assert isinstance(utc, BaseTzInfo), \

@@ -1,70 +1,69 @@
 """
-* Assignment: Serialization CSV List of Tuples
+* Assignment: Serialization CSV DictReader
 * Complexity: easy
-* Lines of code: 3 lines
-* Time: 5 min
+* Lines of code: 10 lines
+* Time: 8 min
 
 English:
     1. Use data from "Given" section (see below)
-    2. Convert `DATA` to `list[dict]`
-    3. Using `csv.DictWriter()` save `DATA` to file
-    4. Non functional requirements:
-        a. Do not use quotes in output CSV file
-        b. Use `,` to separate columns
-        c. Use `utf-8` encoding
-        d. Use Unix `\n` newline
-    5. Run doctests - all must succeed
+    2. Using `csv.DictReader` read the `FILE` content
+    3. Use explicit `encoding`, `delimiter` and `quotechar`
+    4. Replace column names with `FIELDNAMES`
+    5. Skip the first line (header)
+    6. Add rows to `result: list[dict]`
+    7. Run doctests - all must succeed
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Przekonwertuj `DATA` do `list[dict]`
-    3. Za pomocą `csv.DictWriter()` zapisz `DATA` do pliku
-    4. Wymagania niefunkcjonalne:
-        a. Nie używaj cudzysłowów w wynikowym pliku CSV
-        b. Użyj `,` do oddzielenia kolumn
-        c. Użyj kodowania `utf-8`
-        d. Użyj zakończenia linii Unix `\n`
-    5. Uruchom doctesty - wszystkie muszą się powieść
+    2. Korzystając z `csv.DictReader` wczytaj zawartość pliku `FILE`
+    3. Podaj jawnie `encoding`, `delimiter` oraz `quotechar`
+    4. Podmień nazwy kolumn na `FIELDNAMES`
+    5. Pomiń pierwszą linię (nagłówek)
+    6. Dodaj wiersze do `result: list[dict]`
+    7. Uruchom doctesty - wszystkie muszą się powieść
 
 Hint:
     * For Python before 3.8: `dict(OrderedDict)`
 
 Tests:
-    >>> result = open(FILE).read()
-    >>> print(result)
-    Sepal length,Sepal width,Petal length,Petal width,Species
-    5.8,2.7,5.1,1.9,virginica
-    5.1,3.5,1.4,0.2,setosa
-    5.7,2.8,4.1,1.3,versicolor
-    6.3,2.9,5.6,1.8,virginica
-    6.4,3.2,4.5,1.5,versicolor
-    4.7,3.2,1.3,0.2,setosa
-    7.0,3.2,4.7,1.4,versicolor
-    7.6,3.0,6.6,2.1,virginica
-    4.9,3.0,1.4,0.2,setosa
-    <BLANKLINE>
+    >>> import sys; sys.tracebacklimit = 0
+
+    >>> type(result)
+    <class 'list'>
+    >>> result  # doctest: +NORMALIZE_WHITESPACE
+    [{'Sepal Length': '5.8', 'Sepal Width': '2.7', 'Petal Length': '5.1', 'Petal Width': '1.9', 'Species': 'virginica'},
+     {'Sepal Length': '5.1', 'Sepal Width': '3.5', 'Petal Length': '1.4', 'Petal Width': '0.2', 'Species': 'setosa'},
+     {'Sepal Length': '5.7', 'Sepal Width': '2.8', 'Petal Length': '4.1', 'Petal Width': '1.3', 'Species': 'versicolor'}]
     >>> from os import remove
     >>> remove(FILE)
 """
 
 
 # Given
-import csv
-
 FILE = r'_temporary.csv'
-DATA = [('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
-        (5.8, 2.7, 5.1, 1.9, 'virginica'),
-        (5.1, 3.5, 1.4, 0.2, 'setosa'),
-        (5.7, 2.8, 4.1, 1.3, 'versicolor'),
-        (6.3, 2.9, 5.6, 1.8, 'virginica'),
-        (6.4, 3.2, 4.5, 1.5, 'versicolor'),
-        (4.7, 3.2, 1.3, 0.2, 'setosa'),
-        (7.0, 3.2, 4.7, 1.4, 'versicolor'),
-        (7.6, 3.0, 6.6, 2.1, 'virginica'),
-        (4.9, 3.0, 1.4, 0.2, 'setosa'),]
+FIELDNAMES = ['Sepal Length', 'Sepal Width',
+              'Petal Length', 'Petal Width', 'Species']
+
+DATA = """sepal_length,sepal_width,petal_length,petal_width,species
+5.8,2.7,5.1,1.9,virginica
+5.1,3.5,1.4,0.2,setosa
+5.7,2.8,4.1,1.3,versicolor"""
+
+with open(FILE, mode='w') as file:
+    file.write(DATA)
+
+
+result: list = []
 
 
 # Solution
-with open(FILE, mode='w') as file:
-    writer = csv.writer(file)
-    writer.writerows(DATA)
+from csv import DictReader, QUOTE_NONE
+
+
+with open(FILE) as file:
+    header = file.readline()
+    data = DictReader(file, fieldnames=FIELDNAMES,
+                      delimiter=',', quoting=QUOTE_NONE)
+
+    for row in data:
+        result.append(row)

@@ -90,7 +90,15 @@ Install on Windows
 
 Figures
 -------
-.. figure:: img/install-python-1.png
-.. figure:: img/install-python-2.png
-.. figure:: img/install-python-3.png
-.. figure:: img/install-python-4.png
+.. figure:: img/install-python-download.png
+.. figure:: img/install-python-windows-01.png
+.. figure:: img/install-python-windows-02.png
+.. figure:: img/install-python-windows-03.png
+.. figure:: img/install-python-windows-04.png
+.. figure:: img/install-python-macos-01.png
+.. figure:: img/install-python-macos-02.png
+.. figure:: img/install-python-macos-03.png
+.. figure:: img/install-python-macos-04.png
+.. figure:: img/install-python-macos-05.png
+.. figure:: img/install-python-macos-06.png
+.. figure:: img/install-python-macos-07.png

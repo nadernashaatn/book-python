@@ -37,6 +37,8 @@ Hints:
     * `tuple(float(x) for x in X)`
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> header
     ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species']
     >>> features  # doctest: +NORMALIZE_WHITESPACE

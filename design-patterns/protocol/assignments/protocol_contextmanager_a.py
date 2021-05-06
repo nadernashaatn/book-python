@@ -34,7 +34,9 @@ Hints:
     * Append newline character (`\n`) before adding to buffer
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
     >>> from inspect import isclass, ismethod
+
     >>> assert isclass(File)
     >>> assert hasattr(File, 'append')
     >>> assert hasattr(File, '__enter__')

@@ -19,7 +19,9 @@ Polish:
     3. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
     >>> from inspect import isclass
+
     >>> isclass(Iris)
     True
     >>> iris = Iris(5.8, 2.7, 5.1, 1.9, 'virginica')

@@ -27,8 +27,8 @@ Hints:
     * `round()`
 
 Tests:
-    >>> from inspect import isclass, ismethod
     >>> import sys; sys.tracebacklimit = 0
+    >>> from inspect import isclass, ismethod
 
     >>> assert isclass(Stats)
     >>> stats = Stats()

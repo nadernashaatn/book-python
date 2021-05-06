@@ -19,6 +19,8 @@ Polish:
     4. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> class Hero:
     ...    def __init__(self, name):
     ...        self.name = name

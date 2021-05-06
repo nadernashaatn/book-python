@@ -31,6 +31,8 @@ Polish:
     X. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> assert type(features_train) is list
     >>> assert type(features_test) is list
     >>> assert type(labels_train) is list

@@ -30,6 +30,8 @@ Hints:
     * Use `%#I` on Windows to remove leading zero
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> assert type(result) is str, \
     'Variable `result` has invalid type, must be a str'
 
@@ -42,13 +44,11 @@ Tests:
 from datetime import datetime
 
 
-DATA = 'July 21st, 1969 2:56:15 AM'
+DATA = datetime(1969, 7, 21, 2, 56, 15)
 
 result = ...  # str: DATA formatted in short US format: '07/21/69 2:56 AM'
 
 
 # Solution
-dt = datetime.strptime(DATA, '%B %dst, %Y %I:%M:%S %p')
-
-result = dt.strftime('%m/%d/%y %#I:%M %p')  # Windows
-result = dt.strftime('%m/%d/%y %-I:%M %p')  # *nix
+result = DATA.strftime('%m/%d/%y %#I:%M %p')  # Windows
+result = DATA.strftime('%m/%d/%y %-I:%M %p')  # *nix

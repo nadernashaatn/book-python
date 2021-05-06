@@ -23,6 +23,8 @@ Polish:
     5. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> is_valid_phone('+48 (12) 355 5678')
     False
     >>> is_valid_phone('+48 123 555 678')

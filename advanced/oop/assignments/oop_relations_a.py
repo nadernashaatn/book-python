@@ -21,7 +21,9 @@ Polish:
     3. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
     >>> from inspect import isclass
+
     >>> assert isclass(Point)
     >>> assert isclass(Path)
     >>> assert hasattr(Point, 'x')

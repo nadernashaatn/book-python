@@ -16,6 +16,8 @@ Polish:
     X. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> type(result) is pd.DataFrame
     True
     >>> pd.set_option('display.width', 500)

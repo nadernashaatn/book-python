@@ -23,6 +23,8 @@ Polish:
     7. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> mean(1)
     1.0
     >>> mean(1, 3)

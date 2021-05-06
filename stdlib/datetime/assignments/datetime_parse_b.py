@@ -19,6 +19,8 @@ Polish:
     4. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> assert type(a) is datetime, \
     'Variable `a` has invalid type, must be a datetime'
 
@@ -37,13 +39,13 @@ Tests:
 from datetime import datetime
 
 
-DATA = 'April 12, 1961 6:07 local time'
+DATA = 'April 12, 1961 6:07'
 
 a = ...  # datetime: representing DATA
 b = ...  # str: `a` formatted as '1961-04-12 06:07'
 
 
 # Solution
-a = datetime.strptime(DATA, '%B %d, %Y %H:%M local time')
+a = datetime.strptime(DATA, '%B %d, %Y %H:%M')
 b = a.strftime('%Y-%m-%d %H:%M')
 

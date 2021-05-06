@@ -12,9 +12,9 @@ Rationale
 * Recall information about escape characters (``\n`` - newline)
 * Recall information about raw strings ``r'...'``
 
-    * ``hello\nworld`` - text ``hello`` and then ``world`` in a new line
-    * ``hello\\nworld`` - text ``hello``, then ``\n`` and ``world``
-    * r``hello\nworld`` - text ``hello``, then ``\n`` and ``world``
+    * ``'hello\nworld'`` - text ``hello`` and then ``world`` in a new line
+    * ``'hello\\nworld'`` - text ``hello``, then ``\n`` and ``world``
+    * ``r'hello\nworld'`` - text ``hello``, then ``\n`` and ``world``
 
 
 Identifiers

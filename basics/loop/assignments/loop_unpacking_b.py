@@ -22,8 +22,11 @@ Hints:
     * `set.pop()`
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> type(result)
     <class 'set'>
+
     >>> 'virginica' in result
     True
     >>> 'setosa' in result

@@ -21,7 +21,9 @@ Polish:
     X. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
     >>> from inspect import isfunction
+
     >>> assert isfunction(check)
     >>> assert isfunction(wrapper)
     >>> assert isfunction(check(lambda: None))

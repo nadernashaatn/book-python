@@ -16,6 +16,8 @@ Polish:
     3. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> type(result)
     <class 'dict'>
     >>> all(type(x) is str for x in result.keys())

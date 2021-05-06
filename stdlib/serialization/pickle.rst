@@ -3,13 +3,10 @@ Serialization Pickle
 
 
 What is ``pickle``?
--------------------------------------------------------------------------------
+-------------------
 * Python object serialization format
 * ``pickle`` vs. ``cPickle``
 
-
-Serialize data types
--------------------------------------------------------------------------------
 
 Dump to string
 --------------
@@ -33,6 +30,7 @@ Dump to string
     pickle.dumps(1.5)
     # b'\x80\x03G?\xf8\x00\x00\x00\x00\x00\x00.'
 
+
 Load from string
 ----------------
 .. code-block:: python
@@ -55,9 +53,6 @@ Load from string
     pickle.loads(b'\x80\x03G?\xf8\x00\x00\x00\x00\x00\x00.')
     # 1.5
 
-
-Serialize sequences
--------------------------------------------------------------------------------
 
 Dump to string
 --------------
@@ -99,7 +94,7 @@ Load from string
 
 
 Serialize Dates and Datetimes
--------------------------------------------------------------------------------
+-----------------------------
 .. code-block:: python
 
     import pickle
@@ -119,7 +114,7 @@ Serialize Dates and Datetimes
 
 
 Serialize and deserialize objects
--------------------------------------------------------------------------------
+---------------------------------
 .. code-block:: python
 
     import pickle
@@ -140,11 +135,9 @@ Serialize and deserialize objects
 
 
 Serialize and deserialize to file
--------------------------------------------------------------------------------
+---------------------------------
 * File extension ``pkl``
 
-Dump to file
-------------
 Dump to file:
 
 .. code-block:: python
@@ -157,8 +150,6 @@ Dump to file:
     with open('filename.pkl', mode='wb') as file:
         pickle.dump(DATA, file)
 
-Load from file
---------------
 Load from file:
 
 .. code-block:: python
@@ -173,67 +164,48 @@ Load from file:
 
 
 Examples
--------------------------------------------------------------------------------
+--------
 Advanced Example:
 
 .. code-block:: python
 
     import pickle
-    from datetime import datetime, timezone, timedelta
 
 
-    def month_ago(dt):
-        return dt - timedelta(days=30)
+    DATA = {'mission': 'Ares 3',
+            'launch_date': datetime(2035, 6, 29, tzinfo=timezone.utc),
+            'destination': 'Mars',
+            'destination_landing': datetime(2035, 11, 7, tzinfo=timezone.utc),
+            'destination_location': 'Acidalia Planitia',
+            'crew': [{'astronaut': 'Melissa Lewis', 'date_of_birth': date(1995, 7, 15)},
+                     {'astronaut': 'Rick Martinez', 'date_of_birth': date(1996, 1, 21)},
+                     {'astronaut': 'Alex Vogel', 'date_of_birth': date(1994, 11, 15)},
+                     {'astronaut': 'Chris Beck', 'date_of_birth': date(1999, 8, 2)},
+                     {'astronaut': 'Beth Johansen', 'date_of_birth': date(2006, 5, 9)},
+                     {'astronaut': 'Mark Watney', 'date_of_birth': date(1994, 10, 12)}]}
 
 
-    class Astronaut:
-        agency = 'NASA'
+    data = pickle.dumps(DATA)
+    print(data)
+    b'\x80\x04\x95\xe9\x01\x00\x00\x00\x00\x00\x00}\x94(\x8c\x07mission\x94\x8c\x06Ares 3\x94\x8c\x0blaunch_date\x94\x8c\x08datetime\x94\x8c\x08datetime\x94\x93\x94C\n\x07\xf3\x06\x1d\x00\x00\x00\x00\x00\x00\x94h\x04\x8c\x08timezone\x94\x93\x94h\x04\x8c\ttimedelta\x94\x93\x94K\x00K\x00K\x00\x87\x94R\x94\x85\x94R\x94\x86\x94R\x94\x8c\x0bdestination\x94\x8c\x04Mars\x94\x8c\x13destination_landing\x94h\x06C\n\x07\xf3\x0b\x07\x00\x00\x00\x00\x00\x00\x94h\x0f\x86\x94R\x94\x8c\x14destination_location\x94\x8c\x11Acidalia Planitia\x94\x8c\x04crew\x94]\x94(}\x94(\x8c\tastronaut\x94\x8c\rMelissa Lewis\x94\x8c\rdate_of_birth\x94h\x04\x8c\x04date\x94\x93\x94C\x04\x07\xcb\x07\x0f\x94\x85\x94R\x94u}\x94(h\x1d\x8c\rRick Martinez\x94h\x1fh!C\x04\x07\xcc\x01\x15\x94\x85\x94R\x94u}\x94(h\x1d\x8c\nAlex Vogel\x94h\x1fh!C\x04\x07\xca\x0b\x0f\x94\x85\x94R\x94u}\x94(h\x1d\x8c\nChris Beck\x94h\x1fh!C\x04\x07\xcf\x08\x02\x94\x85\x94R\x94u}\x94(h\x1d\x8c\rBeth Johansen\x94h\x1fh!C\x04\x07\xd6\x05\t\x94\x85\x94R\x94u}\x94(h\x1d\x8c\x0bMark Watney\x94h\x1fh!C\x04\x07\xca\n\x0c\x94\x85\x94R\x94ueu.'
 
-        def __init__(self, name):
-            self.name = name
+    pickle.loads(data)
+    {'mission': 'Ares 3',
+     'launch_date': datetime.datetime(2035, 6, 29, 0, 0, tzinfo=datetime.timezone.utc),
+     'destination': 'Mars',
+     'destination_landing': datetime.datetime(2035, 11, 7, 0, 0, tzinfo=datetime.timezone.utc),
+     'destination_location': 'Acidalia Planitia',
+     'crew': [{'astronaut': 'Melissa Lewis', 'date_of_birth': datetime.date(1995, 7, 15)},
+              {'astronaut': 'Rick Martinez', 'date_of_birth': datetime.date(1996, 1, 21)},
+              {'astronaut': 'Alex Vogel', 'date_of_birth': datetime.date(1994, 11, 15)},
+              {'astronaut': 'Chris Beck', 'date_of_birth': datetime.date(1999, 8, 2)},
+              {'astronaut': 'Beth Johansen', 'date_of_birth': datetime.date(2006, 5, 9)},
+              {'astronaut': 'Mark Watney', 'date_of_birth': datetime.date(1994, 10, 12)}]}
 
-
-    jose = Astronaut(name='José Jiménez')
-    now = datetime.now(tz=timezone.utc)
-
-
-    DATA = [
-        jose,
-        Astronaut,
-        month_ago(now),
-        str(now),
-        now.__str__(),
-        '{}'.format(now),
-        f'{now}',
-        {'imie': 'Иван', 'nazwisko': 'Иванович'},
-        {10, 20, 30},
-        (1,),
-        10,
-        10.5,
-    ]
-
-    pickle.dumps(DATA)
-    # b'\x80\x03]q\x00(c__main__\nAstronaut\nq\x01)\x81q\x02}q\x03X\x04\x00\x00\x00nameq\x04X\x0c\x00\x00\x00Jose Jimenezq\x05sbh\x01cdatetime\ndatetime\nq\x06C\n\x07\xe2\t\x0b\r\n\x05\x04\xa9\xfdq\x07cdatetime\ntimezone\nq\x08cdatetime\ntimedelta\nq\tK\x00K\x00K\x00\x87q\nRq\x0b\x85q\x0cRq\r\x86q\x0eRq\x0fX \x00\x00\x002018-10-11 13:10:05.305661+00:00q\x10X \x00\x00\x002018-10-11 13:10:05.305661+00:00q\x11X \x00\x00\x002018-10-11 13:10:05.305661+00:00q\x12X \x00\x00\x002018-10-11 13:10:05.305661+00:00q\x13}q\x14(X\x04\x00\x00\x00imieq\x15X\x08\x00\x00\x00\xd0\x98\xd0\xb2\xd0\xb0\xd0\xbdq\x16X\x08\x00\x00\x00nazwiskoq\x17X\x10\x00\x00\x00\xd0\x98\xd0\xb2\xd0\xb0\xd0\xbd\xd0\xbe\xd0\xb2\xd0\xb8\xd1\x87q\x18ucbuiltins\nset\nq\x19]q\x1a(K\nK\x14K\x1ee\x85q\x1bRq\x1cK\x01\x85q\x1dK\nG@%\x00\x00\x00\x00\x00\x00e.'
-
-    pickle.loads(b'\x80\x03]q\x00(c__main__\nAstronaut\nq\x01)\x81q\x02}q\x03X\x04\x00\x00\x00nameq\x04X\x0c\x00\x00\x00Jose Jimenezq\x05sbh\x01cdatetime\ndatetime\nq\x06C\n\x07\xe2\t\x0b\r\n\x05\x04\xa9\xfdq\x07cdatetime\ntimezone\nq\x08cdatetime\ntimedelta\nq\tK\x00K\x00K\x00\x87q\nRq\x0b\x85q\x0cRq\r\x86q\x0eRq\x0fX \x00\x00\x002018-10-11 13:10:05.305661+00:00q\x10X \x00\x00\x002018-10-11 13:10:05.305661+00:00q\x11X \x00\x00\x002018-10-11 13:10:05.305661+00:00q\x12X \x00\x00\x002018-10-11 13:10:05.305661+00:00q\x13}q\x14(X\x04\x00\x00\x00imieq\x15X\x08\x00\x00\x00\xd0\x98\xd0\xb2\xd0\xb0\xd0\xbdq\x16X\x08\x00\x00\x00nazwiskoq\x17X\x10\x00\x00\x00\xd0\x98\xd0\xb2\xd0\xb0\xd0\xbd\xd0\xbe\xd0\xb2\xd0\xb8\xd1\x87q\x18ucbuiltins\nset\nq\x19]q\x1a(K\nK\x14K\x1ee\x85q\x1bRq\x1cK\x01\x85q\x1dK\nG@%\x00\x00\x00\x00\x00\x00e.')
-    # [
-    #   <__main__.Astronaut object at 0x10585f850>,
-    #   <class '__main__.Astronaut'>,
-    #   datetime.datetime(2018, 9, 11, 13, 10, 5, 305661, tzinfo=datetime.timezone.utc),
-    #   '2018-10-11 13:10:05.305661+00:00',
-    #   '2018-10-11 13:10:05.305661+00:00',
-    #   '2018-10-11 13:10:05.305661+00:00',
-    #   '2018-10-11 13:10:05.305661+00:00',
-    #   {'imie': 'Иван', 'nazwisko': 'Иванович'},
-    #   {10, 20, 30},
-    #   (1,),
-    #   10,
-    #   10.5
-    # ]
 
 
 Assignments
--------------------------------------------------------------------------------
+-----------
 .. literalinclude:: assignments/serialization_pickle_a.py
     :caption: :download:`Solution <assignments/serialization_pickle_a.py>`
     :end-before: # Solution

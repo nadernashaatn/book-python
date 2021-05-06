@@ -21,6 +21,8 @@ Polish:
     X. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> type(result_int) is np.ndarray
     True
     >>> type(result_bool) is np.ndarray

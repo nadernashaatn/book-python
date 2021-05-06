@@ -14,6 +14,8 @@ Polish:
     2. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> type(red)
     <class 'int'>
     >>> type(green)

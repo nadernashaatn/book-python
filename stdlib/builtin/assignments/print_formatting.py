@@ -1,5 +1,7 @@
 """
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> print(result)
     Temperature | -     20°C | ....-4....°F
     Temperature | -     15°C | ....+5....°F

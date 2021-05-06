@@ -7,18 +7,27 @@
 English:
     1. Use data from "Given" section (see below)
     2. Convert from JSON format to Python
-    3. Reading file create instances of `Setosa`, `Virginica`, `Versicolor`
+    3. Create instances of `Setosa`, `Virginica`, `Versicolor`
        classes based on value in field "species"
-    4. Run doctests - all must succeed
+    4. Add instances to `result: list[Setosa|Virginica|Versicolor]`
+    5. Run doctests - all must succeed
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
     2. Przekonwertuj dane z JSON do Python
-    3. Czytając plik twórz obiekty klas `Setosa`, `Virginica`, `Versicolor`
+    3. Twórz obiekty klas `Setosa`, `Virginica`, `Versicolor`
        w zależności od wartości pola "species"
-    4. Uruchom doctesty - wszystkie muszą się powieść
+    4. Dodawaj instancje do `result: list[Setosa|Virginica|Versicolor]`
+    5. Uruchom doctesty - wszystkie muszą się powieść
+
+Hint:
+    * `dict.pop()`
+    * `globals()`
+    * Assignment Expression
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> type(result)
     <class 'list'>
     >>> len(result) > 0
@@ -77,12 +86,10 @@ class Versicolor(Iris):
     pass
 
 
-result: list
+result: list = []
 
 
-# Solution
-result = []
-
+# Solution 1
 for iris in json.loads(DATA):
     species = iris.pop('species')
 
@@ -96,3 +103,18 @@ for iris in json.loads(DATA):
         print('Not supported')
 
     result.append(cls(**iris))
+
+
+# Solution 2
+for row in json.loads(DATA):
+    species = row.pop('species').capitalize()
+    cls = globals()[species]
+    iris = cls(**row)
+    result.append(iris)
+
+
+# Solution 3
+result = [iris(**row)
+          for row in json.loads(DATA)
+          if (clsname := row.pop('species').capitalize())
+          and (iris := globals()[clsname])]

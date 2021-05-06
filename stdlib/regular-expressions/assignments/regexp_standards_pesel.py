@@ -33,6 +33,8 @@ Polish:
     X. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> is_pesel_valid('69072101234')
     True
     >>> is_pesel_valid('18220812345')

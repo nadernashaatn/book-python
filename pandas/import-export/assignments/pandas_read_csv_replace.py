@@ -28,6 +28,8 @@ Hints:
     * `df['label'].replace({'from': 'to'}, inplace=True)`
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> type(result) is pd.DataFrame
     True
     >>> len(result) == 20

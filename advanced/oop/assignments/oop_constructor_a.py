@@ -19,7 +19,9 @@ Polish:
     3. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
     >>> from inspect import isclass
+
     >>> assert isclass(Point)
     >>> assert hasattr(Point, '__new__')
     >>> assert hasattr(Point, '__init__')

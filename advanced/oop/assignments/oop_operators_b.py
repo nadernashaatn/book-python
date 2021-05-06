@@ -18,6 +18,8 @@ Hints:
     * `obj.__iadd__(other) -> self`
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> astro = Astronaut('Jan Twardowski', missions=[
     ...     Mission(1969, 'Apollo 11'),
     ... ])

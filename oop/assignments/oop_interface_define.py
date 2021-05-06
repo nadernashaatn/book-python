@@ -19,6 +19,8 @@ Polish:
     5. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
+    >>> import sys; sys.tracebacklimit = 0
+
     >>> assert hasattr(IrisInterface, 'mean')
     >>> assert hasattr(IrisInterface, 'sum')
     >>> assert hasattr(IrisInterface, 'len')
