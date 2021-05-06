@@ -159,11 +159,11 @@ False
 >>>
 >>> sys.version_info > (3, 9, 0)
 True
->>> sys.version_info > (3, 9, 1)
+>>> sys.version_info > (3, 9, 3)
 True
 >>> sys.version_info >= (3, 9, 4)
 True
->>> sys.version_info > (3, 9, 5)
+>>> sys.version_info > (3, 9, 15)
 False
 
 >>> '3.8.0' > '3.9.0'

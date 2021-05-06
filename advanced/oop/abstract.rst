@@ -260,7 +260,7 @@ Problem - Despite having defined property, the order of decorators (``abstractme
 
 
     sys.modules['abc']
-    # <module 'abc' from '/usr/local/Cellar/python@3.9/3.9.4/Frameworks/Python.framework/Versions/3.9/lib/python3.9/abc.py'>
+    # <module 'abc' from '/usr/local/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/abc.py'>
 
     pprint(sys.path)
     # ['/Applications/PyCharm 2021.1 EAP.app/Contents/plugins/python/helpers/pydev',
@@ -268,9 +268,9 @@ Problem - Despite having defined property, the order of decorators (``abstractme
     #  '/Applications/PyCharm 2021.1 EAP.app/Contents/plugins/python/helpers/pycharm_display',
     #  '/Applications/PyCharm 2021.1 EAP.app/Contents/plugins/python/helpers/third_party/thriftpy',
     #  '/Applications/PyCharm 2021.1 EAP.app/Contents/plugins/python/helpers/pydev',
-    #  '/usr/local/Cellar/python@3.9/3.9.4/Frameworks/Python.framework/Versions/3.9/lib/python39.zip',
-    #  '/usr/local/Cellar/python@3.9/3.9.4/Frameworks/Python.framework/Versions/3.9/lib/python3.9',
-    #  '/usr/local/Cellar/python@3.9/3.9.4/Frameworks/Python.framework/Versions/3.9/lib/python3.9/lib-dynload',
+    #  '/usr/local/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python39.zip',
+    #  '/usr/local/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9',
+    #  '/usr/local/Cellar/python@3.9/3.9.5/Frameworks/Python.framework/Versions/3.9/lib/python3.9/lib-dynload',
     #  '/Users/watney/.virtualenvs/python-3.9/lib/python3.9/site-packages',
     #  '/Applications/PyCharm 2021.1 EAP.app/Contents/plugins/python/helpers/pycharm_matplotlib_backend',
     #  '/Users/watney/book-python',

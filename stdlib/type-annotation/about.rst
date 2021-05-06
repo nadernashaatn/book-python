@@ -111,7 +111,7 @@ New Features
 * Importing those from typing is deprecated.
 * Due to :pep`563` and the intention to minimize the runtime impact of typing, this deprecation will not generate ``DeprecationWarnings``.
 * Instead, type checkers may warn about such deprecated usage when the target version of the checked program is signalled to be Python 3.9 or newer.
-* The deprecated functionality will be removed from the typing module in the first Python version released 5 years after the release of Python 3.9.4.
+* The deprecated functionality will be removed from the typing module in the first Python version released 5 years after the release of Python 3.9.5.
 
 
 .. code-block:: python
