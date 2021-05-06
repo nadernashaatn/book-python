@@ -28,6 +28,9 @@ Polish:
         d. Użyj zakończenia linii Unix `\n`
     6. Uruchom doctesty - wszystkie muszą się powieść
 
+Hint:
+    * For Python before 3.8: `dict(OrderedDict)`
+
 Tests:
     >>> result = open(FILE).read()
     >>> print(result)   # doctest: +NORMALIZE_WHITESPACE

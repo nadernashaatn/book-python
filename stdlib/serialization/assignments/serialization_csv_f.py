@@ -30,6 +30,10 @@ Polish:
         e. Posortuj fieldnames
     6. Uruchom doctesty - wszystkie muszą się powieść
 
+Hints:
+    * `vars(obj)`
+    * For Python before 3.8: `dict(OrderedDict)`
+
 Tests:
     >>> result = open(FILE).read()
     >>> print(result)

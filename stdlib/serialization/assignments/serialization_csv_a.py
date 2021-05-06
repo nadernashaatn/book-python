@@ -22,6 +22,9 @@ Polish:
     6. Wypisz wiersze z danymi
     7. Uruchom doctesty - wszystkie muszą się powieść
 
+Hint:
+    * For Python before 3.8: `dict(OrderedDict)`
+
 Tests:
     >>> type(result)
     <class 'list'>

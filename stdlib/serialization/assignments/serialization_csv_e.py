@@ -25,7 +25,8 @@ Polish:
     4. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
-    * `obj.__dict__`
+    * `vars(obj)`
+    * For Python before 3.8: `dict(OrderedDict)`
 
 Tests:
     >>> result = open(FILE).read()
