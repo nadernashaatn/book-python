@@ -5,22 +5,18 @@
 * Time: 21 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Save `DATA` to `FILE`
-    3. Read data from `FILE` (don't use `csv` or `pandas` library)
-    4. Replace species from `int` to `str` according to `SPECIES` conversion table
-    5. Connect to the `sqlite3` using context manager (`with`)
-    6. Create table `iris` and write data to it
-    X. Run doctests - all must succeed
+    1. Read data from `FILE` (don't use `csv` or `pandas` library)
+    2. Replace species from `int` to `str` according to `SPECIES` conversion table
+    3. Connect to the `sqlite3` using context manager (`with`)
+    4. Create table `iris` and write data to it
+    5. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Zapisz `DATA` do `FILE`
-    3. Wczytaj dane z `FILE` (nie używaj biblioteki `csv` lub `pandas`)
-    4. Podmień gatunki z `int` na `str` zgodnie z tabelą podstawień `SPECIES`
-    5. Połącz się do bazy danych `sqlite3` używając context managera (`with`)
-    6. Stwórz tabelę `iris` i zapisz do niej dane
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    1. Wczytaj dane z `FILE` (nie używaj biblioteki `csv` lub `pandas`)
+    2. Podmień gatunki z `int` na `str` zgodnie z tabelą podstawień `SPECIES`
+    3. Połącz się do bazy danych `sqlite3` używając context managera (`with`)
+    4. Stwórz tabelę `iris` i zapisz do niej dane
+    5. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -32,6 +28,7 @@ Tests:
     >>> all(type(row) is dict
     ...     for row in result)
     True
+
     >>> result  # doctest: +NORMALIZE_WHITESPACE
      [{'id': 4, 'species': 'virginica', 'sepal_length': 5.4, 'sepal_width': 3.9, 'petal_length': 1.3, 'petal_width': 0.4},
       {'id': 3, 'species': 'versicolor', 'sepal_length': 5.7, 'sepal_width': 4.4, 'petal_length': 1.5, 'petal_width': 0.4},
@@ -43,33 +40,13 @@ Tests:
       {'id': 7, 'species': 'setosa', 'sepal_length': 5.1, 'sepal_width': 3.8, 'petal_length': 1.5, 'petal_width': 0.3},
       {'id': 9, 'species': 'setosa', 'sepal_length': 5.1, 'sepal_width': 3.7, 'petal_length': 1.5, 'petal_width': 0.4},
       {'id': 10, 'species': 'setosa', 'sepal_length': 4.6, 'sepal_width': 3.6, 'petal_length': 1.0, 'petal_width': 0.2}]
-    >>> from os import remove
-    >>> remove(FILE)
-    >>> remove(DATABASE)
+    >>> from pathlib import Path
+    >>> Path(FILE).unlink(missing_ok=True)
+    >>> Path(DATABASE).unlink(missing_ok=True)
 """
 
-
-# Given
 import sqlite3
 
-DATABASE = r'_temporary.sqlite3'
-FILE = r'_temporary.csv'
-
-SPECIES = {
-    0: 'setosa',
-    1: 'versicolor',
-    2: 'virginica'}
-
-DATA = """4.3,3.0,1.1,0.1,0
-5.8,4.0,1.2,0.2,0
-5.7,4.4,1.5,0.4,1
-5.4,3.9,1.3,0.4,2
-5.1,3.5,1.4,0.3,1
-5.7,3.8,1.7,0.3,0
-5.1,3.8,1.5,0.3,0
-5.4,3.4,1.7,0.2,1
-5.1,3.7,1.5,0.4,0
-4.6,3.6,1.0,0.2,0"""
 
 SQL_CREATE_TABLE = """
     CREATE TABLE IF NOT EXISTS iris (
@@ -98,15 +75,35 @@ SQL_SELECT = """
     FROM iris
     ORDER BY species DESC, id ASC"""
 
-result: list
 
+DATABASE = r'_temporary.sqlite3'
+FILE = r'_temporary.csv'
 
-# Solution
-result = []
-data = []
+SPECIES = {
+    0: 'setosa',
+    1: 'versicolor',
+    2: 'virginica'}
+
+DATA = """4.3,3.0,1.1,0.1,0
+5.8,4.0,1.2,0.2,0
+5.7,4.4,1.5,0.4,1
+5.4,3.9,1.3,0.4,2
+5.1,3.5,1.4,0.3,1
+5.7,3.8,1.7,0.3,0
+5.1,3.8,1.5,0.3,0
+5.4,3.4,1.7,0.2,1
+5.1,3.7,1.5,0.4,0
+4.6,3.6,1.0,0.2,0"""
 
 with open(FILE, mode='w') as file:
     file.write(DATA)
+
+
+result: list = []
+
+
+# Solution
+data = []
 
 with open(FILE) as file:
     for line in file:

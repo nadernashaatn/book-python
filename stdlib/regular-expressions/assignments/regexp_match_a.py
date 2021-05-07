@@ -7,23 +7,23 @@
 English:
     1. Use data from "Given" section (see below)
     2. Use regular expressions to validate phone numbers
-    3. Check all given numbers (see input section)
-    4. Valid phone number formats:
-        a. Easy version: `+## ### ### ###`
-        b. Harder version: `+## ### ### ###` or `+## ## ### ####`
-    5. Run doctests - all must succeed
+    3. Valid phone number format: `+## ### ### ###` or `+## ## ### ####`
+    4. Run doctests - all must succeed
 
 Polish:
     1. Użyj danych z sekcji "Given" (patrz poniżej)
     2. Użyj wyrażeń regularnych do walidacji numeru telefonu
-    3. Sprawdź wszystkie podane numery (patrz sekcja input)
-    4. Poprawne formaty numeru:
-        a. Wersja łatwa: `+## ### ### ###`
-        b. Wersja trudniejsza: `+## ### ### ###` lub `+## ## ### ####`
-    5. Uruchom doctesty - wszystkie muszą się powieść
+    3. Poprawne format numeru: `+## ### ### ###` lub `+## ## ### ####`
+    4. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
+
+    >>> def is_valid_phone(number):
+    ...     if re.match(pattern, number):
+    ...         return True
+    ...     else:
+    ...         return False
 
     >>> is_valid_phone('+48 (12) 355 5678')
     False
@@ -57,14 +57,7 @@ Tests:
 # Given
 import re
 
-pattern = ...
-
-
-def is_valid_phone(number):
-    if re.match(pattern, number):
-        return True
-    else:
-        return False
+pattern = ...  # str: pattern matching `+## ### ### ###` and `+## ## ### ####`
 
 
 # Solution

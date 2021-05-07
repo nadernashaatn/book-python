@@ -3,13 +3,13 @@ Regexp Substitute
 
 
 About
--------------------------------------------------------------------------------
+-----
 * ``re.sub()``
 * Replace matched substring with text
 
 
 Examples
--------------------------------------------------------------------------------
+--------
 Usage of ``re.sub()``:
 
 .. code-block:: python

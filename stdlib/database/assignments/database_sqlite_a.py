@@ -5,24 +5,22 @@
 * Time: 21 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Extract date, time, log level and message from each line in `FILE`
-    3. Collect data to `data: list[dict]` (see below)
-    4. Create database schema for logs
-    5. Add all logs to database
-    6. Use `SQL_SELECT` query to extract data
-    7. Iterate over rows and append each to `result: list[dict]`
-    8. Run doctests - all must succeed
+    1. Extract date, time, log level and message from each line in `FILE`
+    2. Collect data to `data: list[dict]` (see below)
+    3. Create database schema for logs
+    4. Add all logs to database
+    5. Use `SQL_SELECT` query to extract data
+    6. Iterate over rows and append each to `result: list[dict]`
+    7. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Wyciągnij datę, czas, poziom logowania i teść z każdej linii w `FILE`
-    3. Zbierz dane do `data: list[dict]` (patrz sekcja input)
-    4. Stwórz schemat bazy danych dla logów
-    5. Dodaj wszystkie linie do bazy danych
-    6. Użyj zapytania `SQL_SELECT` do wyciągnięcia danych
-    7. Iterując po wierszach dopisuj je do `result: list[dict]`
-    8. Uruchom doctesty - wszystkie muszą się powieść
+    1. Wyciągnij datę, czas, poziom logowania i teść z każdej linii w `FILE`
+    2. Zbierz dane do `data: list[dict]` (patrz sekcja input)
+    3. Stwórz schemat bazy danych dla logów
+    4. Dodaj wszystkie linie do bazy danych
+    5. Użyj zapytania `SQL_SELECT` do wyciągnięcia danych
+    6. Iterując po wierszach dopisuj je do `result: list[dict]`
+    7. Uruchom doctesty - wszystkie muszą się powieść
 
 References:
     * Apollo 11 timeline https://history.nasa.gov/SP-4029/Apollo_11i_Timeline.htm
@@ -40,6 +38,7 @@ Tests:
     >>> all(type(row) is dict
     ...     for row in result)
     True
+
     >>> result  # doctest: +NORMALIZE_WHITESPACE
     [{'id': 28, 'datetime': '1969-07-24 17:29:00', 'level': 'INFO', 'message': 'Crew egress'},
      {'id': 27, 'datetime': '1969-07-24 16:50:35', 'level': 'WARNING', 'message': 'Splashdown (went to apex-down)'},
@@ -69,18 +68,15 @@ Tests:
      {'id': 3, 'datetime': '1969-07-16 13:33:23', 'level': 'DEBUG', 'message': 'Maximum dynamic pressure (735.17 lb/ft^2)'},
      {'id': 2, 'datetime': '1969-07-16 13:31:53', 'level': 'WARNING', 'message': 'S-IC engine ignition (#5)'},
      {'id': 1, 'datetime': '1969-07-14 21:00:00', 'level': 'INFO', 'message': 'Terminal countdown started'}]
-    >>> from os import remove
-    >>> remove(FILE)
-    >>> remove(DATABASE)
+
+    >>> from pathlib import Path
+    >>> Path(DATABASE).unlink(missing_ok=True)
 """
 
-
-# Given
 import sqlite3
 from datetime import datetime, timezone
 
 DATABASE = r'_temporary.sqlite3'
-FILE = r'_temporary.csv'
 
 DATA = """1969-07-14, 21:00:00, INFO, Terminal countdown started
 1969-07-16, 13:31:53, WARNING, S-IC engine ignition (#5)
@@ -133,28 +129,22 @@ SQL_INSERT = """
 SQL_SELECT = 'SELECT * FROM logs ORDER BY datetime DESC'
 
 
-with open(FILE, mode='w') as file:
-    file.write(DATA)
-
-
-result: list
+result: list = []
 
 # Solution
-result = []
 data = []
 
-with open(FILE) as file:
-    for line in file:
-        date, time, level, message = line.strip().split(', ', maxsplit=3)
-        date = datetime.strptime(date, '%Y-%m-%d').date()
+for line in DATA.splitlines():
+    date, time, level, message = line.strip().split(', ', maxsplit=3)
+    date = datetime.strptime(date, '%Y-%m-%d').date()
 
-        try:
-            time = datetime.strptime(time, '%H:%M:%S').time()
-        except ValueError:
-            time = datetime.strptime(time, '%H:%M').time()
+    try:
+        time = datetime.strptime(time, '%H:%M:%S').time()
+    except ValueError:
+        time = datetime.strptime(time, '%H:%M').time()
 
-        dt = datetime.combine(date, time)
-        data.append({'datetime': dt, 'level': level, 'message': message})
+    dt = datetime.combine(date, time)
+    data.append({'datetime': dt, 'level': level, 'message': message})
 
 
 with sqlite3.connect(DATABASE) as db:

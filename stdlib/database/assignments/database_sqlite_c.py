@@ -1,22 +1,20 @@
 """
-* Assignment: Database SQLite JSON
+* Assignment: Database SQLite Relations
 * Complexity: medium
 * Lines of code: 15 lines
 * Time: 21 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Create database and two tables `astronaut` and `address`
-    3. Insert data to separate tables
-    4. Join information from both tables
-    X. Run doctests - all must succeed
+    1. Create database and two tables `astronaut` and `address`
+    2. Insert data to separate tables
+    3. Join information from both tables
+    4. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Stwórz bazę danych i dwie tabele `astronaut` i `address`
-    3. Zapisz dane do osobnych tabel
-    4. Połączącz informacje z obu tabel
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    1. Stwórz bazę danych i dwie tabele `astronaut` i `address`
+    2. Zapisz dane do osobnych tabel
+    3. Połączącz informacje z obu tabel
+    4. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -28,6 +26,7 @@ Tests:
     >>> all(type(row) is dict
     ...     for row in result)
     True
+
     >>> result  # doctest: +NORMALIZE_WHITESPACE
     [{'id': 1, 'firstname': 'José', 'lastname': 'Jiménez', 'astronaut_id': 1, 'street': '2101 E NASA Pkwy', 'city': 'Houston', 'state': 'Texas', 'code': 77058, 'country': 'USA'},
      {'id': 1, 'firstname': 'José', 'lastname': 'Jiménez', 'astronaut_id': 1, 'street': None, 'city': 'Kennedy Space Center', 'state': 'Florida', 'code': 32899, 'country': 'USA'},
@@ -35,8 +34,9 @@ Tests:
      {'id': 2, 'firstname': 'Mark', 'lastname': 'Watney', 'astronaut_id': 2, 'street': '2825 E Ave P', 'city': 'Palmdale', 'state': 'California', 'code': 93550, 'country': 'USA'},
      {'id': 3, 'firstname': 'Иван', 'lastname': 'Иванович', 'astronaut_id': 3, 'street': '', 'city': 'Космодро́м Байкону́р', 'state': 'Кызылординская область', 'code': None, 'country': 'Қазақстан'},
      {'id': 5, 'firstname': 'Alex', 'lastname': 'Vogel', 'astronaut_id': 5, 'street': 'Linder Hoehe', 'city': 'Köln', 'state': None, 'code': 51147, 'country': 'Germany'}]
-    >>> from os import remove
-    >>> remove(DATABASE)
+
+    >>> from pathlib import Path
+    >>> Path(DATABASE).unlink(missing_ok=True)
 """
 
 
@@ -105,11 +105,9 @@ DATA = [
         {"street": "Linder Hoehe", "city": "Köln", "code": 51147, "state": None, "country": "Germany"}]}
 ]
 
-result: list
+result: list = []
 
 # Solution
-result = []
-
 with sqlite3.connect(DATABASE) as connection:
     db = connection.cursor()
     db.row_factory = sqlite3.Row

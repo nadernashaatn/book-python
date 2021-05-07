@@ -3,13 +3,13 @@ Regexp Compile
 
 
 About
--------------------------------------------------------------------------------
+-----
 * ``re.compile()``
 * Used when pattern is reused (especially in the loop)
 
 
 Examples
--------------------------------------------------------------------------------
+--------
 Compiles at every loop iteration, and then matches:
 
 .. code-block:: python

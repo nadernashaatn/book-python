@@ -3,7 +3,7 @@ Regexp Compare
 
 
 Examples
--------------------------------------------------------------------------------
+--------
 Comparison between ``re.match()``, ``re.search()`` and ``re.findall()``:
 
 .. code-block:: python

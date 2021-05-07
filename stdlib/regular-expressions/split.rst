@@ -3,13 +3,13 @@ Regexp Split
 
 
 About
--------------------------------------------------------------------------------
+-----
 * ``re.split()``
 * Split text by pattern
 
 
 Examples
--------------------------------------------------------------------------------
+--------
 Usage of ``re.split()``:
 
 .. code-block:: python
@@ -56,7 +56,7 @@ Making a Phonebook:
     # ]
 
 Assignments
--------------------------------------------------------------------------------
-.. literalinclude:: assignments/regexp_split_moon_speech.py
-    :caption: :download:`Solution <assignments/regexp_split_moon_speech.py>`
+-----------
+.. literalinclude:: assignments/regexp_split_a.py
+    :caption: :download:`Solution <assignments/regexp_split_a.py>`
     :end-before: # Solution

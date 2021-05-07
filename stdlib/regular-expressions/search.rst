@@ -3,13 +3,13 @@ Regexp Search
 
 
 About
--------------------------------------------------------------------------------
+-----
 * ``re.search()``
 * Searches if pattern contains a string
 
 
 Examples
--------------------------------------------------------------------------------
+--------
 Usage of ``re.search()``:
 
 .. code-block:: python
@@ -33,19 +33,19 @@ Usage of ``re.search()``:
 
 
 Assignments
--------------------------------------------------------------------------------
-.. literalinclude:: assignments/regexp_search_astronauts.py
-    :caption: :download:`Solution <assignments/regexp_search_astronauts.py>`
+-----------
+.. literalinclude:: assignments/regexp_search_a.py
+    :caption: :download:`Solution <assignments/regexp_search_a.py>`
     :end-before: # Solution
 
-.. literalinclude:: assignments/regexp_search_moon_speech.py
-    :caption: :download:`Solution <assignments/regexp_search_moon_speech.py>`
+.. literalinclude:: assignments/regexp_search_b.py
+    :caption: :download:`Solution <assignments/regexp_search_b.py>`
     :end-before: # Solution
 
-.. literalinclude:: assignments/regexp_search_time.py
-    :caption: :download:`Solution <assignments/regexp_search_time.py>`
+.. literalinclude:: assignments/regexp_search_c.py
+    :caption: :download:`Solution <assignments/regexp_search_c.py>`
     :end-before: # Solution
 
-.. literalinclude:: assignments/regexp_search_datetime.py
-    :caption: :download:`Solution <assignments/regexp_search_datetime.py>`
+.. literalinclude:: assignments/regexp_search_d.py
+    :caption: :download:`Solution <assignments/regexp_search_d.py>`
     :end-before: # Solution

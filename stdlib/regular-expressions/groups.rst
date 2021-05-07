@@ -3,7 +3,7 @@ Regexp Groups
 
 
 About
--------------------------------------------------------------------------------
+-----
 * ``(?P<name>...)``- Define named group
 * ``(?P=name)``- Backreferencing by group name
 * ``\number`` - Backreferencing by group number
@@ -26,7 +26,7 @@ Example:
 
 
 Examples
--------------------------------------------------------------------------------
+--------
 Usage of group in ``re.match()``:
 
 .. code-block:: python

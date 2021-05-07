@@ -3,13 +3,13 @@ Regexp Findall, Finditer
 
 
 About
--------------------------------------------------------------------------------
+-----
 * ``re.findall()``
 * ``re.finditer()``
 
 
 Examples
--------------------------------------------------------------------------------
+--------
 Usage of ``re.findall()`` and ``re.finditer()``:
 
 .. code-block:: python
@@ -38,7 +38,7 @@ Finding All Adverbs:
 
 
 Assignments
--------------------------------------------------------------------------------
-.. literalinclude:: assignments/regexp_find_dates.py
-    :caption: :download:`Solution <assignments/regexp_find_dates.py>`
+-----------
+.. literalinclude:: assignments/regexp_find_a.py
+    :caption: :download:`Solution <assignments/regexp_find_a.py>`
     :end-before: # Solution

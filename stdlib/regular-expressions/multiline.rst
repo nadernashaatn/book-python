@@ -2,7 +2,7 @@ Regexp Multiline
 ================
 
 About
--------------------------------------------------------------------------------
+-----
 * ``re.MULTILINE`` - Flag turns on Multiline search
 * ``^`` - Matches the start of the string, and immediately after each newline
 * ``$`` - Matches the end of the string or just before the newline at the end of the string also matches before a newline
@@ -18,7 +18,7 @@ About
 
 
 Examples
--------------------------------------------------------------------------------
+--------
 Usage of regexp:
 
 .. code-block:: python
