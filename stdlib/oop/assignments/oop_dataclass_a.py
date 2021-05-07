@@ -1,8 +1,8 @@
 """
 * Assignment: OOP Dataclass Syntax
 * Complexity: easy
-* Lines of code: 2 lines
-* Time: 3 min
+* Lines of code: 7 lines
+* Time: 5 min
 
 English:
     1. Use Dataclass to define class `Point` with attributes:
