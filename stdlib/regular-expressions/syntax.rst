@@ -20,6 +20,7 @@ Rationale
 Identifiers
 -----------
 Identifiers specifies what to find.
+They are also called Character Classes.
 
 Numeric:
     * ``\d`` - digit
@@ -34,12 +35,41 @@ Whitespaces:
 
     * ``\s`` - whitespace (space, tab, newline, non-breaking space)
     * ``\S`` - anything but whitespace
-    * ``\b`` - whitespace around words
-    * ``\B`` - anything but whitespace around words
     * ``\t`` - tab
     * ``\n`` - newline
     * ``\v`` - vertical space
     * ``\f`` - form feed
+
+Anchors:
+
+    * ``\b`` - word boundary
+    * ``\B`` - anything but word boundary
+
+Examples:
+
+    * ``\babc\b`` - performs a "whole words only" search
+    * ``\Babc\B`` - pattern is fully surrounded by word characters
+
+
+Look Ahead and Look Behind
+--------------------------
+Syntax:
+
+    * ``(?=)`` - Lookahead
+    * ``(?<=)`` - Lookbehind
+    * ``(?!foo)`` - Negative Lookahead
+    * ``(?<!foo)`` - Negative Lookbehind
+    * ``\K`` - Stop Look Behind
+
+Example:
+
+    * ``(?=foo)`` - asserts that what immediately follows the current position in the string is ``foo``
+    * ``(?<=foo)`` - asserts that what immediately precedes the current position in the string is ``foo``
+    * ``(?!foo)`` - Asserts that what immediately follows the current position in the string is not foo
+    * ``(?<!foo)`` - Asserts that what immediately precedes the current position in the string is not foo
+    * ``^\s+sh '\K.+(?=')`` - if line starts with ``sh`` at any indentation, then take the content of whats inside of apostrophes
+    * ``d(?=r)`` - matches a ``d`` only if is followed by ``r``, but ``r`` will not be part of the overall regex match
+    * ``(?<=r)d`` - matches a ``d`` only if is preceded by an ``r``, but ``r`` will not be part of the overall regex match
 
 
 Qualifier
@@ -61,10 +91,16 @@ Alternatives:
     * ``[a-z]|[0-9]`` - any lowercase ASCII letter from `a` to `z` or digit from `0` to `9`
 
 Special:
-
+    * ``?`` - any character
     * ``.`` - any character except a newline
-    * ``^`` - start of a string
-    * ``$`` - end of a string
+
+Anchors:
+
+    * ``^`` - start of a string (changes meaning with ``re.MULTILINE``)
+    * ``$`` - end of a string (changes meaning with ``re.MULTILINE``)
+    * ``\A`` - start of a string (doesn't change meaning with ``re.MULTILINE``)
+    * ``\Z`` - end of a string (doesn't change meaning with ``re.MULTILINE``)
+    * ``\G`` - beginning of string or end of previous match
 
 Examples:
 
@@ -106,7 +142,7 @@ Greedy (prefer longest matches):
     * ``+`` - minimum 1 repetitions, no maximum, prefer longer
     * ``?`` - minimum 0 repetitions, maximum 1 repetitions, prefer longer
 
-Non-Greedy (prefer shortest matches):
+Lazy - non-greedy (prefer shortest matches):
 
     * ``{,n}?`` - maximum `n` repetitions, prefer shorter
     * ``{n,}?`` - minimum `n` repetitions, prefer shorter
@@ -136,6 +172,7 @@ Syntax:
     * ``()`` - matches whatever regular expression is inside the parentheses, and indicates the start and end of a group
     * ``(...)`` - unnamed group
     * ``(?P<mygroup>...)`` - define named group `mygroup`
+    * ``(?:...)`` - disable capturing group
 
 Backreference:
 
@@ -263,7 +300,8 @@ Further Reading
 ---------------
 * Kinsley, Harrison "Sentdex". Python 3 Programming Tutorial - Regular Expressions / Regex with re. Year: 2014. Retrieved: 2021-04-11. URL: https://www.youtube.com/watch?v=sZyAn2TW7GY
 * https://www.rexegg.com/regex-trick-conditional-replacement.html
-
+* https://www.rexegg.com/regex-lookarounds.html
+* https://www.rexegg.com/regex-anchors.html#z
 
 References
 ----------

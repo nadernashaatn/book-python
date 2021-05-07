@@ -1,5 +1,4 @@
 """
-
 * Assignment: Regexp Search Moon Speech
 * Complexity: easy
 * Lines of code: 5 lines
