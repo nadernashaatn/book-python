@@ -30,7 +30,8 @@ W3C standard for URL parsing
 
 Parsing URLs
 ------------
-* Source :cite:`W3CParsingURLs`
+* Source [#W3CParsingURLs]_
+
 
 To parse a *URL* url into its component parts, the user agent must use the following steps:
 
@@ -84,3 +85,8 @@ Assignments
 .. literalinclude:: assignments/regexp_standards_a.py
     :caption: :download:`Solution <assignments/regexp_standards_a.py>`
     :end-before: # Solution
+
+
+References
+----------
+.. [#W3CParsingURLs] W3C. Parsing URLs. Year: 2019. Retrieved: 2019-03-13. URL: https://dev.w3.org/html5/spec-LC/urls.html#parsing-urls

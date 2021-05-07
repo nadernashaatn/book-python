@@ -25,8 +25,7 @@ html_static_path = [
 bibtex_bibfiles = [
     'network/references.bib',
     'numpy/references.bib',
-    'stdlib/references.bib',
-    'stdlib/regular-expressions/references.bib']
+    'stdlib/references.bib',]
 
 # -- Standard book config -----------------------------------------------------
 import os
