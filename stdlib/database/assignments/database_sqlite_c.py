@@ -5,16 +5,44 @@
 * Time: 21 min
 
 English:
-    1. Create database and two tables `astronaut` and `address`
-    2. Insert data to separate tables
-    3. Join information from both tables
+    1. Connect to database
+        a. Set returned result type to `sqlite3.Row`
+        b. Get cursor and next things execute on it
+        c. Execute `SQL_CREATE_TABLE_ASTRONAUT` to create table `astronauts`
+        d. Execute `SQL_CREATE_TABLE_ADDRESS` to create table `addresses`
+        e. Execute `SQL_CREATE_INDEX_ASTRONAUT_LASTNAME` to create index
+    2. Iterate over `DATA`:
+        a. Seprate `addresses` from other values
+        b. Execute `SQL_INSERT_ASTRONAUT` to insert astroanut to database
+        c. Get `id` of the last inserted row (`cursor.lastrowid`)
+        d. Add `id` to each address
+        e. Executing `SQL_INSERT_ADDRESS` insert `addresses` to database
+    3. Executing `SQL_SELECT` select data from database:
+        a. Join data from both tables
+        b. Append each row to `result: list[dict]`
     4. Run doctests - all must succeed
 
 Polish:
-    1. Stwórz bazę danych i dwie tabele `astronaut` i `address`
-    2. Zapisz dane do osobnych tabel
-    3. Połączącz informacje z obu tabel
+    1. Połącz się do bazy danych
+        a. Ustaw typ zwracanych wyników na `sqlite3.Row`
+        b. Pobierz kursor i następne polecenia wykonuj na nim
+        c. Wykonując `SQL_CREATE_TABLE_ASTRONAUT` stwórz tabelę `astronauts`
+        d. Wykonując `SQL_CREATE_TABLE_ADDRESS` stwórz tabelę `addresses`
+        e. Wykonując `SQL_CREATE_INDEX_ASTRONAUT_LASTNAME` stwórz indeks
+    2. Iteruj po `DATA`:
+        a. Oddziel `addresses` od pozostałych wartości
+        b. Wykonując `SQL_INSERT_ASTRONAUT` wstaw astronautę do bazy
+        c. Pobierz `id` ostatniego wstawianego wiersza (`cursor.lastrowid`)
+        d. Dodaj to `id` do każdego adresu
+        e. Wykonując `SQL_INSERT_ADDRESS` wstaw adresy do bazy danych
+    3. Wykonując `SQL_SELECT` wybierz dane z bazy:
+        a. Połącz dane z obu tabel
+        b. Dodaj każdy rekord do `result: list[dict]`
     4. Uruchom doctesty - wszystkie muszą się powieść
+
+Hints:
+    * `cursor = db.cursor()`
+    * `astronaut_id = cursor.lastrowid`
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -121,9 +149,9 @@ with sqlite3.connect(DATABASE) as connection:
         db.execute(SQL_INSERT_ASTRONAUT, astronaut)
         astronaut_id = db.lastrowid
 
-        for addr in addresses:
-            addr['astronaut_id'] = astronaut_id
-            db.execute(SQL_INSERT_ADDRESS, addr)
+        for address in addresses:
+            address['astronaut_id'] = astronaut_id
+            db.execute(SQL_INSERT_ADDRESS, address)
 
     for row in db.execute(SQL_SELECT):
         result.append(dict(row))

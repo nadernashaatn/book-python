@@ -9,14 +9,16 @@ English:
     2. Replace species from `int` to `str` according to `SPECIES` conversion table
     3. Connect to the `sqlite3` using context manager (`with`)
     4. Create table `iris` and write data to it
-    5. Run doctests - all must succeed
+    5. Select data and add them to `result: list[dict]`
+    6. Run doctests - all must succeed
 
 Polish:
     1. Wczytaj dane z `FILE` (nie używaj biblioteki `csv` lub `pandas`)
     2. Podmień gatunki z `int` na `str` zgodnie z tabelą podstawień `SPECIES`
     3. Połącz się do bazy danych `sqlite3` używając context managera (`with`)
     4. Stwórz tabelę `iris` i zapisz do niej dane
-    5. Uruchom doctesty - wszystkie muszą się powieść
+    5. Wybierz dane i dodaj je do `result: list[dict]`
+    6. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -56,10 +58,6 @@ SQL_CREATE_TABLE = """
         sepal_width REAL,
         petal_length REAL,
         petal_width REAL);"""
-
-SQL_CREATE_INDEX = """
-    CREATE INDEX IF NOT EXISTS
-        iris_species_index ON iris (species);"""
 
 SQL_INSERT = """
     INSERT INTO iris VALUES (
