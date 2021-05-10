@@ -19,7 +19,7 @@ Time sleep function:
 >>>
 >>>
 >>> html = HTMLCalendar().formatmonth(1969, 7)
->>> print(html)
+>>> print(html)  # doctest: +NORMALIZE_WHITESPACE
 <table border="0" cellpadding="0" cellspacing="0" class="month">
 <tr><th colspan="7" class="month">July 1969</th></tr>
 <tr><th class="mon">Mon</th><th class="tue">Tue</th><th class="wed">Wed</th><th class="thu">Thu</th><th class="fri">Fri</th><th class="sat">Sat</th><th class="sun">Sun</th></tr>

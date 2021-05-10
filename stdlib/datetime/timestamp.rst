@@ -37,7 +37,7 @@ Convert timestamp to ``datetime``:
 >>>
 >>>
 >>> datetime.fromtimestamp(267809220)
-datetime.datetime(1978, 6, 27, 15, 27)
+datetime.datetime(1978, 6, 27, 17, 27)
 
 * JavaScript has timestamp in milliseconds
 * To convert from milliseconds we have to divide by 1000
@@ -49,7 +49,7 @@ Convert JavaScript timestamp to ``datetime``:
 >>> MILLISECONDS = 1000
 >>>
 >>> datetime.fromtimestamp(267809220000 / MILLISECONDS)
-datetime.datetime(1978, 6, 27, 15, 27)
+datetime.datetime(1978, 6, 27, 17, 27)
 
 
 Assignments

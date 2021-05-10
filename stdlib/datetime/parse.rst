@@ -39,7 +39,7 @@ Use Case
 >>> lvl = lvl.strip('[]')
 >>>
 >>> print(dt)
-1969-07-21 02:56:15.123
+1969-07-21 02:56:15.123000
 >>>
 >>> print(lvl)
 WARNING

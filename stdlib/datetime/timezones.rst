@@ -185,7 +185,8 @@ Descriptor Timezone Converter:
 ...         return parent.utc.astimezone(self.timezone)
 ...
 ...     def __set__(self, parent, new_datetime):
-...         parent.utc = new_datetime.astimezone(ZoneInfo('UTC'))
+...         local_time = new_datetime.astimezone(self.timezone)
+...         parent.utc = local_time.astimezone(ZoneInfo('UTC'))
 >>>
 >>>
 >>> @dataclass
@@ -223,6 +224,8 @@ Descriptor Timezone Converter:
 1969-07-20 22:56:15-04:00
 >>> print(t.pdt)
 1969-07-20 19:56:15-07:00
+
+.. todo:: Check if those times are correct
 
 
 Assignments
