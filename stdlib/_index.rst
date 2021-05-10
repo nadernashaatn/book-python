@@ -28,7 +28,8 @@ Datetime and Timezones
     :maxdepth: 1
     :caption: Datetime and Timezones
 
-    datetime/datetime.rst
+    datetime/create.rst
+    datetime/iso.rst
     datetime/format.rst
     datetime/standards.rst
     datetime/parse.rst

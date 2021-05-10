@@ -2,31 +2,6 @@ Datetime Format
 ===============
 
 
-ISO Format
-----------
-Datetime formatting to ISO format:
-
-.. code-block:: python
-
-    from datetime import datetime
-
-
-    dt = datetime(1969, 7, 21, 2, 56, 15)
-    dt.isoformat()
-    # 1969-07-21T02:56:15
-
-Date formatting to ISO format:
-
-.. code-block:: python
-
-    from datetime import date
-
-
-    d = date(1969, 7, 21)
-    d.isoformat()
-    # 1969-07-21
-
-
 ``f-string`` formatting
 -----------------------
 Datetime formatting as string with ``f'...'``:
@@ -103,30 +78,10 @@ Almost any programming language has very similar date formatting parameters. The
 
 Assignments
 -----------
-.. literalinclude:: assignments/datetime_parse_a.py
-    :caption: :download:`Solution <assignments/datetime_parse_a.py>`
+.. literalinclude:: assignments/datetime_format_a.py
+    :caption: :download:`Solution <assignments/datetime_format_a.py>`
     :end-before: # Solution
 
-.. literalinclude:: assignments/datetime_parse_b.py
-    :caption: :download:`Solution <assignments/datetime_parse_b.py>`
-    :end-before: # Solution
-
-.. literalinclude:: assignments/datetime_parse_c.py
-    :caption: :download:`Solution <assignments/datetime_parse_c.py>`
-    :end-before: # Solution
-
-.. literalinclude:: assignments/datetime_parse_d.py
-    :caption: :download:`Solution <assignments/datetime_parse_d.py>`
-    :end-before: # Solution
-
-.. literalinclude:: assignments/datetime_parse_e.py
-    :caption: :download:`Solution <assignments/datetime_parse_e.py>`
-    :end-before: # Solution
-
-.. literalinclude:: assignments/datetime_parse_f.py
-    :caption: :download:`Solution <assignments/datetime_parse_f.py>`
-    :end-before: # Solution
-
-.. literalinclude:: assignments/datetime_parse_g.py
-    :caption: :download:`Solution <assignments/datetime_parse_g.py>`
+.. literalinclude:: assignments/datetime_format_b.py
+    :caption: :download:`Solution <assignments/datetime_format_b.py>`
     :end-before: # Solution

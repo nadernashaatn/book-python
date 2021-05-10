@@ -81,11 +81,3 @@ Assignments
 .. literalinclude:: assignments/datetime_parse_e.py
     :caption: :download:`Solution <assignments/datetime_parse_e.py>`
     :end-before: # Solution
-
-.. literalinclude:: assignments/datetime_parse_f.py
-    :caption: :download:`Solution <assignments/datetime_parse_f.py>`
-    :end-before: # Solution
-
-.. literalinclude:: assignments/datetime_parse_g.py
-    :caption: :download:`Solution <assignments/datetime_parse_g.py>`
-    :end-before: # Solution

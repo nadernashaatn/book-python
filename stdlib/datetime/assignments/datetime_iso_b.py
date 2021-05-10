@@ -1,15 +1,15 @@
 """
-* Assignment: Datetime Parse US
+* Assignment: Datetime ISO Parse
 * Complexity: easy
 * Lines of code: 1 lines
 * Time: 3 min
 
 English:
-    1. Define `result: datetime` with parsed date `DATA`
+    1. Define `result: datetime` with converted `DATA` from ISO-8601
     2. Run doctests - all must succeed
 
 Polish:
-    1. Zdefiniuj `result: datetime` ze sparsowaną datą `DATA`
+    1. Zdefiniuj `result: datetime` z przekonwertowaną `DATA` z ISO-8601
     2. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
@@ -19,17 +19,16 @@ Tests:
     'Variable `result` has invalid type, must be a datetime'
 
     >>> result
-    datetime.datetime(1969, 7, 21, 2, 56, 15)
+    datetime.datetime(1969, 7, 21, 2, 56, 15, 123000)
 """
 
 from datetime import datetime
 
 
-DATA = 'July 21, 1969 2:56:15 AM'
+DATA = '1969-07-21T02:56:15.123'
 
-result = ...  # datetime: DATA from US long format
+result = ...  # datetime: DATA from ISO-8601 format
 
 
 # Solution
-result = datetime.strptime(DATA, '%B %d, %Y %H:%M:%S %p')
-
+result = datetime.fromisoformat(DATA)

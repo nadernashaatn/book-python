@@ -1,45 +1,50 @@
 """
-* Assignment: Datetime Parse Local
-* Complexity: easy
-* Lines of code: 1 lines
-* Time: 3 min
+* Assignment: Datetime Parse List
+* Complexity: medium
+* Lines of code: 8 lines
+* Time: 8 min
 
 English:
-    1. Create `datetime` object by parsing `DATA`
-    2. Using date formatting converts `DATA` to `datetime`
-    3. Make sure, that hour is without leading zero
-    4. Run doctests - all must succeed
+    1. Define `result: list[datetime]` with parsed `DATA` dates
+    2. Run doctests - all must succeed
 
 Polish:
-    1. Stwórz obiekt `datetime` parsując `DATA`
-    2. Używając parametrów formatowania daty przekonwertuj `DATA` do `datetime`
-    3. Upewnij się, że godzina jest bez wiodącego zera
-    4. Uruchom doctesty - wszystkie muszą się powieść
+    1. Zdefiniuj `result: list[datetime]` ze sparsowanymi datami `DATA`
+    2. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
-    * Add string `local time` to format statement
-
-Hints:
-    * Add `local time` text to format parameter
-    * `%dst`
+    * `for ... in``
+    * `try ... except`
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
 
-    >>> assert type(result) is datetime, \
-    'Variable `result` has invalid type, must be a datetime'
+    >>> assert type(result) is list, \
+    'Variable `result` has invalid type, must be a list'
 
-    >>> result
-    datetime.datetime(1969, 7, 21, 2, 56, 15)
+    >>> assert all(type(element) is datetime for element in result), \
+    'All elements in `result` must be a datetime'
+
+    >>> result  # doctest: +NORMALIZE_WHITESPACE
+    [datetime.datetime(1961, 4, 12, 6, 7),
+     datetime.datetime(1961, 4, 12, 6, 7)]
 """
 
 from datetime import datetime
 
 
-DATA = 'July 21st, 1969 2:56:15 AM local time'
+DATA = ['1961-04-12 06:07',
+        '1961-04-12 06:07:00']
 
-result = ...  # datetime: representation of DATA
-
+result = ...  # list[datetime]: parsed DATA
 
 # Solution
-result = datetime.strptime(DATA, '%B %dst, %Y %I:%M:%S %p local time')
+result = []
+
+for line in DATA:
+    try:
+        date = datetime.strptime(line, '%Y-%m-%d %H:%M:%S')
+        result.append(date)
+    except ValueError:
+        date = datetime.strptime(line, '%Y-%m-%d %H:%M')
+        result.append(date)
