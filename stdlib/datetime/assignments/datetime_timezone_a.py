@@ -5,8 +5,7 @@
 * Time: 13 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Create `timezone` object of:
+    1. Create `timezone` object of:
         a. UTC
         b. London, United Kingdom
         c. Moscow, Russian Federation
@@ -15,12 +14,11 @@ English:
         f. Sydney, Australia
         g. Auckland, New Zealand
         h. New York, USA
-    3. Use `List of tz database time zones` [1]
-    X. Run doctests - all must succeed
+    2. Use `List of tz database time zones` [1]
+    3. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Stwórz obiekt `timezone` z:
+    1. Stwórz obiekt `timezone` z:
         a. UCT
         b. London, Wielka Brytania
         c. Moscow, Rosja
@@ -29,8 +27,8 @@ Polish:
         f. Sydney, Australia
         g. Auckland, Nowa Zelandia
         h. New York, USA
-    3. Użyj `List of tz database time zones` [1]
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    2. Użyj `List of tz database time zones` [1]
+    3. Uruchom doctesty - wszystkie muszą się powieść
 
 References:
     [1] Wikipedia. List of tz database time zones.
@@ -118,8 +116,6 @@ Tests:
     datetime.timedelta(seconds=5040)
 """
 
-
-# Given
 from pytz import timezone
 
 

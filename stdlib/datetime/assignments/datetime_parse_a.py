@@ -5,17 +5,15 @@
 * Time: 3 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Given `DATA` is in ISO format
-    3. Define `a: datetime` with converted `DATA` to `datetime` object
-    4. Define `b: str` with converted `a` to to ISO format
+    1. Given `DATA` is in ISO format
+    2. Define `a: datetime` with converted `DATA` to `datetime` object
+    3. Define `b: str` with converted `a` to to ISO format
     4. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Dana `DATA` jest w formacie ISO
-    3. Zdefiniuj `a: datetime` z przekonwertowaną `DATA` do obiektu `datetime`
-    4. Zdefiniuj `b: str` z przekonwertowaną `a` do formatu ISO
+    1. Dana `DATA` jest w formacie ISO
+    2. Zdefiniuj `a: datetime` z przekonwertowaną `DATA` do obiektu `datetime`
+    3. Zdefiniuj `b: str` z przekonwertowaną `a` do formatu ISO
     4. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
@@ -34,8 +32,6 @@ Tests:
     '1969-07-21T02:56:15.123000'
 """
 
-
-# Given
 from datetime import datetime
 
 

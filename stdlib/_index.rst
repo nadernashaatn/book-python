@@ -29,7 +29,9 @@ Datetime and Timezones
     :caption: Datetime and Timezones
 
     datetime/datetime.rst
-    datetime/parse-and-format.rst
+    datetime/format.rst
+    datetime/standards.rst
+    datetime/parse.rst
     datetime/timedelta.rst
     datetime/timestamp.rst
     datetime/utils.rst

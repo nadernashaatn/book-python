@@ -5,18 +5,16 @@
 * Time: 5 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Convert given dates to `datetime` objects
-    3. Print timestamp for each date
-    4. What is special about those dates?
-    X. Run doctests - all must succeed
+    1. Convert given dates to `datetime` objects
+    2. Print timestamp for each date
+    3. What is special about those dates?
+    4. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Przekonwertuj podane daty do obiektów `datetime`
-    3. Wypisz timestamp każdej daty
-    4. Co to za daty?
-    5. Uruchom doctesty - wszystkie muszą się powieść
+    1. Przekonwertuj podane daty do obiektów `datetime`
+    2. Wypisz timestamp każdej daty
+    3. Co to za daty?
+    4. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -38,8 +36,6 @@ Tests:
     2147483647.0
 """
 
-
-# Given
 from datetime import datetime
 
 

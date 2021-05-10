@@ -52,12 +52,11 @@ DATA = [('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'
         (4.7, 3.2, 1.3, 0.2, 'setosa')]
 
 
-result: list
+result = []
 
 
 # Solution
 header, *data = DATA
-result = []
 
 for row in data:
     paris = zip(header, row)

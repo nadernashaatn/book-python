@@ -11,16 +11,16 @@ English:
     3. Create `time` object representing time of the launch
     4. Combine date and time into `datetime` object representing
        exact moment of the launch
-    X. Run doctests - all must succeed
+    5. Run doctests - all must succeed
 
 Polish:
     1. Pierwszy człowiek (Juri Gagarin) poleciał w kosmos
        12 kwietnia 1961 roku o 6:07 rano z kosmodromu Bajkonur w Kazachstanie
-    1. Stwórz obiekt `date` reprezentujący datę startu
-    2. Stwórz obiekt `time` reprezentujący czas startu
-    3. Połącz datę i czas w obiekt `datetime` reprezentujący
+    2. Stwórz obiekt `date` reprezentujący datę startu
+    3. Stwórz obiekt `time` reprezentujący czas startu
+    4. Połącz datę i czas w obiekt `datetime` reprezentujący
        dokładny moment startu
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    5. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -42,8 +42,6 @@ Tests:
     '1961-04-12 06:07:00'
 """
 
-
-# Given
 from datetime import datetime, date, time
 
 

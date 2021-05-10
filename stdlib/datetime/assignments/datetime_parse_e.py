@@ -5,18 +5,16 @@
 * Time: 8 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. List `DATA` has dates in multiple formats
-    3. Define `result: list` with converted `DATA` elements
+    1. List `DATA` has dates in multiple formats
+    2. Define `result: list` with converted `DATA` elements
        to `datetime` objects
-    4. Run doctests - all must succeed
+    3. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Lista `DATA` ma dane w różnych formatach
-    3. Zdefiniuj `result: list` z przekonwertowanymi elementami `DATA`
+    1. Lista `DATA` ma dane w różnych formatach
+    2. Zdefiniuj `result: list` z przekonwertowanymi elementami `DATA`
        do obiektów `datetime`
-    4. Uruchom doctesty - wszystkie muszą się powieść
+    3. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
     * `try ... except`
@@ -35,8 +33,6 @@ Tests:
      datetime.datetime(1961, 4, 12, 6, 7)]
 """
 
-
-# Given
 from datetime import datetime
 
 

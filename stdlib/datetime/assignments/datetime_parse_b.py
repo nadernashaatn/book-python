@@ -5,17 +5,15 @@
 * Time: 3 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Given `DATA` is in long US date and time format
-    3. Define `a: datetime` with converted `DATA` to `datetime` object
-    4. Define `b: str` with converted `a` to `1961-04-12 06:07` format
+    1. Given `DATA` is in long US date and time format
+    2. Define `a: datetime` with converted `DATA` to `datetime` object
+    3. Define `b: str` with converted `a` to `1961-04-12 06:07` format
     4. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Dana `DATA` jest w długim formacie amerykańskim
-    3. Zdefiniuj `a: datetime` z przekonwertowaną `DATA` do obiektu `datetime`
-    4. Zdefiniuj `b: str` z przekonwertowaną `a` do formatu `1961-04-12 06:07`
+    1. Dana `DATA` jest w długim formacie amerykańskim
+    2. Zdefiniuj `a: datetime` z przekonwertowaną `DATA` do obiektu `datetime`
+    3. Zdefiniuj `b: str` z przekonwertowaną `a` do formatu `1961-04-12 06:07`
     4. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
@@ -34,8 +32,6 @@ Tests:
     '1961-04-12 06:07'
 """
 
-
-# Given
 from datetime import datetime
 
 

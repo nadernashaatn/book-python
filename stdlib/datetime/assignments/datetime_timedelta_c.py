@@ -5,34 +5,32 @@
 * Time: 8 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Given period is the time between Gagarin launch and Armstrong first step on the Moon:
+    1. Given period is the time between Gagarin launch and Armstrong first step on the Moon:
         * 8 years
         * 3 months
         * 8 days
         * 20 hours
         * 49 minutes
         * 15 seconds
-    3. Assume:
+    2. Assume:
         a. year = 365.2425 days
         b. month = 30.436875 days
-    4. Define `result: timedelta` representing given period
-    X. Run doctests - all must succeed
+    3. Define `result: timedelta` representing given period
+    4. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Podany jest czas, który upłynął między startem Gagarina a pierwszym krokiem Armstronga na Księżycu:
+    1. Podany jest czas, który upłynął między startem Gagarina a pierwszym krokiem Armstronga na Księżycu:
         * 8 lat
         * 3 miesięcy
         * 8 dni
         * 20 godzin
         * 49 minut
         * 15 sekund
-    3. Uwzględnij założenie:
+    2. Uwzględnij założenie:
         a. rok = 365.2425 dni
         b. miesiąc = 30.436875 dni
-    4. Zdefiniuj `result: timedelta` reprezentujące dany okres
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    3. Zdefiniuj `result: timedelta` reprezentujące dany okres
+    4. Uruchom doctesty - wszystkie muszą się powieść
 
 
 Tests:
@@ -45,8 +43,6 @@ Tests:
     datetime.timedelta(days=3022, seconds=24609)
 """
 
-
-# Given
 from datetime import timedelta
 
 

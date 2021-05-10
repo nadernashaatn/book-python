@@ -53,12 +53,10 @@ DATA = [('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'
 
 SUFFIXES = ('ca', 'osa')
 
-result: set
+result = set()
 
 
 # Solution
-result = set()
-
 for *features, label in DATA[1:]:
     species = label.pop()
 

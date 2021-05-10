@@ -5,18 +5,16 @@
 * Time: 13 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Iterate over `DATA` with Apollo 11 timeline [1]
-    3. From each line extract date, time, level and message
-    4. Collect data to `result: list[dict]`
-    6. Run doctests - all must succeed
+    1. Iterate over `DATA` with Apollo 11 timeline [1]
+    2. From each line extract date, time, level and message
+    3. Collect data to `result: list[dict]`
+    4. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Iteruj po `DATA` z harmonogramem Apollo 11 [1]
-    3. Dla każdej linii wyciągnij datę, czas, poziom logowania oraz wiadomość
-    4. Zbierz dane do `result: list[dict]`
-    6. Uruchom doctesty - wszystkie muszą się powieść
+    1. Iteruj po `DATA` z harmonogramem Apollo 11 [1]
+    2. Dla każdej linii wyciągnij datę, czas, poziom logowania oraz wiadomość
+    3. Zbierz dane do `result: list[dict]`
+    4. Uruchom doctesty - wszystkie muszą się powieść
 
 Hint:
     * Note, that last time has no seconds
@@ -74,7 +72,6 @@ Tests:
 """
 
 
-# Given
 from datetime import datetime
 
 

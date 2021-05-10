@@ -5,20 +5,18 @@
 * Time: 11 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. How old was Yuri Gagarin when he was launched to space?
-    3. How old was Neil Armstrong when he made a first step on the Moon?
-    4. Result round to full years
-    5. Mind, that there are two different objects: `date` and `datetime`
-    6. Run doctests - all must succeed
+    1. How old was Yuri Gagarin when he was launched to space?
+    2. How old was Neil Armstrong when he made a first step on the Moon?
+    3. Result round to full years
+    4. Mind, that there are two different objects: `date` and `datetime`
+    5. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Ile miał lat Juri Gagarin kiedy wystartował w kosmos?
-    3. Ile lat miał Neil Armstrong kiedy zrobił pierwszy krok na Księżycu?
-    4. Rezultat zaokrąglij do pełnych lat
-    5. Mind, that there are two different objects: `date` and `datetime`
-    6. Uruchom doctesty - wszystkie muszą się powieść
+    1. Ile miał lat Juri Gagarin kiedy wystartował w kosmos?
+    2. Ile lat miał Neil Armstrong kiedy zrobił pierwszy krok na Księżycu?
+    3. Rezultat zaokrąglij do pełnych lat
+    4. Mind, that there are two different objects: `date` and `datetime`
+    5. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -36,8 +34,6 @@ Tests:
     39
 """
 
-
-# Given
 from datetime import datetime, date
 
 

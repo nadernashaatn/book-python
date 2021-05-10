@@ -5,22 +5,20 @@
 * Time: 13 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Given period `DATA` is the time between Gagarin launch and Armstrong first step on the Moon
-    3. Assume:
+    1. Given period `DATA` is the time between Gagarin launch and Armstrong first step on the Moon
+    2. Assume:
         a. year = 365.2425 days
         b. month = 30.436875 days
-    4. Define `result: dict[str, int]` representing period
-    X. Run doctests - all must succeed
+    3. Define `result: dict[str, int]` representing period
+    4. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Podany jest okres `DATA`, który upłynął między startem Gagarina a pierwszym krokiem Armstronga na Księżycu
-    3. Uwzględnij założenie:
+    1. Podany jest okres `DATA`, który upłynął między startem Gagarina a pierwszym krokiem Armstronga na Księżycu
+    2. Uwzględnij założenie:
         a. rok = 365.2425 dni
         b. miesiąc = 30.436875 dni
-    4. Zdefiniuj `result: dict[str, int]` reprezentujący okres
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    3. Zdefiniuj `result: dict[str, int]` reprezentujący okres
+    4. Uruchom doctesty - wszystkie muszą się powieść
 
 Given:
     * 8 years
@@ -46,8 +44,6 @@ Tests:
     {'years': 8, 'months': 3, 'days': 9, 'hours': 6, 'minutes': 50, 'seconds': 9}
 """
 
-
-# Given
 from datetime import timedelta
 
 
