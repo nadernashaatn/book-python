@@ -139,12 +139,12 @@ Create ``datetime`` from ``date`` and ``time`` objects:
 >>> t = time(2, 56, 15)
 >>>
 >>> datetime(
->>>     year=d.year,
->>>     month=d.month,
->>>     day=d.day,
->>>     hour=t.hour,
->>>     minute=t.minute,
->>>     second=t.second)
+...     year=d.year,
+...     month=d.month,
+...     day=d.day,
+...     hour=t.hour,
+...     minute=t.minute,
+...     second=t.second)
 datetime.datetime(1969, 7, 21, 2, 56, 15)
 >>>
 >>> datetime(d.year, d.month, d.day, t.hour, t. minute, t.second)

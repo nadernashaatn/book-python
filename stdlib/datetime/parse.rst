@@ -26,27 +26,26 @@ datetime.datetime(1961, 4, 12, 6, 7)
 >>> datetime.strptime(armstrong, '%b %d, %y %I:%M:%S')
 datetime.datetime(1969, 7, 21, 2, 56, 15)
 
+
 Use Case
 --------
-.. code-block:: python
-
-    from datetime import datetime
-
-
-    line = '1969-07-21T02:56:15.123 [WARNING] First step on the Moon'
-
-    dt, lvl, msg = line.split(maxsplit=2)
-    dt = datetime.strptime(date, '%Y-%m-%dT%H:%M:%S.%f')
-    lvl = lvl.strip('[]')
-
-    print(dt)
-    # 1969-07-21 02:56:15.123000
-
-    print(lvl)
-    # WARNING
-
-    print(msg)
-    # First step on the Moon
+>>> from datetime import datetime
+>>>
+>>>
+>>> line = '1969-07-21T02:56:15.123 [WARNING] First step on the Moon'
+>>>
+>>> dt, lvl, msg = line.split(maxsplit=2)
+>>> dt = datetime.strptime(date, '%Y-%m-%dT%H:%M:%S.%f')
+>>> lvl = lvl.strip('[]')
+>>>
+>>> print(dt)
+1969-07-21 02:56:15.123000
+>>>
+>>> print(lvl)
+WARNING
+>>>
+>>> print(msg)
+First step on the Moon
 
 
 Parsing Parameters

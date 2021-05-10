@@ -16,47 +16,40 @@ Get current timestamp
 ---------------------
 Get current timestamp using ``datetime`` module:
 
-.. code-block:: python
-
-    from datetime import datetime
-
-    datetime.now().timestamp()
-    # 1567298992.679585
+>>> from datetime import datetime
+>>>
+>>>
+>>> current_timestamp = datetime.now().timestamp()
 
 Get current timestamp using ``time`` module:
 
-.. code-block:: python
-
-    import time
-
-    time.time()
-    # 1567298992.679617
+>>> import time
+>>>
+>>>
+>>> current_timestamp = time.time()
 
 
 Convert timestamp to ``datetime``
 ---------------------------------
 Convert timestamp to ``datetime``:
 
-.. code-block:: python
-
-    from datetime import datetime
-
-    datetime.fromtimestamp(267809220)
-    # datetime.datetime(1978, 6, 27, 15, 27)
+>>> from datetime import datetime
+>>>
+>>>
+>>> datetime.fromtimestamp(267809220)
+datetime.datetime(1978, 6, 27, 15, 27)
 
 * JavaScript has timestamp in milliseconds
 * To convert from milliseconds we have to divide by 1000
 
 Convert JavaScript timestamp to ``datetime``:
 
-.. code-block:: python
-
-    from datetime import datetime
-
-    MILLISECONDS = 1000
-
-    datetime.fromtimestamp(267809220000 / MILLISECONDS)
-    # datetime.datetime(1978, 6, 27, 17, 27)
+>>> from datetime import datetime
+>>>
+>>> MILLISECONDS = 1000
+>>>
+>>> datetime.fromtimestamp(267809220000 / MILLISECONDS)
+datetime.datetime(1978, 6, 27, 17, 27)
 
 
 Assignments

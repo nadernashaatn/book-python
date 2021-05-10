@@ -31,8 +31,6 @@ Polish:
     6. Uruchom doctesty - wszystkie muszą się powieść
 
 Given:
-    .. code-block:: python
-
         DATA = [('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
                 (5.8, 2.7, 5.1, 1.9, 'virginica'),
                 (5.1, 3.5, 1.4, 0.2, 'setosa'),

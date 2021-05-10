@@ -10,10 +10,8 @@ Rationale
 
 Return
 ------
-.. code-block:: python
-
-    def say_hello() -> str:
-        return 'My name... José Jiménez'
+>>> def say_hello() -> str:
+...     return 'My name... José Jiménez'
 
 
 Parameters
