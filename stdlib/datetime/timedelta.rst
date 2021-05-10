@@ -96,9 +96,11 @@ datetime.datetime(1969, 7, 18, 5, 56, 15)
 ...     seconds=12,
 ...     milliseconds=10,
 ...     microseconds=55)
+>>>
+>>> duration
 datetime.timedelta(days=23, seconds=75912, microseconds=10055)
 >>>
->>> between_dates = armstrong - duration
+>>> armstrong - duration
 datetime.datetime(1969, 6, 27, 5, 51, 2, 989945)
 
 
@@ -113,7 +115,7 @@ Month Shifts
 >>> gagarin - MONTH
 datetime.date(1961, 3, 13)
 
->>> from calendar import monthlen
+>>> from calendar import _monthlen as monthlen
 >>> from datetime import timedelta, date
 >>>
 >>>

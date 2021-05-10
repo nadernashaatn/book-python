@@ -35,11 +35,11 @@ Use Case
 >>> line = '1969-07-21T02:56:15.123 [WARNING] First step on the Moon'
 >>>
 >>> dt, lvl, msg = line.split(maxsplit=2)
->>> dt = datetime.strptime(date, '%Y-%m-%dT%H:%M:%S.%f')
+>>> dt = datetime.strptime(dt, '%Y-%m-%dT%H:%M:%S.%f')
 >>> lvl = lvl.strip('[]')
 >>>
 >>> print(dt)
-1969-07-21 02:56:15.123000
+1969-07-21 02:56:15.123
 >>>
 >>> print(lvl)
 WARNING

@@ -189,7 +189,7 @@ Descriptor Timezone Converter:
 >>>
 >>>
 >>> @dataclass
->>> class Time:
+... class Time:
 ...     utc = datetime.now(tz=ZoneInfo('UTC'))
 ...     warsaw = Timezone('Europe/Warsaw')
 ...     moscow = Timezone('Europe/Moscow')
@@ -199,7 +199,7 @@ Descriptor Timezone Converter:
 >>>
 >>> t = Time()
 >>>
->>> t.moscow = datetime(1961, 4, 12, 9, 6, 59)  # Launch of a first man to space
+>>> t.moscow = datetime(1961, 4, 12, 9, 6, 59)  # Gagarin's launch to space
 >>> print(t.utc)
 1961-04-12 08:06:59+00:00
 >>> print(t.warsaw)
@@ -212,7 +212,7 @@ Descriptor Timezone Converter:
 1961-04-12 00:06:59-08:00
 >>>
 >>>
->>> t.warsaw = datetime(1969, 7, 21, 3, 56, 15) # First man set foot on a Moon
+>>> t.warsaw = datetime(1969, 7, 21, 3, 56, 15)  # Armstrong's first Lunar step
 >>> print(t.utc)
 1969-07-21 02:56:15+00:00
 >>> print(t.warsaw)
