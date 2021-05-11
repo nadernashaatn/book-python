@@ -5,18 +5,16 @@
 * Time: 8 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Read data from `FILE`
-    3. Convert data to `result: list[tuple]`
-    4. Do not add header as a first line
-    5. Run doctests - all must succeed
+    1. Read data from `FILE`
+    2. Convert data to `result: list[tuple]`
+    3. Do not add header as a first line
+    4. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Odczytaj dane z pliku `FILE`
-    3. Przekonwertuj dane do `result: list[tuple]`
-    4. Nie dodawaj nagłówka jako pierwsza linia
-    5. Uruchom doctesty - wszystkie muszą się powieść
+    1. Odczytaj dane z pliku `FILE`
+    2. Przekonwertuj dane do `result: list[tuple]`
+    3. Nie dodawaj nagłówka jako pierwsza linia
+    4. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -43,6 +41,7 @@ Tests:
 """
 
 FILE = r'_temporary.json'
+
 DATA = """[{"Sepal length": 5.8, "Sepal width": 2.7, "Petal length": 5.1, "Petal width": 1.9, "Species": "virginica"},
 {"Sepal length": 5.1, "Sepal width": 3.5, "Petal length": 1.4, "Petal width": 0.2, "Species": "setosa"},
 {"Sepal length": 5.7, "Sepal width": 2.8, "Petal length": 4.1, "Petal width": 1.3, "Species": "versicolor"},

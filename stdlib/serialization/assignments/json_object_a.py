@@ -5,20 +5,18 @@
 * Time: 13 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Convert from JSON format to Python
-    3. Create instances of `Setosa`, `Virginica`, `Versicolor`
+    1. Convert from JSON format to Python
+    2. Create instances of `Setosa`, `Virginica`, `Versicolor`
        classes based on value in field "species"
-    4. Add instances to `result: list[Setosa|Virginica|Versicolor]`
-    5. Run doctests - all must succeed
+    3. Add instances to `result: list[Setosa|Virginica|Versicolor]`
+    4. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Przekonwertuj dane z JSON do Python
-    3. Twórz obiekty klas `Setosa`, `Virginica`, `Versicolor`
+    1. Przekonwertuj dane z JSON do Python
+    2. Twórz obiekty klas `Setosa`, `Virginica`, `Versicolor`
        w zależności od wartości pola "species"
-    4. Dodawaj instancje do `result: list[Setosa|Virginica|Versicolor]`
-    5. Uruchom doctesty - wszystkie muszą się powieść
+    3. Dodawaj instancje do `result: list[Setosa|Virginica|Versicolor]`
+    4. Uruchom doctesty - wszystkie muszą się powieść
 
 Hint:
     * `dict.pop()`
@@ -47,13 +45,12 @@ Tests:
      Setosa(sepalLength=4.9, sepalWidth=3.0, petalLength=1.4, petalWidth=0.2)]
 """
 
-
-# Given
 import json
 from dataclasses import dataclass
 
 
 FILE = r'_temporary.json'
+
 DATA = """
     [{"sepalLength": 5.8, "sepalWidth": 2.7, "petalLength": 5.1, "petalWidth": 1.9, "species": "virginica"},
      {"sepalLength": 5.1, "sepalWidth": 3.5, "petalLength": 1.4, "petalWidth": 0.2, "species": "setosa"},

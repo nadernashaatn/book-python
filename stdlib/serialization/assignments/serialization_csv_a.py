@@ -5,24 +5,14 @@
 * Time: 5 min
 
 English:
-    1. Use data from "Given" section (see below)
-    3. Using `csv.writer()` save `DATA` to file
-    4. Non functional requirements:
-        a. Do not use quotes in output CSV file
-        b. Use `,` to separate columns
-        c. Use `utf-8` encoding
-        d. Use Unix `\n` newline
-    5. Run doctests - all must succeed
+    1. Using `csv.writer()` save `DATA` to file
+    2. Use Unix `\n` line terminator
+    3. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    3. Za pomocą `csv.writer()` zapisz `DATA` do pliku
-    4. Wymagania niefunkcjonalne:
-        a. Nie używaj cudzysłowów w wynikowym pliku CSV
-        b. Użyj `,` do oddzielenia kolumn
-        c. Użyj kodowania `utf-8`
-        d. Użyj zakończenia linii Unix `\n`
-    5. Uruchom doctesty - wszystkie muszą się powieść
+    1. Za pomocą `csv.writer()` zapisz `DATA` do pliku
+    2. Użyj zakończenia linii Unix `\n`
+    3. Uruchom doctesty - wszystkie muszą się powieść
 
 Hint:
     * For Python before 3.8: `dict(OrderedDict)`
@@ -47,9 +37,8 @@ Tests:
     >>> remove(FILE)
 """
 
-
-# Given
 FILE = r'_temporary.csv'
+
 DATA = [('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
         (5.8, 2.7, 5.1, 1.9, 'virginica'),
         (5.1, 3.5, 1.4, 0.2, 'setosa'),
@@ -67,5 +56,5 @@ from csv import writer
 
 
 with open(FILE, mode='w') as file:
-    data = writer(file)
+    data = writer(file, lineterminator='\n')
     data.writerows(DATA)

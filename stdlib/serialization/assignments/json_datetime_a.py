@@ -5,18 +5,16 @@
 * Time: 13 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Save data to `FILE` in JSON format
-    3. Read data from `FILE`
-    4. Recreate data structure
-    5. Run doctests - all must succeed
+    1. Save data to `FILE` in JSON format
+    2. Read data from `FILE`
+    3. Recreate data structure
+    4. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Zapisz dane do `FILE` w formacie JSON
-    3. Odczytaj dane z `FILE`
-    4. Odtwórz strukturę danych
-    5. Uruchom doctesty - wszystkie muszą się powieść
+    1. Zapisz dane do `FILE` w formacie JSON
+    2. Odczytaj dane z `FILE`
+    3. Odtwórz strukturę danych
+    4. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -58,12 +56,11 @@ Tests:
               {'astronaut': 'Mark Watney', 'date_of_birth': datetime.date(1994, 10, 12)}]}
 """
 
-
-# Given
 from datetime import datetime, date, timezone
 import json
 
 FILE = '_temporary.json'
+
 DATA = {'mission': 'Ares 3',
         'launch_date': datetime(2035, 6, 29, tzinfo=timezone.utc),
         'destination': 'Mars',

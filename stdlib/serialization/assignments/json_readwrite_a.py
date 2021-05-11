@@ -5,22 +5,20 @@
 * Time: 8 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Extract from input a header and data
-    3. Create `result: list[dict]`
+    1. Extract from input a header and data
+    2. Create `result: list[dict]`
         a. key - name from the header
         b. value - measurement or species
-    4. Write structure to file `FILE` in JSON format
-    5. Run doctests - all must succeed
+    3. Write structure to file `FILE` in JSON format
+    4. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Z danych wydziel nagłówek i pomiary
-    3. Wygeneruj `result: list[dict]`
+    1. Z danych wydziel nagłówek i pomiary
+    2. Wygeneruj `result: list[dict]`
         a. klucz - nazwa z nagłówka
         b. wartość - wyniki pomiarów lub gatunek
-    4. Zapisz strukturę do pliku `FILE` w formacie JSON
-    5. Uruchom doctesty - wszystkie muszą się powieść
+    3. Zapisz strukturę do pliku `FILE` w formacie JSON
+    4. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -47,9 +45,8 @@ Tests:
      {"Sepal length": 4.9, "Sepal width": 3.0, "Petal length": 1.4, "Petal width": 0.2, "Species": "setosa"}]
 """
 
-
-# Given
 FILE = '_temporary.json'
+
 DATA = [('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
         (5.8, 2.7, 5.1, 1.9, 'virginica'),
         (5.1, 3.5, 1.4, 0.2, 'setosa'),

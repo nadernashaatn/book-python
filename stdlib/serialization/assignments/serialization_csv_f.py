@@ -5,34 +5,35 @@
 * Time: 21 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Using `csv.DictWriter()` save contacts from addressbook to CSV file
-    3. How to write relations to CSV file (contact has many addresses)?
-    4. Recreate object structure from CSV file
-    5. Non functional requirements:
+    1. Using `csv.DictWriter()` save contacts from addressbook to CSV file
+    2. How to write relations to CSV file (contact has many addresses)?
+    3. Recreate object structure from CSV file
+    4. Non functional requirements:
         a. All fields must be enclosed by double quote `"` character
         b. Use `,` to separate mission fields
         c. Use `;` to separate missions
         d. Use Unix `\n` newline
         e. Sort `fieldnames` using `sorted()`
-    6. Run doctests - all must succeed
+    5. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Za pomocą `csv.DictWriter()` zapisz kontakty z książki adresowej w pliku
-    3. Jak zapisać w CSV dane relacyjne (kontakt ma wiele adresów)?
-    4. Odtwórz strukturę obiektów na podstawie danych odczytanych z pliku
-    5. Wymagania niefunkcjonalne:
+    1. Za pomocą `csv.DictWriter()` zapisz kontakty z książki adresowej w pliku
+    2. Jak zapisać w CSV dane relacyjne (kontakt ma wiele adresów)?
+    3. Odtwórz strukturę obiektów na podstawie danych odczytanych z pliku
+    4. Wymagania niefunkcjonalne:
         a. Wszystkie pola muszą być otoczone znakiem cudzysłowu `"`
         b. Użyj `,` do oddzielania pól mission
         c. Użyj `;` do oddzielenia missions
         d. Użyj zakończenia linii Unix `\n`
         e. Posortuj `fieldnames` używając `sorted()`
-    6. Uruchom doctesty - wszystkie muszą się powieść
+    5. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
     * `vars(obj)`
     * For Python before 3.8: `dict(OrderedDict)`
+    * Nested `for`
+    * `str.join(';', sequence)`
+    * `str.join(',', sequence)`
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -48,8 +49,6 @@ Tests:
     >>> remove(FILE)
 """
 
-
-# Given
 import csv
 
 FILE = r'_temporary.csv'

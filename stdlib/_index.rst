@@ -45,8 +45,14 @@ Serialization
     :maxdepth: 1
     :caption: Serialization
 
-    serialization/csv.rst
-    serialization/json.rst
+    serialization/csv-standard.rst
+    serialization/csv-readwrite.rst
+    serialization/csv-nonstandard.rst
+    serialization/csv-relations.rst
+    serialization/json-standard.rst
+    serialization/json-readwrite.rst
+    serialization/json-datetime.rst
+    serialization/json-object.rst
     serialization/pickle.rst
     serialization/xml.rst
 

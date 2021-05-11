@@ -5,22 +5,20 @@
 * Time: 8 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Using `csv.DictReader` read the `FILE` content
-    3. Use explicit `encoding`, `delimiter` and `quotechar`
-    4. Replace column names with `FIELDNAMES`
-    5. Skip the first line (header)
-    6. Add rows to `result: list[dict]`
-    7. Run doctests - all must succeed
+    1. Using `csv.DictReader` read the `FILE` content
+    2. Use explicit `encoding`, `delimiter` and `quotechar`
+    3. Replace column names with `FIELDNAMES`
+    4. Skip the first line (header)
+    5. Add rows to `result: list[dict]`
+    6. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Korzystając z `csv.DictReader` wczytaj zawartość pliku `FILE`
-    3. Podaj jawnie `encoding`, `delimiter` oraz `quotechar`
-    4. Podmień nazwy kolumn na `FIELDNAMES`
-    5. Pomiń pierwszą linię (nagłówek)
-    6. Dodaj wiersze do `result: list[dict]`
-    7. Uruchom doctesty - wszystkie muszą się powieść
+    1. Korzystając z `csv.DictReader` wczytaj zawartość pliku `FILE`
+    2. Podaj jawnie `encoding`, `delimiter` oraz `quotechar`
+    3. Podmień nazwy kolumn na `FIELDNAMES`
+    4. Pomiń pierwszą linię (nagłówek)
+    5. Dodaj wiersze do `result: list[dict]`
+    6. Uruchom doctesty - wszystkie muszą się powieść
 
 Hint:
     * For Python before 3.8: `dict(OrderedDict)`
@@ -39,8 +37,8 @@ Tests:
 """
 
 
-# Given
 FILE = r'_temporary.csv'
+
 FIELDNAMES = ['Sepal Length', 'Sepal Width',
               'Petal Length', 'Petal Width', 'Species']
 
@@ -48,6 +46,7 @@ DATA = """sepal_length,sepal_width,petal_length,petal_width,species
 5.8,2.7,5.1,1.9,virginica
 5.1,3.5,1.4,0.2,setosa
 5.7,2.8,4.1,1.3,versicolor"""
+
 
 with open(FILE, mode='w') as file:
     file.write(DATA)

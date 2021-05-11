@@ -5,24 +5,22 @@
 * Time: 8 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Using `csv.DictWriter()` save data to CSV file
-    3. Non functional requirements:
+    1. Using `csv.DictWriter()` save data to CSV file
+    2. Non functional requirements:
         a. All fields must be enclosed by double quote `"` character
         b. Use `,` to separate columns
         c. Use `utf-8` encoding
-        d. Use Unix `\n` newline
-    4. Run doctests - all must succeed
+        d. Use Unix `\n` line terminator
+    3. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Za pomocą `csv.DictWriter()` zapisz dane do pliku CSV
-    3. Wymagania niefunkcjonalne:
+    1. Za pomocą `csv.DictWriter()` zapisz dane do pliku CSV
+    2. Wymagania niefunkcjonalne:
         a. Wszystkie pola muszą być otoczone znakiem cudzysłowu `"`
         b. Użyj `,` do oddzielenia kolumn
         c. Użyj kodowania `utf-8`
         d. Użyj zakończenia linii Unix `\n`
-    4. Uruchom doctesty - wszystkie muszą się powieść
+    3. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
     * `vars(obj)`
@@ -45,8 +43,6 @@ Tests:
     >>> remove(FILE)
 """
 
-
-# Given
 from csv import DictWriter
 
 

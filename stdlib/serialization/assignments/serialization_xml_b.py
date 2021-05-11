@@ -5,18 +5,14 @@
 * Time: 13 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Convert input data to `list[dict]`
-    X. Run doctests - all must succeed
+    1. Convert input data to `list[dict]`
+    2. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Przekonwertuj dane wejściowe do `list[dict]`
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    1. Przekonwertuj dane wejściowe do `list[dict]`
+    2. Uruchom doctesty - wszystkie muszą się powieść
 """
 
-
-# Given
 DATA = """<?xml version="1.0" encoding="UTF-8"?>
 <breakfast_menu>
     <food>

@@ -5,16 +5,14 @@
 * Time: 5 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Using `pickle` save data structure to file
-    3. Recreate data structure from file
-    4. Run doctests - all must succeed
+    1. Using `pickle` save data structure to file
+    2. Recreate data structure from file
+    3. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Za pomocą `pickle` zapisz strukturę danych do pliku
-    3. Odtwórz strukturę danych na podstawie danych z pliku
-    4. Uruchom doctesty - wszystkie muszą się powieść
+    1. Za pomocą `pickle` zapisz strukturę danych do pliku
+    2. Odtwórz strukturę danych na podstawie danych z pliku
+    3. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -27,8 +25,6 @@ Tests:
     >>> remove(FILE)
 """
 
-
-# Given
 import pickle
 from dataclasses import dataclass, field
 
