@@ -1,5 +1,5 @@
 """
-* Assignment: Serialization CSV Writer
+* Assignment: CSV Read/Write Writer
 * Complexity: easy
 * Lines of code: 4 lines
 * Time: 5 min

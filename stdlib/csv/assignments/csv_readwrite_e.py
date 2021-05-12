@@ -1,5 +1,5 @@
 """
-* Assignment: Serialization CSV Objects
+* Assignment: CSV Read/Write Objects
 * Complexity: medium
 * Lines of code: 6 lines
 * Time: 8 min

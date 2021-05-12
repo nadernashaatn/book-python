@@ -1,5 +1,5 @@
 """
-* Assignment: Serialization CSV Relations
+* Assignment: CSV Relations Join
 * Complexity: hard
 * Lines of code: 11 lines
 * Time: 21 min

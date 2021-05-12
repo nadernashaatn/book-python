@@ -1,5 +1,5 @@
 """
-* Assignment: Serialization CSV Schemaless
+* Assignment: CSV Read/Write Schemaless
 * Complexity: medium
 * Lines of code: 7 lines
 * Time: 8 min

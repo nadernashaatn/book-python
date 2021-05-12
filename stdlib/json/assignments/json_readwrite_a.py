@@ -1,5 +1,5 @@
 """
-* Assignment: Serialization JSON Dump
+* Assignment: JSON Read/Write Dump
 * Complexity: easy
 * Lines of code: 4 lines
 * Time: 8 min

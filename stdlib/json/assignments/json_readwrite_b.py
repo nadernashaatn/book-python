@@ -1,5 +1,5 @@
 """
-* Assignment: Serialization JSON Load
+* Assignment: JSON Read/Write Load
 * Complexity: easy
 * Lines of code: 4 lines
 * Time: 8 min
