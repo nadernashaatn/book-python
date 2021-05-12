@@ -39,6 +39,11 @@ Author
     "978-83-957186-1-8", "https://alsep.astronaut.center", "Geophysics experiments from Apollo Lunar Surface Experiments Package"
 
 
+Big Picture
+===========
+.. figure:: about/img/python-training-path.png
+
+
 Note
 ====
 * For consulting or training course requests please email matt@astrotech.io
