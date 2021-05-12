@@ -57,24 +57,6 @@ Serialization
     serialization/xml.rst
 
 
-Database
-********
-.. toctree::
-    :maxdepth: 1
-    :caption: Database
-
-    database/db-api.rst
-    database/sqlite.rst
-    database/mysql.rst
-    database/postgresql.rst
-    database/mongodb.rst
-    database/orm.rst
-    database/migrations.rst
-    database/data-exploration.rst
-    database/sql-injection.rst
-    database/sql.rst
-
-
 Regular Expressions
 *******************
 .. toctree::
@@ -94,6 +76,24 @@ Regular Expressions
     regular-expressions/greedy.rst
     regular-expressions/standards.rst
     regular-expressions/references.rst
+
+
+Database
+********
+.. toctree::
+    :maxdepth: 1
+    :caption: Database
+
+    database/db-api.rst
+    database/sqlite.rst
+    database/mysql.rst
+    database/postgresql.rst
+    database/mongodb.rst
+    database/orm.rst
+    database/migrations.rst
+    database/data-exploration.rst
+    database/sql-injection.rst
+    database/sql.rst
 
 
 Modules and Packages
