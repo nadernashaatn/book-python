@@ -5,16 +5,14 @@
 * Time: 8 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Using `re.split()` split text [1] by paragraphs
-    4. Define `result: str` containing paragraph starting with 'We choose to go to the moon'
-    X. Run doctests - all must succeed
+    1. Using `re.split()` split text [1] by paragraphs
+    2. Define `result: str` containing paragraph starting with 'We choose to go to the moon'
+    3. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Za pomocą `re.split()` podziel tekst [1] na paragrafy
-    4. Zdefiniuj `result: str` zawierający tekst paragrafu zaczynający się od słów "We choose to go to the moon"
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    1. Za pomocą `re.split()` podziel tekst [1] na paragrafy
+    2. Zdefiniuj `result: str` zawierający tekst paragrafu zaczynający się od słów "We choose to go to the moon"
+    3. Uruchom doctesty - wszystkie muszą się powieść
 
 References:
     [1] Kennedy, J.F. Moon Speech - Rice Stadium,
@@ -29,8 +27,6 @@ Tests:
     'We choose to go to the moon. We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills,because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win,and the others, too.'
 """
 
-
-# Given
 import re
 
 

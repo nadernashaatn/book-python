@@ -165,20 +165,18 @@ Database SQL Relations
 * Time: 13 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. How to write input data in one table without using relations?
-    3. There are at least four methods
-    4. Discuss pros and cons of each method
-    5. Which methods is ACID compliant?
-    6. Run doctests - all must succeed
+    1. How to write input data in one table without using relations?
+    2. There are at least four methods
+    3. Discuss pros and cons of each method
+    4. Which methods is ACID compliant?
+    5. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Jak zapisać w jednej tabeli bez wykorzystania relacji?
-    3. Są przynajmniej cztery metody
-    4. Przeprowadź dyskusję na temat zalet i wad każdej metody
-    5. Która metody jest zgodna z ACID?
-    6. Uruchom doctesty - wszystkie muszą się powieść
+    1. Jak zapisać w jednej tabeli bez wykorzystania relacji?
+    2. Są przynajmniej cztery metody
+    3. Przeprowadź dyskusję na temat zalet i wad każdej metody
+    4. Która metody jest zgodna z ACID?
+    5. Uruchom doctesty - wszystkie muszą się powieść
 
 Given:
     .. code-block:: text

@@ -5,26 +5,24 @@
 * Time: 5 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Use `re.search()` to check if Astronaut first and last names are in the text [1]
-    3. Astronauts to find:
+    1. Use `re.search()` to check if Astronaut first and last names are in the text [1]
+    2. Astronauts to find:
         a. Neil Armstrong
         b. Buzz Aldrin
         c. Michael Collins
         d. Jan Twardowski
         e. Mark Watney
-    X. Run doctests - all must succeed
+    3. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Użyj `re.search()` do sprawdzenia czy imiona i nazwiska Astronautów występują w tekście [1]
-    3. Astronauci do znalezienia:
+    1. Użyj `re.search()` do sprawdzenia czy imiona i nazwiska Astronautów występują w tekście [1]
+    2. Astronauci do znalezienia:
         a. Neil Armstrong
         b. Buzz Aldrin
         c. Michael Collins
         d. Jan Twardowski
         e. Mark Watney
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    3. Uruchom doctesty - wszystkie muszą się powieść
 
 References:
     [1] Kennedy, J.F. Moon Speech - Rice Stadium,

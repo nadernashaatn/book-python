@@ -85,15 +85,12 @@ Tests:
      (3, '1969-07-16 13:33:23', 'DEBUG', 'Maximum dynamic pressure (735.17 lb/ft^2)'),
      (2, '1969-07-16 13:31:53', 'WARNING', 'S-IC engine ignition (#5)'),
      (1, '1969-07-14 21:00:00', 'INFO', 'Terminal countdown started')]
-
-    >>> from pathlib import Path
-    >>> Path(DATABASE).unlink(missing_ok=True)
 """
 
 import sqlite3
 from datetime import datetime
 
-DATABASE = r'_temporary.sqlite3'
+DATABASE = r':memory:'
 
 DATA = """1969-07-14, 21:00:00, INFO, Terminal countdown started
 1969-07-16, 13:31:53, WARNING, S-IC engine ignition (#5)
@@ -124,7 +121,6 @@ DATA = """1969-07-14, 21:00:00, INFO, Terminal countdown started
 1969-07-24, 16:50:35, WARNING, Splashdown (went to apex-down)
 1969-07-24, 17:29, INFO, Crew egress"""
 
-
 SQL_CREATE_TABLE = """
     CREATE TABLE IF NOT EXISTS logs (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -135,8 +131,8 @@ SQL_CREATE_TABLE = """
 SQL_INSERT = 'INSERT INTO logs VALUES (NULL, ?, ?, ?);'
 SQL_SELECT = 'SELECT * FROM logs ORDER BY datetime DESC'
 
-
 result: list = []
+
 
 # Solution
 data = []

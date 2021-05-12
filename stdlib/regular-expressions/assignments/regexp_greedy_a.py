@@ -5,16 +5,14 @@
 * Time: 8 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Using `re.findall()` and non-greedy qualifier split text by paragraphs
-    3. In ``result: str`` catch paragraf starting with "We choose to go to the moon"
-    X. Run doctests - all must succeed
+    1. Using `re.findall()` and non-greedy qualifier split text by paragraphs
+    2. In ``result: str`` catch paragraf starting with "We choose to go to the moon"
+    3. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Za pomocą `re.findall()` i non-greedy qualifier podziel tekst na paragrafy
-    3. W ``result: str`` uchwyć paragraf zaczynający się od słów "We choose to go to the moon"
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    1. Za pomocą `re.findall()` i non-greedy qualifier podziel tekst na paragrafy
+    2. W ``result: str`` uchwyć paragraf zaczynający się od słów "We choose to go to the moon"
+    3. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
     * In this assignments all HTML paragraphs starts with `<p>` and ends with `</p>`
@@ -27,8 +25,6 @@ Test:
     'We choose to go to the moon. We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills,because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win,and the others, too.'
 """
 
-
-# Given
 import re
 
 DATA = ("<h1>TEXT OF PRESIDENT JOHN KENNEDY'S RICE STADIUM MOON SPEECH</h1>\n"

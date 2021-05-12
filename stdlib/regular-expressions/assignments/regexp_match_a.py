@@ -5,16 +5,14 @@
 * Time: 8 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Use regular expressions to validate phone numbers
-    3. Valid phone number format: `+## ### ### ###` or `+## ## ### ####`
-    4. Run doctests - all must succeed
+    1. Use regular expressions to validate phone numbers
+    2. Valid phone number format: `+## ### ### ###` or `+## ## ### ####`
+    3. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Użyj wyrażeń regularnych do walidacji numeru telefonu
-    3. Poprawne format numeru: `+## ### ### ###` lub `+## ## ### ####`
-    4. Uruchom doctesty - wszystkie muszą się powieść
+    1. Użyj wyrażeń regularnych do walidacji numeru telefonu
+    2. Poprawne format numeru: `+## ### ### ###` lub `+## ## ### ####`
+    3. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -53,8 +51,6 @@ Tests:
     False
 """
 
-
-# Given
 import re
 
 pattern = ...  # str: pattern matching `+## ### ### ###` and `+## ## ### ####`

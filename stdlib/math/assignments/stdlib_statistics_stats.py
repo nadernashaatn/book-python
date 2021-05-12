@@ -5,34 +5,32 @@
 * Time: 21 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. For columns:
+    1. For columns:
         a. Sepal length,
         b. Sepal width,
         c. Petal length,
         d. Petal width.
-    3. Print calculated values:
+    2. Print calculated values:
         a. mean,
         b. median,
         c. standard deviation,
         d. variance.
-    4. Use `statistics` module from Python standard library
-    X. Run doctests - all must succeed
+    3. Use `statistics` module from Python standard library
+    4. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Dla kolumn:
+    1. Dla kolumn:
         a. Sepal length,
         b. Sepal width,
         c. Petal length,
         d. Petal width.
-    3. Wypisz wyliczone wartości:
+    2. Wypisz wyliczone wartości:
         a. średnią,
         b. medianę,
         c. odchylenie standardowe,
         d. wariancję.
-    4. Użyj modułu `statistics` z biblioteki standardowej Python
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    3. Użyj modułu `statistics` z biblioteki standardowej Python
+    4. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0

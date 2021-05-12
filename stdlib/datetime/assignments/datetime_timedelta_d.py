@@ -5,7 +5,7 @@
 * Time: 13 min
 
 English:
-    1. Given period `DATA` is the time between Gagarin launch and Armstrong first step on the Moon
+    1. `DATA` is the time between Gagarin launch and Armstrong first step on the Moon
     2. Assume:
         a. year = 365.2425 days
         b. month = 30.436875 days
@@ -13,7 +13,7 @@ English:
     4. Run doctests - all must succeed
 
 Polish:
-    1. Podany jest okres `DATA`, który upłynął między startem Gagarina a pierwszym krokiem Armstronga na Księżycu
+    1. `DATA`, to czas który upłynął między startem Gagarina a pierwszym krokiem Armstronga na Księżycu
     2. Uwzględnij założenie:
         a. rok = 365.2425 dni
         b. miesiąc = 30.436875 dni

@@ -39,16 +39,36 @@ Datetime and Timezones
     datetime/timezones.rst
 
 
+CSV
+***
+.. toctree::
+    :maxdepth: 1
+    :caption: CSV
+
+    csv/standard.rst
+    csv/readwrite.rst
+    csv/nonstandard.rst
+    csv/relations.rst
+
+
+JSON
+****
+.. toctree::
+    :maxdepth: 1
+    :caption: Serialization
+
+    json/standard.rst
+    json/readwrite.rst
+    json/datetime.rst
+    json/object.rst
+
+
 Serialization
 *************
 .. toctree::
     :maxdepth: 1
     :caption: Serialization
 
-    serialization/csv-standard.rst
-    serialization/csv-readwrite.rst
-    serialization/csv-nonstandard.rst
-    serialization/csv-relations.rst
     serialization/json-standard.rst
     serialization/json-readwrite.rst
     serialization/json-datetime.rst

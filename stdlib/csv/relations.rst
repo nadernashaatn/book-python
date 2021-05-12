@@ -22,6 +22,6 @@ Serialization
 
 Assignments
 -----------
-.. literalinclude:: assignments/serialization_csv_f.py
-    :caption: :download:`Solution <assignments/serialization_csv_f.py>`
+.. literalinclude:: assignments/csv_relations_a.py
+    :caption: :download:`Solution <assignments/csv_relations_a.py>`
     :end-before: # Solution

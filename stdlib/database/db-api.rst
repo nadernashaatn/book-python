@@ -14,3 +14,4 @@ Rationale
     connection.fetchmany(...) -> list[result]
     connection.fetchone(...) -> result
     connection.cursor(...) -> cursor
+    connection.close()

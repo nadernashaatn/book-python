@@ -1,5 +1,5 @@
 """
-* Assignment: Serialization JSON HTTP
+* Assignment: JSON Object Dataclass
 * Complexity: easy
 * Lines of code: 15 lines
 * Time: 13 min
@@ -64,55 +64,12 @@ class User:
 
 
 # Solution
-from dataclasses import dataclass
-
-
-@dataclass
 class User:
-    login: str
-    id: int
-    node_id: str
-    avatar_url: str
-    gravatar_id: str
-    url: str
-    html_url: str
-    followers_url: str
-    following_url: str
-    gists_url: str
-    starred_url: str
-    subscriptions_url: str
-    organizations_url: str
-    repos_url: str
-    events_url: str
-    received_events_url: str
-    type: str
-    site_admin: bool
+    def __init__(self, login, id, node_id, avatar_url, gravatar_id, url,
+                 html_url, followers_url, following_url, gists_url,
+                 starred_url, subscriptions_url, organizations_url, repos_url,
+                 events_url, received_events_url, type, site_admin):
 
-
-result = [User(**user) for user in DATA]
-
-
-# Solution
-class User:
-    def __init__(self,
-                 login: str,
-                 id: str,
-                 node_id: str,
-                 avatar_url: str,
-                 gravatar_id: str,
-                 url: str,
-                 html_url: str,
-                 followers_url: str,
-                 following_url: str,
-                 gists_url: str,
-                 starred_url: str,
-                 subscriptions_url: str,
-                 organizations_url: str,
-                 repos_url: str,
-                 events_url: str,
-                 received_events_url: str,
-                 type: str,
-                 site_admin: str):
         self.login = login
         self.id = id
         self.node_id = node_id
@@ -144,3 +101,32 @@ class User:
 
 
 result = [User(**data) for data in DATA]
+
+
+# Solution 2
+from dataclasses import dataclass
+
+
+@dataclass
+class User:
+    login: str
+    id: int
+    node_id: str
+    avatar_url: str
+    gravatar_id: str
+    url: str
+    html_url: str
+    followers_url: str
+    following_url: str
+    gists_url: str
+    starred_url: str
+    subscriptions_url: str
+    organizations_url: str
+    repos_url: str
+    events_url: str
+    received_events_url: str
+    type: str
+    site_admin: bool
+
+
+result = [User(**user) for user in DATA]

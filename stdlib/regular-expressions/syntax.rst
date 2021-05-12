@@ -283,7 +283,7 @@ Examples
 * ISO Date: ``r'^\d{4}-\d{2}-\d{2}$'``
 * US Long Date: ``r'^\w+ \d{2}, \d{4}$'``
 * US Short Date: ``r'^\d{2}/\d{2}/\d{2}$'``
-* Email: ``r'^[a-zA-Z0-9][\w.+-]*@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]{2,20}$'``
+* Email [#rfc3696]_: ``r'^[a-zA-Z0-9][\w.+-]*@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]{2,20}$'``
 
 
 Visualization
@@ -293,7 +293,7 @@ Visualization
 
 .. figure:: img/regexp-visualization.png
 
-    Visualization for pattern ``r'^[a-zA-Z0-9][\w.+-]*@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]{2,20}$'``
+    Visualization for pattern ``r'^[a-zA-Z0-9][\w.+-]*@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]{2,20}$'`` [#rfc3696]_
 
 
 Further Reading
@@ -305,4 +305,6 @@ Further Reading
 
 References
 ----------
+.. [#rfc3696] Klensin, J. RFC-3696: Application Techniques for Checking and Transformation of Names. The Internet Society Network Working Group. Year: 2004. Retrieved: 2021-05-12. https://datatracker.ietf.org/doc/html/rfc3696#section-3
+
 .. [#Summerfield2008] Summerfield, Mark. Programming in Python 3. Regular Expressions. Chapter: 12. Pages: 445-465. Year: 2008. Retrieved: 2021-04-11. Publisher: Addison-Wesley Professional. ISBN: 978-0-13-712929-4. URL: https://www.informit.com/articles/article.aspx?p=1278986

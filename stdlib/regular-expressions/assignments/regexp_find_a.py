@@ -5,16 +5,14 @@
 * Time: 5 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Using regular expressions find dates in US format,
+    1. Using regular expressions find dates in US long format
        example: "April 12, 1961"
-    3. Run doctests - all must succeed
+    2. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Używając wyrażeń regularnych wyszukaj dat w formacie US,
+    1. Używając wyrażeń regularnych wyszukaj dat w formacie amerykańskim długim
        przykład: "April 12, 1961"
-    3. Uruchom doctesty - wszystkie muszą się powieść
+    2. Uruchom doctesty - wszystkie muszą się powieść
 
 References:
     [1] Wikipedia Apollo 11,

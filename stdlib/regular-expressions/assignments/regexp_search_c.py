@@ -5,18 +5,16 @@
 * Time: 5 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Use regular expressions to check text [1] contains time in UTC (format: `%H:%M UTC`)
-    3. Use simplified checking: `##:## UTC`, where `#` is a digit
-    4. Define `result: str` with matched time
-    X. Run doctests - all must succeed
+    1. Use regular expressions to check text [1] contains time in UTC (format: `%H:%M UTC`)
+    2. Use simplified checking: `##:## UTC`, where `#` is a digit
+    3. Define `result: str` with matched time
+    4. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Użyj wyrażeń regularnych do sprawdzenia czy tekst [1] zawiera godzinę w UTC (format: `%H:%M UTC`)
-    3. Użyj uproszczonego sprawdzania: `##:## UTC`, gdzie `#` to dowolna cyfra
-    4. Zdefiniuj `result: str` ze znalezionym czasem
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    1. Użyj wyrażeń regularnych do sprawdzenia czy tekst [1] zawiera godzinę w UTC (format: `%H:%M UTC`)
+    2. Użyj uproszczonego sprawdzania: `##:## UTC`, gdzie `#` to dowolna cyfra
+    3. Zdefiniuj `result: str` ze znalezionym czasem
+    4. Uruchom doctesty - wszystkie muszą się powieść
 
 References:
     [1] Wikipedia Apollo 11,
@@ -34,8 +32,6 @@ Tests:
     '20:17 UTC'
 """
 
-
-# Given
 import re
 
 

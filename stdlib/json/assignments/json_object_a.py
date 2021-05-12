@@ -1,5 +1,5 @@
 """
-* Assignment: Serialization JSON Object
+* Assignment: JSON Object Factory
 * Complexity: medium
 * Lines of code: 15 lines
 * Time: 13 min

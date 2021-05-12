@@ -21,15 +21,15 @@ Polish:
 
 Discuss:
     * nie pisz kodu, przeprowadź tylko dyskusję
-    * Co to jest suma kontrolna? (**tylko dyskusja**)
-    * Mając PESEL "69072101234" (**tylko dyskusja**)
+    * Co to jest suma kontrolna?
+    * Mając PESEL "69072101234"
        a. Jakie wyrażenie może być na pierwszym miejscu w PESEL?
        b. Jakie wyrażenie może być na drugim miejscu w PESEL?
        c. Jakie wyrażenie może być na trzecim miejscu w PESEL?
        d. Jakie wyrażenie może być na czwartym miejscu w PESEL?
        e. Jakie wyrażenie może być na piątym miejscu w PESEL?
        f. Jakie wyrażenie może być na szóstym miejscu w PESEL?
-    * Mając PESEL "18220812345" (**tylko dyskusja**)
+    * Mając PESEL "18220812345"
        a. Jakie wyrażenie może być na pierwszym miejscu w PESEL?
        b. Jakie wyrażenie może być na drugim miejscu w PESEL?
        c. Jakie wyrażenie może być na trzecim miejscu w PESEL?
@@ -50,8 +50,6 @@ Tests:
     True
 """
 
-
-# Given
 import re
 
 PATTERN = r'^\d{11}$'

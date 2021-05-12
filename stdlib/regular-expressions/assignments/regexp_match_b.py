@@ -47,8 +47,6 @@ Polish:
     X. Uruchom doctesty - wszystkie muszą się powieść
 """
 
-
-# Given
 import re
 
 result = ...

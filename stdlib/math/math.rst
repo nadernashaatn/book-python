@@ -256,48 +256,45 @@ Euclidean distance 2D
 * Time: 13 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Given are two points ``A: tuple[int, int]`` and ``B: tuple[int, int]``
-    3. Coordinates are in cartesian system
-    4. Points ``A`` and ``B`` are in two dimensional space
-    5. Calculate distance between points using Euclidean algorithm
-    6. Run doctests - all must succeed
+    1. Given are two points ``A: tuple[int, int]`` and ``B: tuple[int, int]``
+    2. Coordinates are in cartesian system
+    3. Points ``A`` and ``B`` are in two dimensional space
+    4. Calculate distance between points using Euclidean algorithm
+    5. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Dane są dwa punkty ``A: tuple[int, int]`` i ``B: tuple[int, int]``
-    3. Koordynaty są w systemie kartezjańskim
-    4. Punkty ``A`` i ``B`` są w dwuwymiarowej przestrzeni
-    5. Oblicz odległość między nimi wykorzystując algorytm Euklidesa
-    6. Uruchom doctesty - wszystkie muszą się powieść
+    1. Dane są dwa punkty ``A: tuple[int, int]`` i ``B: tuple[int, int]``
+    2. Koordynaty są w systemie kartezjańskim
+    3. Punkty ``A`` i ``B`` są w dwuwymiarowej przestrzeni
+    4. Oblicz odległość między nimi wykorzystując algorytm Euklidesa
+    5. Uruchom doctesty - wszystkie muszą się powieść
 
-Given:
-    .. code-block:: python
+.. code-block:: python
 
-        def euclidean_distance(A, B):
-            """
-            >>> A = (1, 0)
-            >>> B = (0, 1)
-            >>> euclidean_distance(A, B)
-            1.4142135623730951
+    def euclidean_distance(A, B):
+        """
+        >>> A = (1, 0)
+        >>> B = (0, 1)
+        >>> euclidean_distance(A, B)
+        1.4142135623730951
 
-            >>> euclidean_distance((0,0), (1,0))
-            1.0
+        >>> euclidean_distance((0,0), (1,0))
+        1.0
 
-            >>> euclidean_distance((0,0), (1,1))
-            1.4142135623730951
+        >>> euclidean_distance((0,0), (1,1))
+        1.4142135623730951
 
-            >>> euclidean_distance((0,1), (1,1))
-            1.0
+        >>> euclidean_distance((0,1), (1,1))
+        1.0
 
-            >>> euclidean_distance((0,10), (1,1))
-            9.055385138137417
-            """
-            x1 = ...
-            y1 = ...
-            x2 = ...
-            y2 = ...
-            return ...
+        >>> euclidean_distance((0,10), (1,1))
+        9.055385138137417
+        """
+        x1 = ...
+        y1 = ...
+        x2 = ...
+        y2 = ...
+        return ...
 
 .. figure:: img/math-euclidean-distance.png
 

@@ -62,16 +62,30 @@ Tests:
      {'id': 2, 'firstname': 'Mark', 'lastname': 'Watney', 'astronaut_id': 2, 'street': '2825 E Ave P', 'city': 'Palmdale', 'state': 'California', 'code': 93550, 'country': 'USA'},
      {'id': 3, 'firstname': 'Иван', 'lastname': 'Иванович', 'astronaut_id': 3, 'street': '', 'city': 'Космодро́м Байкону́р', 'state': 'Кызылординская область', 'code': None, 'country': 'Қазақстан'},
      {'id': 5, 'firstname': 'Alex', 'lastname': 'Vogel', 'astronaut_id': 5, 'street': 'Linder Hoehe', 'city': 'Köln', 'state': None, 'code': 51147, 'country': 'Germany'}]
-
-    >>> from pathlib import Path
-    >>> Path(DATABASE).unlink(missing_ok=True)
 """
 
-
-# Given
 import sqlite3
 
-DATABASE = r'_temporary.sqlite3'
+
+DATABASE = r':memory:'
+
+DATA = [
+    {"firstname": "José", "lastname": "Jiménez", "addresses": [
+        {"street": "2101 E NASA Pkwy", "code": 77058, "city": "Houston", "state": "Texas", "country": "USA"},
+        {"street": None, "code": 32899, "city": "Kennedy Space Center", "state": "Florida", "country": "USA"}]},
+
+    {"firstname": "Mark", "lastname": "Watney", "addresses": [
+        {"street": "4800 Oak Grove Dr", "code": 91109, "city": "Pasadena", "state": "California", "country": "USA"},
+        {"street": "2825 E Ave P", "code": 93550, "city": "Palmdale", "state": "California", "country": "USA"}]},
+
+    {"firstname": "Иван", "lastname": "Иванович", "addresses": [
+        {"street": "", "code": None, "city": "Космодро́м Байкону́р", "state": "Кызылординская область", "country": "Қазақстан"}]},
+
+    {"firstname": "Melissa", "lastname": "Lewis", "addresses": []},
+
+    {"firstname": "Alex", "lastname": "Vogel", "addresses": [
+        {"street": "Linder Hoehe", "city": "Köln", "code": 51147, "state": None, "country": "Germany"}]}
+]
 
 SQL_CREATE_TABLE_ASTRONAUT = """
     CREATE TABLE IF NOT EXISTS astronaut (
@@ -115,25 +129,8 @@ SQL_SELECT = """
     ON astronaut.id=address.astronaut_id;
 """
 
-DATA = [
-    {"firstname": "José", "lastname": "Jiménez", "addresses": [
-        {"street": "2101 E NASA Pkwy", "code": 77058, "city": "Houston", "state": "Texas", "country": "USA"},
-        {"street": None, "code": 32899, "city": "Kennedy Space Center", "state": "Florida", "country": "USA"}]},
-
-    {"firstname": "Mark", "lastname": "Watney", "addresses": [
-        {"street": "4800 Oak Grove Dr", "code": 91109, "city": "Pasadena", "state": "California", "country": "USA"},
-        {"street": "2825 E Ave P", "code": 93550, "city": "Palmdale", "state": "California", "country": "USA"}]},
-
-    {"firstname": "Иван", "lastname": "Иванович", "addresses": [
-        {"street": "", "code": None, "city": "Космодро́м Байкону́р", "state": "Кызылординская область", "country": "Қазақстан"}]},
-
-    {"firstname": "Melissa", "lastname": "Lewis", "addresses": []},
-
-    {"firstname": "Alex", "lastname": "Vogel", "addresses": [
-        {"street": "Linder Hoehe", "city": "Köln", "code": 51147, "state": None, "country": "Germany"}]}
-]
-
 result: list = []
+
 
 # Solution
 with sqlite3.connect(DATABASE) as connection:
