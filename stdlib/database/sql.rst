@@ -152,6 +152,33 @@ TRUNCATE
     :language: sql
     :caption: TRUNCATE
 
+Use Case
+--------
+* ``AND``
+* ``OR``
+* ``IN``, ``NOT IN``
+* ``LIKE``, ``%``, ``_``
+* ``IN (SELECT ...)`` - subquery
+
+.. code-block:: sql
+
+    SELECT
+        message,
+        level,
+        COUNT(level) AS count
+    FROM logs
+    WHERE
+        (datetime <= '1969-07-18' OR datetime >= '1969-07-20')
+        AND message LIKE 'Max__%'
+        AND level IN (
+            SELECT DISTINCT(level) FROM logs
+        )
+    GROUP BY level
+    HAVING count > 5
+    ORDER BY datetime DESC
+    LIMIT 5
+
+
 
 Assignments
 -----------

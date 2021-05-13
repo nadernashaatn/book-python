@@ -1,6 +1,13 @@
 CSV Read/Write
 ==============
 
+Rationale
+---------
+* csv.reader: list[tuple]
+* csv.writer: list[tuple]
+* csv.DictReader: list[dict]
+* csv.DictWriter: list[dict]
+
 
 Reader -> list[tuple]
 ---------------------

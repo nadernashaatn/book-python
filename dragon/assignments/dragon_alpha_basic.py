@@ -2,10 +2,11 @@
 * Assignment: Dragon (version alpha)
 * Complexity: medium
 * Lines of code: 100 lines
-* Time: 60 min, then 90 min live coding with instructor
+* Time: 89 min, then 144 min live coding with instructor
 * Warning: Don't delete code, assignment will be continued
 
 English:
+    0. Create file `dragon_alpha.py`
     1. Dragon has (attributes):
         a. name
         b. position `x` on the screen
@@ -71,6 +72,7 @@ English:
            is the most important: learning
 
 Polish:
+    0. Stwórz plik `dragon_alpha.py`
     1. Smok ma (atrybuty):
         a. nazwę
         b. pozycję `x` na ekranie
@@ -160,8 +162,6 @@ Tests:
     {'gold': 98, 'position': (20, 40)}
 """
 
-
-# Given
 from random import randint
 
 
