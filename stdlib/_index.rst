@@ -140,6 +140,10 @@ Builtins
     builtin/keyword.rst
     builtin/operator.rst
     builtin/print.rst
+    builtin/logging.rst
+    builtin/parameter-syntax.rst
+    builtin/assignment-expression.rst
+    builtin/unpack.rst
 
 
 Locale
@@ -190,6 +194,19 @@ Object Oriented Programming
 
     oop/enum.rst
     oop/dataclass.rst
+    oop/operators.rst
+
+
+Unpacking
+*********
+.. toctree::
+    :maxdepth: 1
+    :caption: Unpacking
+
+    unpacking/assignment.rst
+    unpacking/parameters.rst
+    unpacking/arguments.rst
+    unpacking/assignment-expression.rst
 
 
 Mathematics

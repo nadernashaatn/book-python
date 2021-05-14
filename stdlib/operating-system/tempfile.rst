@@ -3,7 +3,7 @@ Tempfile
 
 
 Create Temporary File
--------------------------------------------------------------------------------
+---------------------
 .. code-block:: python
 
     from tempfile import TemporaryFile
@@ -17,7 +17,7 @@ Create Temporary File
 
 
 Context Manager
--------------------------------------------------------------------------------
+---------------
 * preferred
 
 .. code-block:: python
@@ -32,7 +32,7 @@ Context Manager
 
 
 Temporary Directory
--------------------------------------------------------------------------------
+-------------------
 .. code-block:: python
 
     from tempfile import TemporaryDirectory
