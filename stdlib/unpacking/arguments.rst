@@ -401,10 +401,10 @@ Decorators. Decorators are functions, which get pointer to the decorated functio
 
 Assignments
 -----------
-.. literalinclude:: assignments/unpacking_arguments_range.py
-    :caption: :download:`Solution <assignments/unpacking_arguments_range.py>`
+.. literalinclude:: assignments/unpacking_arguments_a.py
+    :caption: :download:`Solution <assignments/unpacking_arguments_a.py>`
     :end-before: # Solution
 
-.. literalinclude:: assignments/unpacking_arguments_define.py
-    :caption: :download:`Solution <assignments/unpacking_arguments_define.py>`
+.. literalinclude:: assignments/unpacking_arguments_b.py
+    :caption: :download:`Solution <assignments/unpacking_arguments_b.py>`
     :end-before: # Solution

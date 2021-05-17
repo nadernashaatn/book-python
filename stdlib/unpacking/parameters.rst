@@ -195,14 +195,14 @@ Intuitive definition of ``print`` function:
 
 Assignments
 -----------
-.. literalinclude:: assignments/unpacking_parameters_define.py
-    :caption: :download:`Solution <assignments/unpacking_parameters_define.py>`
+.. literalinclude:: assignments/unpacking_parameters_a.py
+    :caption: :download:`Solution <assignments/unpacking_parameters_a.py>`
     :end-before: # Solution
 
-.. literalinclude:: assignments/unpacking_parameters_args.py
-    :caption: :download:`Solution <assignments/unpacking_parameters_args.py>`
+.. literalinclude:: assignments/unpacking_parameters_b.py
+    :caption: :download:`Solution <assignments/unpacking_parameters_b.py>`
     :end-before: # Solution
 
-.. literalinclude:: assignments/unpacking_parameters_kwargs.py
-    :caption: :download:`Solution <assignments/unpacking_parameters_kwargs.py>`
+.. literalinclude:: assignments/unpacking_parameters_c.py
+    :caption: :download:`Solution <assignments/unpacking_parameters_c.py>`
     :end-before: # Solution

@@ -371,6 +371,6 @@ References
 
 Assignments
 -----------
-.. literalinclude:: assignments/idioms_assignmentexpr_a.py
-    :caption: :download:`Solution <assignments/idioms_assignmentexpr_a.py>`
+.. literalinclude:: assignments/unpacking_assignmentexpr_a.py
+    :caption: :download:`Solution <assignments/unpacking_assignmentexpr_a.py>`
     :end-before: # Solution
