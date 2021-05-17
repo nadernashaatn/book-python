@@ -5,18 +5,19 @@
 * Time: 21 min
 
 English:
-    1. Define function `myrange` with parameters: `start`, `stop`, `step`
-    2. Write own implementation of a built-in `myrange(start, stop, step)` function
+    1. Write own implementation of a built-in `myrange(start, stop, step)` function
+    2. Note, that function does not take any keyword arguments
     3. How to implement passing only stop argument (`myrange(start=0, stop=???, step=1)`)?
     4. Run doctests - all must succeed
 
 Polish:
-    1. Zdefiniuj funkcję `myrange` z parametrami: `start`, `stop`, `step`
-    2. Zaimplementuj własne rozwiązanie wbudowanej funkcji `myrange(start, stop, step)`
+    1. Zaimplementuj własne rozwiązanie wbudowanej funkcji `myrange(start, stop, step)`
+    2. Zauważ, że funkcja nie przyjmuje żanych argumentów nazwanych (keyword)
     3. Jak zaimplementować możliwość podawania tylko końca (`myrange(start=0, stop=???, step=1)`)?
     4. Uruchom doctesty - wszystkie muszą się powieść
 
 Hint:
+    * https://github.com/python/cpython/blob/bb3e0c240bc60fe08d332ff5955d54197f79751c/Objects/rangeobject.c#L82
     * use `*args` and `**kwargs`
     * `if len(args) == ...`
 
@@ -55,6 +56,18 @@ Tests:
     Traceback (most recent call last):
     TypeError: myrange() takes no keyword arguments
 """
+
+
+def myrange():
+    current = start
+    result = []
+
+    while current < stop:
+        result.append(current)
+        current += step
+
+    return result
+
 
 
 # Solution
