@@ -1,8 +1,8 @@
 """
 * Assignment: Unpacking Arguments Define
 * Complexity: medium
-* Lines of code: 15 lines
-* Time: 13 min
+* Lines of code: 4 lines
+* Time: 8 min
 
 English:
     1. Create function `mean(*args)`, which calculates arithmetic mean for `args`

@@ -1,5 +1,5 @@
 """
-* Assignment: Function Arguments Numbers to Str
+* Assignment: Function Arguments Num2Str
 * Required: no
 * Complexity: medium
 * Lines of code: 5 lines

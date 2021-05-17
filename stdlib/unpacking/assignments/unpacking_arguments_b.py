@@ -8,15 +8,13 @@ English:
     1. Define function `myrange` with parameters: `start`, `stop`, `step`
     2. Write own implementation of a built-in `myrange(start, stop, step)` function
     3. How to implement passing only stop argument (`myrange(start=0, stop=???, step=1)`)?
-    4. All tests must pass
-    5. Run doctests - all must succeed
+    4. Run doctests - all must succeed
 
 Polish:
     1. Zdefiniuj funkcję `myrange` z parametrami: `start`, `stop`, `step`
     2. Zaimplementuj własne rozwiązanie wbudowanej funkcji `myrange(start, stop, step)`
     3. Jak zaimplementować możliwość podawania tylko końca (`myrange(start=0, stop=???, step=1)`)?
-    4. Wszystkie testy muszą przejść
-    5. Uruchom doctesty - wszystkie muszą się powieść
+    4. Uruchom doctesty - wszystkie muszą się powieść
 
 Hint:
     * use `*args` and `**kwargs`
