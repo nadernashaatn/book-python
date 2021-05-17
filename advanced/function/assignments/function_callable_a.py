@@ -10,7 +10,7 @@ English:
     3. Function `wrapper` prints `hello from wrapper`
     4. Define function `check` with `func: Callable` as a parameter
     5. Function `check` must return `wrapper: Callable`
-    X. Run doctests - all must succeed
+    6. Run doctests - all must succeed
 
 Polish:
     1. Zdefiniuj funkcję `wrapper`
