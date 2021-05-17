@@ -5,20 +5,18 @@
 * Time: 13 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Create `pd.Series` with 26 random integers in range `[10, 100)`
-    3. Name indexes like letters from ASCII alphabet (`ascii_lowercase: str`)
-    4. Find middle letter of alphabet
-    5. Slice from series 3 elements up and down from middle
-    6. Run doctests - all must succeed
+    1. Create `pd.Series` with 26 random integers in range `[10, 100)`
+    2. Name indexes like letters from ASCII alphabet (`ascii_lowercase: str`)
+    3. Find middle letter of alphabet
+    4. Slice from series 3 elements up and down from middle
+    5. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Stwórz `pd.Series` z 26 losowymi liczbami całkowitymi z przedziału `<10; 100)`
-    3. Nazwij indeksy jak kolejne litery alfabetu ASCII (`ascii_lowercase: str`)
-    4. Znajdź środkową literę alfabetu
-    5. Wytnij z serii po 3 elementy w górę i w dół od wyszukanego środka
-    6. Uruchom doctesty - wszystkie muszą się powieść
+    1. Stwórz `pd.Series` z 26 losowymi liczbami całkowitymi z przedziału `<10; 100)`
+    2. Nazwij indeksy jak kolejne litery alfabetu ASCII (`ascii_lowercase: str`)
+    3. Znajdź środkową literę alfabetu
+    4. Wytnij z serii po 3 elementy w górę i w dół od wyszukanego środka
+    5. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
     * `np.random.randint(..., ..., size=...)`
@@ -39,8 +37,6 @@ Tests:
     dtype: int64
 """
 
-
-# Given
 from statistics import median_low
 import pandas as pd
 import numpy as np

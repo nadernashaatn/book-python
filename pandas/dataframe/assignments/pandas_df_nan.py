@@ -9,25 +9,24 @@ English:
     X. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Wczytaj dane z `DATA` jako `df: pd.DataFrame`
-    3. Pomiń pierwszą linię z metadanymi
-    4. Zmień nazwy kolumn na:
+    1. Wczytaj dane z `DATA` jako `df: pd.DataFrame`
+    2. Pomiń pierwszą linię z metadanymi
+    3. Zmień nazwy kolumn na:
         a. Sepal length
         b. Sepal width
         c. Petal length
         d. Petal width
         e. Species
-    5. Podmień wartości w kolumnie species
+    4. Podmień wartości w kolumnie species
         a. 0 -> 'setosa',
         b. 1 -> 'versicolor',
         c. 2 -> 'virginica'
-    6. Wybierz wartości w kolumnie 'Petal length' mniejsze od 4
-    7. Wybrane wartości ustaw na `NaN`
-    8. Interpoluj liniowo wszystkie wartości `NaN`
-    9. Usuń wiersze z pozostałymi wartościami `NaN`
-    10. Zdefiniuj `result` jako dwa pierwsze wiersze
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    5. Wybierz wartości w kolumnie 'Petal length' mniejsze od 4
+    6. Wybrane wartości ustaw na `NaN`
+    7. Interpoluj liniowo wszystkie wartości `NaN`
+    8. Usuń wiersze z pozostałymi wartościami `NaN`
+    9. Zdefiniuj `result` jako dwa pierwsze wiersze
+    10. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -43,8 +42,6 @@ Tests:
     2           6.0          3.4           4.5          1.6  versicolor
 """
 
-
-# Given
 import pandas as pd
 import numpy as np
 

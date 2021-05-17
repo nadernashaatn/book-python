@@ -151,7 +151,7 @@ Polish:
         b. ``.predict()`` - do predykcji
 
     5. Do porównania użyj ``accuracy = metrics.accuracy_score(labels_test, labels_predicted)``
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    6. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
     * Dla każdego feature sprawdzasz jaka jest najmniejsza odległość

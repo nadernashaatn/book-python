@@ -5,26 +5,24 @@
 * Time: 8 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Create decorator `@cache`
-    3. Decorator must check before running function, if for given argument
+    1. Create decorator `@cache`
+    2. Decorator must check before running function, if for given argument
        the computation was already done:
         a. if yes, return from `_cache`
         b. if not, calculate new result, update cache and return computed value
-    4. Compare execution time using `timeit` (it might take around 30 seconds)
-    5. Last three tests will fail, this is only infomation about execution time
-    X. Run doctests - all must succeed
+    3. Compare execution time using `timeit` (it might take around 30 seconds)
+    4. Last three tests will fail, this is only infomation about execution time
+    5. Run doctests - all must succeed
 
 Polish:
-    1. Użyj kodu z sekcji "Given" (patrz poniżej)
-    2. Stwórz dekorator `@cache`
-    3. Decorator ma sprawdzać przed uruchomieniem funkcji, czy dla danego
+    1. Stwórz dekorator `@cache`
+    2. Decorator ma sprawdzać przed uruchomieniem funkcji, czy dla danego
        argumentu wynik został już wcześniej obliczony:
         a. jeżeli tak, to zwraca dane z `_cache`
         b. jeżeli nie, to oblicza, aktualizuje `_cache`, a następnie zwraca wartość
-    4. Porównaj prędkość działania za pomocą `timeit` (może to trwać około 30 sekund)
-    5. Ostatnie trzy testy nie przejdą, to tylko informacja o czasie wykonywania
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    3. Porównaj prędkość działania za pomocą `timeit` (może to trwać około 30 sekund)
+    4. Ostatnie trzy testy nie przejdą, to tylko informacja o czasie wykonywania
+    5. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -59,8 +57,6 @@ Tests:
     TODO: Make tests faster
 """
 
-
-# Given
 _cache = {}
 
 

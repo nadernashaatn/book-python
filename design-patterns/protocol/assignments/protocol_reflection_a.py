@@ -5,16 +5,14 @@
 * Time: 5 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Create class `Point` with `x`, `y`, `z` attributes
-    3. Prevent deleting attributes
-    4. Run doctests - all must succeed
+    1. Create class `Point` with `x`, `y`, `z` attributes
+    2. Prevent deleting attributes
+    3. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Stwórz klasę `Point` z atrybutami `x`, `y`, `z`
-    3. Zablokuj usuwanie atrybutów
-    4. Uruchom doctesty - wszystkie muszą się powieść
+    1. Stwórz klasę `Point` z atrybutami `x`, `y`, `z`
+    2. Zablokuj usuwanie atrybutów
+    3. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -32,8 +30,6 @@ Tests:
     PermissionError: Cannot delete attributes
 """
 
-
-# Given
 from dataclasses import dataclass
 
 

@@ -311,22 +311,20 @@ Euclidean distance ``n`` dimensions
 * Time: 13 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Given are two points ``A: Sequence[int]`` and ``B: Sequence[int]``
-    3. Coordinates are in cartesian system
-    4. Points ``A`` and ``B`` are in ``N``-dimensional space
-    5. Points ``A` and ``B`` must be in the same space
-    6. Calculate distance between points using Euclidean algorithm
-    7. Run doctests - all must succeed
+    1. Given are two points ``A: Sequence[int]`` and ``B: Sequence[int]``
+    2. Coordinates are in cartesian system
+    3. Points ``A`` and ``B`` are in ``N``-dimensional space
+    4. Points ``A` and ``B`` must be in the same space
+    5. Calculate distance between points using Euclidean algorithm
+    6. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Dane są dwa punkty ``A: Sequence[int]`` i ``B: Sequence[int]``
-    3. Koordynaty są w systemie kartezjańskim
-    4. Punkty ``A`` i ``B`` są w ``N``-wymiarowej przestrzeni
-    5. Punkty ``A`` i ``B`` muszą być w tej samej przestrzeni
-    6. Oblicz odległość między nimi wykorzystując algorytm Euklidesa
-    7. Uruchom doctesty - wszystkie muszą się powieść
+    1. Dane są dwa punkty ``A: Sequence[int]`` i ``B: Sequence[int]``
+    2. Koordynaty są w systemie kartezjańskim
+    3. Punkty ``A`` i ``B`` są w ``N``-wymiarowej przestrzeni
+    4. Punkty ``A`` i ``B`` muszą być w tej samej przestrzeni
+    5. Oblicz odległość między nimi wykorzystując algorytm Euklidesa
+    6. Uruchom doctesty - wszystkie muszą się powieść
 
 Given:
     .. code-block:: python
@@ -368,14 +366,12 @@ Matrix multiplication
 * Time: 21 min
 
 English:
-    1. Use code from "Input" section (see below)
-    2. Multiply matrices using nested ``for`` loops
-    3. Run doctests - all must succeed
+    1. Multiply matrices using nested ``for`` loops
+    2. Run doctests - all must succeed
 
 Polish:
-    1. Użyj code z sekcji "Input" (patrz poniżej)
-    2. Pomnóż macierze wykorzystując zagnieżdżone pętle ``for``
-    3. Uruchom doctesty - wszystkie muszą się powieść
+    1. Pomnóż macierze wykorzystując zagnieżdżone pętle ``for``
+    2. Uruchom doctesty - wszystkie muszą się powieść
 
 Given:
     .. code-block:: python

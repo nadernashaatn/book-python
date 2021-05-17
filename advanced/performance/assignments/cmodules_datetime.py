@@ -10,7 +10,7 @@ English:
 
 Polish:
     1. Wykorzystując C Modules wypisz datę i czas, za pomocą funkcji zdefiniowanej w C `<time.h>`
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    2. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0

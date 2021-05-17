@@ -10,7 +10,7 @@ English:
     2. Define function `fib(n)` using recursion to generate items of the Fibonacci series
     3. For `n` less or equal to 0, return 1
     4. Else return sum `fib(n-1)` and `fib(n-2)`
-    X. Run doctests - all must succeed
+    5. Run doctests - all must succeed
 
 Polish:
     1. Ciąg Fibonacciego powstaje przez dodawanie dwóch poprzednich liczb, np:
@@ -18,7 +18,7 @@ Polish:
     2. Zdefiniuj funkcję `fib(n)` używającą rekurencji do generowania wyrazów ciągu Fibonacciego
     3. Dla `n` mniejszej lub równej 0, zwróć 1
     4. W przeciwnym wypadku zwróć sumę `fib(n-1)` i `fib(n-2)`
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    5. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0

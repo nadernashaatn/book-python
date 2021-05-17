@@ -5,20 +5,18 @@
 * Time: 3 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Create class `MarsMission` from classes `Habitat`, `Rocket`, `Astronaut`
-    3. Use mixins classes
-    4. You can modify given classes
-    5. Assignment demonstrates syntax, so do not add any attributes and methods
-    6. Run doctests - all must succeed
+    1. Create class `MarsMission` from classes `Habitat`, `Rocket`, `Astronaut`
+    2. Use mixins classes
+    3. You can modify given classes
+    4. Assignment demonstrates syntax, so do not add any attributes and methods
+    5. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Stwórz klasę `MarsMission` z klas `Habitat`, `Rocket`, `Astronaut`
-    3. Użyj klas domieszkowych (mixin)
-    4. Możesz modyfikować dane klasy
-    5. Zadanie demonstruje składnię, nie dodawaj żadnych atrybutów i metod
-    6. Uruchom doctesty - wszystkie muszą się powieść
+    1. Stwórz klasę `MarsMission` z klas `Habitat`, `Rocket`, `Astronaut`
+    2. Użyj klas domieszkowych (mixin)
+    3. Możesz modyfikować dane klasy
+    4. Zadanie demonstruje składnię, nie dodawaj żadnych atrybutów i metod
+    5. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0

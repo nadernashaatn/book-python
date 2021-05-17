@@ -5,16 +5,14 @@
 * Time: 5 min
 
 English:
-    1. Use code from "Given" section (see below)
-    2. Override operator for code to work correctly
-    3. Do not use `dataclasses`
-    4. Run doctests - all must succeed
+    1. Override operator for code to work correctly
+    2. Do not use `dataclasses`
+    3. Run doctests - all must succeed
 
 Polish:
-    1. Użyj kodu z sekcji "Given" (patrz poniżej)
-    2. Nadpisz operator aby poniższy kod zadziałał poprawnie
-    3. Nie używaj `dataclasses`
-    4. Uruchom doctesty - wszystkie muszą się powieść
+    1. Nadpisz operator aby poniższy kod zadziałał poprawnie
+    2. Nie używaj `dataclasses`
+    3. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -29,8 +27,6 @@ Tests:
     False
 """
 
-
-# Given
 class Mission:
     def __init__(self, year, name):
         self.year = year

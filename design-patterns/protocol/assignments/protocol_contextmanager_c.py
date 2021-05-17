@@ -5,22 +5,20 @@
 * Time: 21 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Define class configuration attribute `AUTOSAVE_SECONDS: float = 1.0`
-    3. Save buffer content to file every `AUTOSAVE_SECONDS` seconds
-    4. Writing and reading takes time,
+    1. Define class configuration attribute `AUTOSAVE_SECONDS: float = 1.0`
+    2. Save buffer content to file every `AUTOSAVE_SECONDS` seconds
+    3. Writing and reading takes time,
        how to make buffer save data in the background,
        but it could be still used?
-    5. Run doctests - all must succeed
+    4. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Zdefiniuj klasowy atrybut konfiguracyjny `AUTOSAVE_SECONDS: float = 1.0`
-    3. Zapisuj zawartość bufora do pliku co `AUTOSAVE_SECONDS` sekund
-    4. Operacje zapisu i odczytu trwają, jak zrobić,
+    1. Zdefiniuj klasowy atrybut konfiguracyjny `AUTOSAVE_SECONDS: float = 1.0`
+    2. Zapisuj zawartość bufora do pliku co `AUTOSAVE_SECONDS` sekund
+    3. Operacje zapisu i odczytu trwają, jak zrobić,
        aby do bufora podczas zapisu na dysk,
        nadal można było pisać?
-    5. Uruchom doctesty - wszystkie muszą się powieść
+    4. Uruchom doctesty - wszystkie muszą się powieść
 
 Hint:
     * `from threading import Timer`
@@ -57,8 +55,6 @@ Tests:
     >>> remove('_temporary.txt')
 """
 
-
-# Given
 from threading import Timer
 
 

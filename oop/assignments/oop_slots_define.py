@@ -6,18 +6,16 @@
 * Time: 13 min
 
 English:
-    1. Use code from "Input" section (see below)
-    2. Define class `Iris` with attributes: `sepal_length, sepal_width, petal_length, petal_width, species`
-    3. All attributes must be in `__slots__`
-    4. Define method `__repr__` which prints class name and all values positionally, ie. `Iris(5.8, 2.7, 5.1, 1.9, 'virginica')`
-    5. Run doctests - all must succeed
+    1. Define class `Iris` with attributes: `sepal_length, sepal_width, petal_length, petal_width, species`
+    2. All attributes must be in `__slots__`
+    3. Define method `__repr__` which prints class name and all values positionally, ie. `Iris(5.8, 2.7, 5.1, 1.9, 'virginica')`
+    4. Run doctests - all must succeed
 
 Polish:
-    1. Użyj kodu z sekcji "Input" (patrz poniżej)
-    2. Zdefiniuj klasę `Iris` z atrybutami: `sepal_length, sepal_width, petal_length, petal_width, species`
-    3. Wszystkie atrybuty muszą być w `__slots__`
-    4. Zdefiniuj metodę `__repr__` wypisującą nazwę klasy i wszystkie wartości atrybutów pozycyjnie, np. `Iris(5.8, 2.7, 5.1, 1.9, 'virginica')`
-    5. Uruchom doctesty - wszystkie muszą się powieść
+    1. Zdefiniuj klasę `Iris` z atrybutami: `sepal_length, sepal_width, petal_length, petal_width, species`
+    2. Wszystkie atrybuty muszą być w `__slots__`
+    3. Zdefiniuj metodę `__repr__` wypisującą nazwę klasy i wszystkie wartości atrybutów pozycyjnie, np. `Iris(5.8, 2.7, 5.1, 1.9, 'virginica')`
+    4. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -56,8 +54,6 @@ Hint:
     * In `__repr__()` use tuple comprehension to get `self.__slots__` values
 """
 
-
-# Given
 DATA = [('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
         (5.8, 2.7, 5.1, 1.9, 'virginica'),
         (5.1, 3.5, 1.4, 0.2, 'setosa'),

@@ -18,7 +18,7 @@ Polish:
     7. Dodaj Colorbar ze skalą temperatur zimno-ciepło
     8. Użyj kolorów niebieski (zimno), czerwony (ciepło)
     9. Wykres ma mieć grid
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    10. Uruchom doctesty - wszystkie muszą się powieść
 """
 
 

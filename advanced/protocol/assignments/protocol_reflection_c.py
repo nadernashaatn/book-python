@@ -5,20 +5,18 @@
 * Time: 13 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Create class `Point` with `x`, `y`, `z` attributes
-    3. Prevent creation of new attributes
-    4. Allow to define `x`, `y`, `z` but only at the initialization
-    5. Prevent later modification of `x`, `y`, `z`
-    6. Run doctests - all must succeed
+    1. Create class `Point` with `x`, `y`, `z` attributes
+    2. Prevent creation of new attributes
+    3. Allow to define `x`, `y`, `z` but only at the initialization
+    4. Prevent later modification of `x`, `y`, `z`
+    5. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Stwórz klasę `Point` z atrybutami `x`, `y`, `z`
-    3. Zablokuj tworzenie nowych atrybutów
-    4. Pozwól na zdefiniowanie `x`, `y`, `z` ale tylko przy inicjalizacji
-    5. Zablokuj późniejsze modyfikacje `x`, `y`, `z`
-    6. Uruchom doctesty - wszystkie muszą się powieść
+    1. Stwórz klasę `Point` z atrybutami `x`, `y`, `z`
+    2. Zablokuj tworzenie nowych atrybutów
+    3. Pozwól na zdefiniowanie `x`, `y`, `z` ale tylko przy inicjalizacji
+    4. Zablokuj późniejsze modyfikacje `x`, `y`, `z`
+    5. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -44,8 +42,6 @@ Tests:
     PermissionError: Cannot modify existing attributes
 """
 
-
-# Given
 class Point:
     def __init__(self, x, y, z):
         self.x = x

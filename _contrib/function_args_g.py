@@ -40,8 +40,6 @@ Tests:
     'minus forty nine and thirty five hundreds'
 """
 
-
-# Given
 MIN = 1e-3
 MAX = 1e6
 

@@ -5,16 +5,14 @@
 * Time: 3 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Compose class `MarsMission` from `Habitat`, `Rocket`, `Astronaut`
-    3. Assignment demonstrates syntax, so do not add any attributes and methods
-    4. Run doctests - all must succeed
+    1. Compose class `MarsMission` from `Habitat`, `Rocket`, `Astronaut`
+    2. Assignment demonstrates syntax, so do not add any attributes and methods
+    3. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Skomponuj klasę `MarsMission` z `Habitat`, `Rocket`, `Astronaut`
-    3. Zadanie demonstruje składnię, nie dodawaj żadnych atrybutów i metod
-    4. Uruchom doctesty - wszystkie muszą się powieść
+    1. Skomponuj klasę `MarsMission` z `Habitat`, `Rocket`, `Astronaut`
+    2. Zadanie demonstruje składnię, nie dodawaj żadnych atrybutów i metod
+    3. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -29,8 +27,6 @@ Tests:
     >>> assert issubclass(MarsMission, Rocket)
 """
 
-
-# Given
 class Habitat:
     pass
 

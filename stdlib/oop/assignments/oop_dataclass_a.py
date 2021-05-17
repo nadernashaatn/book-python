@@ -46,8 +46,6 @@ Tests:
     ValueError: Coordinate cannot be negative
 """
 
-
-# Given
 from dataclasses import dataclass
 
 

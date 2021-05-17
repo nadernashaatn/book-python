@@ -5,14 +5,12 @@
 * Time: 5 min
 
 English:
-    1. Use code from "Given" section (see below)
-    2. Override operator `+=` for code to work correctly
-    3. Run doctests - all must succeed
+    1. Override operator `+=` for code to work correctly
+    2. Run doctests - all must succeed
 
 Polish:
-    1. Użyj kodu z sekcji "Given" (patrz poniżej)
-    2. Nadpisz operatory `+=` aby poniższy kod zadziałał poprawnie
-    3. Uruchom doctesty - wszystkie muszą się powieść
+    1. Nadpisz operatory `+=` aby poniższy kod zadziałał poprawnie
+    2. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
     * `obj.__iadd__(other) -> self`
@@ -33,8 +31,6 @@ Tests:
                         Mission(year=2035, name='Ares 3')])
 """
 
-
-# Given
 from dataclasses import dataclass
 
 

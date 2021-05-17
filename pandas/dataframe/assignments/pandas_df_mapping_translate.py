@@ -5,20 +5,18 @@
 * Time: 13 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Read data from `DATA` as `df: pd.DataFrame`
-    3. Set header and index to data from file
-    4. Convert Polish month names to English
-    5. Parse dates to `datetime` objects
-    X. Run doctests - all must succeed
+    1. Read data from `DATA` as `df: pd.DataFrame`
+    2. Set header and index to data from file
+    3. Convert Polish month names to English
+    4. Parse dates to `datetime` objects
+    5. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Wczytaj dane z `DATA` jako `df: pd.DataFrame`
-    3. Ustaw nagłówek i index na dane zaczytane z pliku
-    4. Przekonwertuj polskie nazwy miesięcy na angielskie
-    5. Sparsuj daty do obiektów `datetime`
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    1. Wczytaj dane z `DATA` jako `df: pd.DataFrame`
+    2. Ustaw nagłówek i index na dane zaczytane z pliku
+    3. Przekonwertuj polskie nazwy miesięcy na angielskie
+    4. Sparsuj daty do obiektów `datetime`
+    5. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
     * `pd.Series.replace(regex=True)`
@@ -41,8 +39,6 @@ Tests:
     4   5       Alex       Vogel   1968-12-25
 """
 
-
-# Given
 import pandas as pd
 
 

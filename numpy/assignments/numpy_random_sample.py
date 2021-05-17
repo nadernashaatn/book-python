@@ -7,12 +7,12 @@
 English:
     1. Set random seed to zero
     2. Print 6 random integers without repetition in range from 1 to 49
-    X. Run doctests - all must succeed
+    3. Run doctests - all must succeed
 
 Polish:
     1. Ustaw ziarno losowości na zero
     2. Wyświetl 6 losowych i nie powtarzających się liczb całkowitych z zakresu od 1 do 49.
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    3. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -23,8 +23,6 @@ Tests:
     array([30,  5, 27, 31, 33, 38])
 """
 
-
-# Given
 import numpy as np
 np.random.seed(0)
 

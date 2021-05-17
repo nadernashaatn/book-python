@@ -5,18 +5,16 @@
 * Time: 5 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Read data from `DATA` as `result: pd.DataFrame`
-    3. Select 146 head rows, and last 11 from it
-    4. Export data from column `Event` to database `FILE` to table `apollo11`
-    X. Run doctests - all must succeed
+    1. Read data from `DATA` as `result: pd.DataFrame`
+    2. Select 146 head rows, and last 11 from it
+    3. Export data from column `Event` to database `FILE` to table `apollo11`
+    4. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Wczytaj dane z `DATA` jako `result: pd.DataFrame`
-    3. Wybierz pierwszych 146 wierszy, a z nich ostatnie 11
-    4. Wyeksportuj dane z kolumny `Event` do bazy danych `FILE` do tabeli `apollo11`
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    1. Wczytaj dane z `DATA` jako `result: pd.DataFrame`
+    2. Wybierz pierwszych 146 wierszy, a z nich ostatnie 11
+    3. Wyeksportuj dane z kolumny `Event` do bazy danych `FILE` do tabeli `apollo11`
+    4. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -39,8 +37,6 @@ Tests:
     >>> remove(FILE)
 """
 
-
-# Given
 import sqlite3
 import pandas as pd
 

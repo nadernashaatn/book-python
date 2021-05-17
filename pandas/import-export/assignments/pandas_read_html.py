@@ -5,16 +5,14 @@
 * Time: 5 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Read data from `DATA` as `data: pd.DataFrame`
-    3. Define `result` with active European Space Agency astronauts
-    X. Run doctests - all must succeed
+    1. Read data from `DATA` as `data: pd.DataFrame`
+    2. Define `result` with active European Space Agency astronauts
+    3. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Wczytaj dane z `DATA` jako `data: pd.DataFrame`
-    3. Zdefiniuj `result` z aktywnymi astronautami Europejskiej Agencji Kosmicznej
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    1. Wczytaj dane z `DATA` jako `data: pd.DataFrame`
+    2. Zdefiniuj `result` z aktywnymi astronautami Europejskiej Agencji Kosmicznej
+    3. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
     * `pip install --upgrade lxml`
@@ -38,8 +36,6 @@ Tests:
     Name: Name, dtype: object
 """
 
-
-# Given
 import pandas as pd
 
 DATA = 'https://en.wikipedia.org/wiki/European_Astronaut_Corps'

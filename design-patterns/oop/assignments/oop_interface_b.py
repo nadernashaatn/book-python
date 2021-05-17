@@ -5,16 +5,14 @@
 * Time: 8 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Define class `Setosa` implementing `IrisInterface`
-    3. Implement interface
-    4. Run doctests - all must succeed
+    1. Define class `Setosa` implementing `IrisInterface`
+    2. Implement interface
+    3. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Stwórz klasę `Setosa` implementującą `IrisInterface`
-    3. Zaimplementuj interfejs
-    4. Uruchom doctesty - wszystkie muszą się powieść
+    1. Stwórz klasę `Setosa` implementującą `IrisInterface`
+    2. Zaimplementuj interfejs
+    3. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
     * `vars(self).values()`
@@ -48,8 +46,6 @@ Tests:
     2.55
 """
 
-
-# Given
 class IrisInterface:
     sepal_length: float
     sepal_width: float

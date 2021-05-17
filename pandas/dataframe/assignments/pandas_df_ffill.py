@@ -9,18 +9,17 @@ English:
     X. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Wczytaj dane z `DATA` jako `df: pd.DataFrame`
-    3. W danych kolumna "Order":
+    1. Wczytaj dane z `DATA` jako `df: pd.DataFrame`
+    2. W danych kolumna "Order":
         a. określa kolejność astronauty/kosmonauty w kosmosie
         b. Czasami kilka osób leciało tym samym statkiem i ich numery powinny być takie same, a w danych jest `NaN`.
         c. Wypełnij brakujące indeksy stosując `df.ffill()`
-    4. Ustaw wszystkie wiersze w losowej kolejności
-    5. Zresetuj index nie pozostawiając kopii zapasowej starego
-    6. Wypisz
+    3. Ustaw wszystkie wiersze w losowej kolejności
+    4. Zresetuj index nie pozostawiając kopii zapasowej starego
+    5. Wypisz
         a. Pierwsze trzy wiersze
         b. Ostatnie 10% wierszy
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    6. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -47,8 +46,6 @@ Tests:
     [583 rows x 5 columns]
 """
 
-
-# Given
 import pandas as pd
 import numpy as np
 np.random.seed(0)

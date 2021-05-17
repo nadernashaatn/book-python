@@ -5,16 +5,14 @@
 * Time: 21 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Define class `GeographicCoordinate`
-    3. Use descriptors to check value boundaries
-    5. Run doctests - all must succeed
+    1. Define class `GeographicCoordinate`
+    2. Use descriptors to check value boundaries
+    3. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Zdefiniuj klasę `GeographicCoordinate`
-    3. Użyj deskryptory do sprawdzania wartości brzegowych
-    5. Uruchom doctesty - wszystkie muszą się powieść
+    1. Zdefiniuj klasę `GeographicCoordinate`
+    2. Użyj deskryptory do sprawdzania wartości brzegowych
+    3. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -73,8 +71,6 @@ Tests:
     ValueError: Out of bounds
 """
 
-
-# Given
 class GeographicCoordinate:
     def __str__(self):
         return f'Latitude: {self.latitude},' +\

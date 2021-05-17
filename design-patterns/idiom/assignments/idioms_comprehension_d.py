@@ -5,30 +5,28 @@
 * Time: 13 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Using List Comprehension split `DATA` into:
+    1. Using List Comprehension split `DATA` into:
         a. `features_train: list[tuple]` - 60% of first features in `DATA`
         b. `features_test: list[tuple]` - 40% of last features in `DATA`
         c. `labels_train: list[str]` - 60% of first labels in `DATA`
         d. `labels_test: list[str]` - 40% of last labels in `DATA`
-    3. In order to do so, calculate pivot point:
+    2. In order to do so, calculate pivot point:
         a. length of `DATA` times given percent (60% = 0.6)
         b. remember, that slice indicies must be `int`, not `float`
         c. for example: if dataset has 10 rows, then 6 rows will be for training, and 4 rows for test
-    X. Run doctests - all must succeed
+    3. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Używając List Comprehension podziel `DATA` na:
+    1. Używając List Comprehension podziel `DATA` na:
         a. `features_train: list[tuple]` - 60% pierwszych features w `DATA`
         b. `features_test: list[tuple]` - 40% ostatnich features w `DATA`
         c. `labels_train: list[str]` - 60% pierwszych labels w `DATA`
         d. `labels_test: list[str]` - 40% ostatnich labels w `DATA`
-    3. Aby to zrobić, wylicz punkt podziału:
+    2. Aby to zrobić, wylicz punkt podziału:
         a. długość `DATA` razy zadany procent (60% = 0.6)
         b. pamiętaj, że indeksy slice muszą być `int` a nie `float`
         c. na przykład: if zbiór danych ma 10 wierszy, to 6 wierszy będzie do treningu, a 4 do testów
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    3. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -59,8 +57,6 @@ Tests:
     ['versicolor', 'virginica', 'setosa', 'virginica']
 """
 
-
-# Given
 DATA = [('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
         (5.8, 2.7, 5.1, 1.9, 'virginica'),
         (5.1, 3.5, 1.4, 0.2, 'setosa'),

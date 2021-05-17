@@ -5,28 +5,26 @@
 * Time: 5 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Create decorator `check_astronauts`
-    3. To answer if person is an astronaut check field:
+    1. Create decorator `check_astronauts`
+    2. To answer if person is an astronaut check field:
        `is_astronaut` in `crew: list[dict]`
-    4. Decorator will call decorated function, only if all crew members has
+    3. Decorator will call decorated function, only if all crew members has
        field with specified value
-    5. Both field name and value are given as keyword arguments to decorator
-    6. If any member is not an astronaut raise `PermissionError` and print
+    4. Both field name and value are given as keyword arguments to decorator
+    5. If any member is not an astronaut raise `PermissionError` and print
        his first name and last name
-    X. Run doctests - all must succeed
+    6. Run doctests - all must succeed
 
 Polish:
-    1. Użyj kodu z sekcji "Given" (patrz poniżej)
-    2. Stwórz dekorator `check_astronauts`
-    3. Aby odpowiedzieć czy osoba jest astronautą sprawdź pole:
+    1. Stwórz dekorator `check_astronauts`
+    2. Aby odpowiedzieć czy osoba jest astronautą sprawdź pole:
        `is_astronaut` in `crew: list[dict]`
-    4. Dekorator wywoła dekorowaną funkcję tylko wtedy, gdy każdy członek
+    3. Dekorator wywoła dekorowaną funkcję tylko wtedy, gdy każdy członek
        załogi ma pole o podanej wartości
-    5. Zarówno nazwa pola jak i wartość są podawane jako argumenty nazwane do dekoratora
-    6. Jeżeli, jakikolwiek członek nie jest astronautą, podnieś wyjątek
+    4. Zarówno nazwa pola jak i wartość są podawane jako argumenty nazwane do dekoratora
+    5. Jeżeli, jakikolwiek członek nie jest astronautą, podnieś wyjątek
        `PermissionError` i wypisz jego imię i nazwisko
-    7. Uruchom doctesty - wszystkie muszą się powieść
+    6. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -67,8 +65,6 @@ Tests:
     PermissionError: Mark Watney is not an astronaut
 """
 
-
-# Given
 def check_astronauts(field, value):
     def decorator(func):
         def wrapper(crew):

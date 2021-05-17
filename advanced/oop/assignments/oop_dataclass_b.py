@@ -5,18 +5,16 @@
 * Time: 8 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Model data using `dataclasses`
-    3. Create classes to represent `DATA`, but do not convert it
-    4. Fields should have deafault value set to empty `str`
-    5. Run doctests - all must succeed
+    1. Model data using `dataclasses`
+    2. Create classes to represent `DATA`, but do not convert it
+    3. Fields should have deafault value set to empty `str`
+    4. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Zamodeluj dane wykorzystując `dataclass`
-    3. Stwórz klasy do reprezentacji `DATA`, ale nie konwertuj tego
-    4. Pola mają mieć wartość domyślną pusty `str`
-    5. Uruchom doctesty - wszystkie muszą się powieść
+    1. Zamodeluj dane wykorzystując `dataclass`
+    2. Stwórz klasy do reprezentacji `DATA`, ale nie konwertuj tego
+    3. Pola mają mieć wartość domyślną pusty `str`
+    4. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -33,8 +31,6 @@ Tests:
     >>> assert hasattr(Address, 'country')
 """
 
-
-# Given
 from dataclasses import dataclass, field
 
 

@@ -5,16 +5,14 @@
 * Time: 3 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Print inner 4x4 elements
-    3. Inner matrix is exactly in the middle of outer
-    X. Run doctests - all must succeed
+    1. Print inner 4x4 elements
+    2. Inner matrix is exactly in the middle of outer
+    3. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Wypisz środkowe 4x4 elementy
-    3. Środkowa macierz jest dokładnie w środku większej
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    1. Wypisz środkowe 4x4 elementy
+    2. Środkowa macierz jest dokładnie w środku większej
+    3. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -28,8 +26,6 @@ Tests:
            [4, 3, 6, 9]])
 """
 
-
-# Given
 import numpy as np
 
 DATA = np.array([[5, 0, 3, 3, 7, 9, 3, 5, 2, 4, 7, 6, 8, 8, 1, 6],

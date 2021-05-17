@@ -18,7 +18,7 @@ Polish:
     3. Funkcja `wrapper` wypisuje `hello from wrapper`
     4. Zdefiniuj funkcję `check` z `func: Callable` jako parametr
     5. Funkcja `check` ma zwracać `wrapper: Callable`
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    6. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0

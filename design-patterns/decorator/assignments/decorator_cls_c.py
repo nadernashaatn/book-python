@@ -5,26 +5,24 @@
 * Time: 21 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Create decorator class `TypeCheck`
-    3. Decorator checks types of all arguments (`*args` oraz `**kwargs`)
-    4. Decorator checks return type
-    5. In case when received type is not expected throw an exception `TypeError` with:
+    1. Create decorator class `TypeCheck`
+    2. Decorator checks types of all arguments (`*args` oraz `**kwargs`)
+    3. Decorator checks return type
+    4. In case when received type is not expected throw an exception `TypeError` with:
         a. argument name
         b. actual type
         c. expected type
-    6. Run doctests - all must succeed
+    5. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Stwórz dekorator klasę `TypeCheck`
-    3. Dekorator sprawdza typy wszystkich argumentów (`*args` oraz `**kwargs`)
-    4. Dekorator sprawdza typ zwracany
-    5. W przypadku gdy otrzymany typ nie jest równy oczekiwanemu wyrzuć wyjątek `TypeError` z:
+    1. Stwórz dekorator klasę `TypeCheck`
+    2. Dekorator sprawdza typy wszystkich argumentów (`*args` oraz `**kwargs`)
+    3. Dekorator sprawdza typ zwracany
+    4. W przypadku gdy otrzymany typ nie jest równy oczekiwanemu wyrzuć wyjątek `TypeError` z:
         a. nazwa argumentu
         b. aktualny typ
         c. oczekiwany typ
-    6. Uruchom doctesty - wszystkie muszą się powieść
+    5. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
     * `echo.__annotations__`
@@ -75,8 +73,6 @@ Tests:
     TypeError: "b" is <class 'float'>, but <class 'int'> was expected
 """
 
-
-# Given
 def decorator(func):
     def validate(argname, argval):
         argtype = type(argval)

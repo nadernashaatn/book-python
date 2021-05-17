@@ -6,14 +6,12 @@
 * Time: 13 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Write implementation of a function `celsius_to_kelvin`
-    3. Run doctests - all must succeed
+    1. Write implementation of a function `celsius_to_kelvin`
+    2. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Napisz implementację funkcji `celsius_to_kelvin`
-    3. Uruchom doctesty - wszystkie muszą się powieść
+    1. Napisz implementację funkcji `celsius_to_kelvin`
+    2. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0

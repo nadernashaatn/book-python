@@ -5,18 +5,16 @@
 * Time: 8 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Given are points coordinates in Cartesian system
-    3. Separate first row (header) from data
-    4. Calculate coefficients of best approximating polynomial of 3rd degree
-    X. Run doctests - all must succeed
+    1. Given are points coordinates in Cartesian system
+    2. Separate first row (header) from data
+    3. Calculate coefficients of best approximating polynomial of 3rd degree
+    4. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Dane są koordynaty punktów w układzie kartezjańskim
-    3. Odseparuj pierwszy wiersz (nagłówek) do danych
-    4. Oblicz współczynniki najlepiej dopasowanego wielomianu 3 stopnia
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    1. Dane są koordynaty punktów w układzie kartezjańskim
+    2. Odseparuj pierwszy wiersz (nagłówek) do danych
+    3. Oblicz współczynniki najlepiej dopasowanego wielomianu 3 stopnia
+    4. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -27,8 +25,6 @@ Tests:
     array([ 0.25,  0.75, -1.5 , -2.  ])
 """
 
-
-# Given
 import numpy as np
 
 DATA = [('x', 'y'),

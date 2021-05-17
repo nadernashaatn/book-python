@@ -9,17 +9,16 @@ English:
     X. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Stwórz pusty `dict` o nazwie `CACHE`
-    3. W słowniku będziemy przechowywali wyniki wyliczenia funkcji dla zadanych parametrów:
+    1. Stwórz pusty `dict` o nazwie `CACHE`
+    2. W słowniku będziemy przechowywali wyniki wyliczenia funkcji dla zadanych parametrów:
         a. klucz: argument funkcji
         b. wartość: wynik obliczeń
-    4. Zmodyfikuj funkcję `factorial_cache(n: int)`
-    5. Przed uruchomieniem funkcji, sprawdź czy wynik został już wcześniej obliczony:
+    3. Zmodyfikuj funkcję `factorial_cache(n: int)`
+    4. Przed uruchomieniem funkcji, sprawdź czy wynik został już wcześniej obliczony:
         a. jeżeli tak, to zwraca dane z `CACHE`
         b. jeżeli nie, to oblicza, aktualizuje `CACHE`, a następnie zwraca wartość
-    6. Porównaj prędkość działania
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    5. Porównaj prędkość działania
+    6. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -27,8 +26,6 @@ Tests:
     TODO: Doctests
 """
 
-
-# Given
 from timeit import timeit
 import sys
 sys.setrecursionlimit(5000)

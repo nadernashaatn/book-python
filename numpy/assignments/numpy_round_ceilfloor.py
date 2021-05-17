@@ -5,18 +5,16 @@
 * Time: 3 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Ceil round `data` values and assign to `result_ceil`
-    3. Floor round `data` values and assign to `result_floor`
-    4. Round `data` values and assign to `result_round`
-    5. Run doctests - all must succeed
+    1. Ceil round `data` values and assign to `result_ceil`
+    2. Floor round `data` values and assign to `result_floor`
+    3. Round `data` values and assign to `result_round`
+    4. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Zaokrąglij wartości `data` w górę (ceil) i przypisz do `result_ceil`
-    3. Zaokrąglij wartości `data` w dół (floor) i przypisz do `result_floor`
-    4. Zaokrąglij wartości `data` i przypisz do `result_round`
-    5. Uruchom doctesty - wszystkie muszą się powieść
+    1. Zaokrąglij wartości `data` w górę (ceil) i przypisz do `result_ceil`
+    2. Zaokrąglij wartości `data` w dół (floor) i przypisz do `result_floor`
+    3. Zaokrąglij wartości `data` i przypisz do `result_round`
+    4. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -40,8 +38,6 @@ Tests:
            1., 1., 1., 1.])
 """
 
-
-# Given
 import numpy as np
 np.random.seed(0)
 

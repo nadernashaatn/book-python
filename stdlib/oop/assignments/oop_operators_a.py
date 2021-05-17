@@ -5,16 +5,14 @@
 * Time: 3 min
 
 English:
-    1. Use code from "Given" section (see below)
-    2. Overload `@` operator
-    3. Set position based on argument `tuple[int, int]`
-    4. Run doctests - all must succeed
+    1. Overload `@` operator
+    2. Set position based on argument `tuple[int, int]`
+    3. Run doctests - all must succeed
 
 Polish:
-    1. Użyj kodu z sekcji "Given" (patrz poniżej)
-    2. Przeciąż operator `@`
-    3. Ustaw pozycję na podstawie argumentu `tuple[int, int]`
-    4. Uruchom doctesty - wszystkie muszą się powieść
+    1. Przeciąż operator `@`
+    2. Ustaw pozycję na podstawie argumentu `tuple[int, int]`
+    3. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -27,8 +25,6 @@ Tests:
     Position(x=1, y=2)
 """
 
-
-# Given
 from dataclasses import dataclass
 
 

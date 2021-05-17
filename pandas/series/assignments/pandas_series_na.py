@@ -5,21 +5,18 @@
 * Time: 5 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. From input data create `pd.Series`
-    3. Fill first missing value with zero
-    4. Drop missing values
-    5. Reindex series (without old copy)
-    6. Run doctests - all must succeed
+    1. From input data create `pd.Series`
+    2. Fill first missing value with zero
+    3. Drop missing values
+    4. Reindex series (without old copy)
+    5. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Z danych wejściowych stwórz `pd.Series`
-    3. Wypełnij pierwszą brakującą wartość zerem
-    4. Usuń brakujące wartości
-    5. Zresetuj indeks (bez kopii starego)
-    6. Uruchom doctesty - wszystkie muszą się powieść
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    1. Z danych wejściowych stwórz `pd.Series`
+    2. Wypełnij pierwszą brakującą wartość zerem
+    3. Usuń brakujące wartości
+    4. Zresetuj indeks (bez kopii starego)
+    5. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -36,8 +33,6 @@ Tests:
     dtype: float64
 """
 
-
-# Given
 import pandas as pd
 
 DATA = [1, None, 5, None, 1, 2, 1]

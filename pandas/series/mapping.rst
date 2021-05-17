@@ -200,7 +200,7 @@ Map
 
 
 Cleaning User Input
--------------------------------------------------------------------------------
+-------------------
 * 80% of machine learning and data science is cleaning data
 
 Addresses

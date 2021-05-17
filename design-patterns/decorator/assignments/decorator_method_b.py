@@ -5,18 +5,16 @@
 * Time: 13 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Create `if_alive` method decorator
-    3. Decorator will allow running `make_damage` method
+    1. Create `if_alive` method decorator
+    2. Decorator will allow running `make_damage` method
        only if `current_health` is greater than 0
-    4. Run doctests - all must succeed
+    3. Run doctests - all must succeed
 
 Polish:
-    1. Użyj kodu z sekcji "Given" (patrz poniżej)
-    2. Stwórz dekorator metody `if_alive`
-    3. Dekorator pozwoli na wykonanie metody `make_damage`,
+    1. Stwórz dekorator metody `if_alive`
+    2. Dekorator pozwoli na wykonanie metody `make_damage`,
        tylko gdy `current_health` jest większe niż 0
-    4. Uruchom doctesty - wszystkie muszą się powieść
+    3. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -39,8 +37,6 @@ Tests:
     RuntimeError: Hero is dead and cannot make damage
 """
 
-
-# Given
 def if_alive(method):
     def wrapper(hero, *args, **kwargs):
         return method(hero, *args, **kwargs)

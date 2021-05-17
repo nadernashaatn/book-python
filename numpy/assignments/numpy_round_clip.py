@@ -5,18 +5,16 @@
 * Time: 5 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Create `result: np.ndarray` copy of `DATA`
-    3. Clip numbers only in first column to 50 (inclusive) to 80 (exclusive)
-    4. Print `result`
-    5. Run doctests - all must succeed
+    1. Create `result: np.ndarray` copy of `DATA`
+    2. Clip numbers only in first column to 50 (inclusive) to 80 (exclusive)
+    3. Print `result`
+    4. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Stwórz `result: np.ndarray` z kopią danych z `DATA`
-    3. Przytnij liczby w pierwszej kolumnie od 50 (włącznie) do 80 (rozłącznie)
-    4. Wypisz `result`
-    5. Uruchom doctesty - wszystkie muszą się powieść
+    1. Stwórz `result: np.ndarray` z kopią danych z `DATA`
+    2. Przytnij liczby w pierwszej kolumnie od 50 (włącznie) do 80 (rozłącznie)
+    3. Wypisz `result`
+    4. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
     * `result[:, 0]`
@@ -36,8 +34,6 @@ Tests:
            [50, 88, 81]])
 """
 
-
-# Given
 import numpy as np
 
 

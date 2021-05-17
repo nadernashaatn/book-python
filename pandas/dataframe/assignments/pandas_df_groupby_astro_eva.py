@@ -5,16 +5,14 @@
 * Time: 21 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Read data from `DATA` as `df: pd.DataFrame`
-    3. Create ranking of astronauts with the most time spent on EVA (ExtraVehicular Activity)
-    X. Run doctests - all must succeed
+    1. Read data from `DATA` as `df: pd.DataFrame`
+    2. Create ranking of astronauts with the most time spent on EVA (ExtraVehicular Activity)
+    3. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Wczytaj dane z `DATA` jako `df: pd.DataFrame`
-    3. Stwórz ranking astronautów z największym czasem EVA (Spacerów kosmicznych)
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    1. Wczytaj dane z `DATA` jako `df: pd.DataFrame`
+    2. Stwórz ranking astronautów z największym czasem EVA (Spacerów kosmicznych)
+    3. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
     * Parse CSV and replace newlines inside fields with `","`
@@ -48,8 +46,6 @@ Tests:
     [226 rows x 1 columns]
 """
 
-
-# Given
 import pandas as pd
 
 

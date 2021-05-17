@@ -5,24 +5,22 @@
 * Time: 8 min
 
 English:
-    1. Use code from "Given" section (see below)
-    2. Split `DATA` by lines and then by colon `:`
-    3. Extract system accounts (users with UID [third field] is less than 1000)
-    4. Return list of system account logins
-    5. Implement solution using function
-    6. Implement solution using generator and `yield` keyword
-    7. Compare results of both using `sys.getsizeof()`
-    8. Run doctests - all must succeed
+    1. Split `DATA` by lines and then by colon `:`
+    2. Extract system accounts (users with UID [third field] is less than 1000)
+    3. Return list of system account logins
+    4. Implement solution using function
+    5. Implement solution using generator and `yield` keyword
+    6. Compare results of both using `sys.getsizeof()`
+    7. Run doctests - all must succeed
 
 Polish:
-    1. Użyj kodu z sekcji "Given" (patrz poniżej)
-    2. Podziel `DATA` po liniach a następnie po dwukropku `:`
-    3. Wyciągnij konta systemowe (użytkownicy z UID (trzecie pole) mniejszym niż 1000)
-    4. Zwróć listę loginów użytkowników systemowych
-    5. Zaimplementuj rozwiązanie wykorzystując funkcję
-    6. Zaimplementuj rozwiązanie wykorzystując generator i słowo kluczowe `yield`
-    7. Porównaj wyniki obu używając `sys.getsizeof()`
-    8. Uruchom doctesty - wszystkie muszą się powieść
+    1. Podziel `DATA` po liniach a następnie po dwukropku `:`
+    2. Wyciągnij konta systemowe (użytkownicy z UID (trzecie pole) mniejszym niż 1000)
+    3. Zwróć listę loginów użytkowników systemowych
+    4. Zaimplementuj rozwiązanie wykorzystując funkcję
+    5. Zaimplementuj rozwiązanie wykorzystując generator i słowo kluczowe `yield`
+    6. Porównaj wyniki obu używając `sys.getsizeof()`
+    7. Uruchom doctesty - wszystkie muszą się powieść
 
 Hint:
     * `str.splitlines()`
@@ -52,8 +50,6 @@ Tests:
     112
 """
 
-
-# Given
 DATA = """root:x:0:0:root:/root:/bin/bash
 bin:x:1:1:bin:/bin:/sbin/nologin
 daemon:x:2:2:daemon:/sbin:/sbin/nologin

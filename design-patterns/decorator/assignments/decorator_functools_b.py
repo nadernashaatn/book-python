@@ -5,14 +5,12 @@
 * Time: 2 min
 
 English:
-    1. Use code from "Given" section (see below)
-    2. Use `functools.wraps` in correct place
-    3. Run doctests - all must succeed
+    1. Use `functools.wraps` in correct place
+    2. Run doctests - all must succeed
 
 Polish:
-    1. Użyj kodu z sekcji "Given" (patrz poniżej)
-    2. Użyj `functools.wraps` w odpowiednim miejscu
-    3. Uruchom doctesty - wszystkie muszą się powieść
+    1. Użyj `functools.wraps` w odpowiednim miejscu
+    2. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -27,8 +25,6 @@ Tests:
     'Hello Docstring'
 """
 
-
-# Given
 from functools import wraps
 
 

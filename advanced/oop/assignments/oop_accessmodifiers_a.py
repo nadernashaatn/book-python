@@ -5,22 +5,20 @@
 * Time: 8 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Define `result: list[dict]`
-    3. Define class `Iris` with attributes
-    4. Protected attributes: `sepal_length`, `sepal_width`, `petal_length`, `petal_width`
-    5. Public attribute: `species`
-    6. Iterate over `DATA` and add all public attributes to `result`
-    7. Run doctests - all must succeed
+    1. Define `result: list[dict]`
+    2. Define class `Iris` with attributes
+    3. Protected attributes: `sepal_length`, `sepal_width`, `petal_length`, `petal_width`
+    4. Public attribute: `species`
+    5. Iterate over `DATA` and add all public attributes to `result`
+    6. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Zdefiniuj `result: list[dict]`
-    3. Zdefiniuj klasę `Iris`
-    4. Chronione atrybuty: `sepal_length`, `sepal_width`, `petal_length`, `petal_width`
-    5. Publiczne atrybuty: `species`
-    6. Iteruj po `DATA` i dodaj wszystkie publiczne atrybuty do `result`
-    7. Uruchom doctesty - wszystkie muszą się powieść
+    1. Zdefiniuj `result: list[dict]`
+    2. Zdefiniuj klasę `Iris`
+    3. Chronione atrybuty: `sepal_length`, `sepal_width`, `petal_length`, `petal_width`
+    4. Publiczne atrybuty: `species`
+    5. Iteruj po `DATA` i dodaj wszystkie publiczne atrybuty do `result`
+    6. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -40,8 +38,6 @@ Tests:
      {'species': 'versicolor'}]
 """
 
-
-# Given
 class Iris:
     pass
 

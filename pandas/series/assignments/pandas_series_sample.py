@@ -15,7 +15,7 @@ English:
         d. last month in the series,
         e. three random elements,
         f. 125% of random elements with replacement.
-    X. Run doctests - all must succeed
+    5. Run doctests - all must succeed
 
 Polish:
     1. Ustaw ziarno losowości na zero
@@ -28,7 +28,7 @@ Polish:
         d. ostatni miesiąc w serii,
         e. trzy losowe element,
         f. 125% losowych elementów z powtórzeniami.
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    5. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
     * `np.random.seed(0)`
@@ -81,8 +81,6 @@ Tests:
     Length: 125, dtype: float64}
 """
 
-
-# Given
 import pandas as pd
 import numpy as np
 np.random.seed(0)

@@ -9,14 +9,14 @@ English:
     3. Check for even numbers of `DATA` which are less than 50 and save result to `result`
     4. Check if all `result` matches this condition, result assing to `result_all`
     5. Check if any `result` matches this condition, result assign to `result_any`
-    X. Run doctests - all must succeed
+    6. Run doctests - all must succeed
 
 Polish:
     1. Ustaw ziarno losowości na zero
     3. Sprawdź parzyste elementy `DATA`, które są mniejsze od 50 i wynik zapisz do `result`
     4. Sprawdź czy wszystkie `result` spełniają ten warunek, wynik zapisz do `result_all`
     5. Sprawdź czy jakakolwiek `result` spełnia ten warunek, wynik zapisz do `result_any`
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    6. Uruchom doctesty - wszystkie muszą się powieść
 
     >>> type(result) is np.ndarray
     True
@@ -28,8 +28,6 @@ Polish:
     True
 """
 
-
-# Given
 import numpy as np
 np.random.seed(0)
 

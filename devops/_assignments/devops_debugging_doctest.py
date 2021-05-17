@@ -12,11 +12,9 @@ Polish:
     1. Dla kodu z listingu
     2. Napisz własną uproszczoną implementację `doctest`
     3. Dla uproszczenia przyjmij, że zwracana zawsze będzie tylko jedna linia (bezpośrednio poniżej testu)
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    4. Uruchom doctesty - wszystkie muszą się powieść
 """
 
-
-# Given
 class Astronaut:
     """
     New Astronaut

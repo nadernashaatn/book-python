@@ -7,12 +7,12 @@
 English:
     1. Set random seed to zero
     2. Define `result: np.ndarray` of size 16x16 with random integers `[0;9]` (inclusive)
-    X. Run doctests - all must succeed
+    3. Run doctests - all must succeed
 
 Polish:
     1. Ustaw ziarno losowości na zero
     2. Zdefiniuj `result: np.ndarray` o rozmiarze 16x16 z losowymi liczbami całkowitymi `<0,9>` (włącznie)
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    3. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -38,8 +38,6 @@ Tests:
            [4, 4, 0, 9, 3, 7, 3, 2, 1, 1, 2, 1, 4, 2, 5, 5]])
 """
 
-
-# Given
 import numpy as np
 np.random.seed(0)
 

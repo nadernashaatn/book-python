@@ -24,7 +24,7 @@ Polish:
     5. Przeanalizuj dane statystycznie:
         a. Zapisz podstawowe statystyki opisowe (`DataFrame.describe()`) do `result: pd.DataFrame`
         b. Sprawdź liczność grup (`DataFrame.count()`, `Series.value_counts()`)
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    6. Uruchom doctesty - wszystkie muszą się powieść
 
 Extra Task:
     1. (wymaga wiedzy z przyszłych rozdziałów)
@@ -52,8 +52,6 @@ Tests:
     max    199827.00000    20.000000
 """
 
-
-# Given
 import pandas as pd
 import numpy as np
 np.random.seed(0)

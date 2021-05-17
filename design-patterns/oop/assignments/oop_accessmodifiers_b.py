@@ -5,28 +5,26 @@
 * Time: 8 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Create `result: list[Iris]`
-    3. Iterate over `DATA` skipping header
-    4. Separate `features` from `species` in each row
-    5. Append to `result`:
+    1. Create `result: list[Iris]`
+    2. Iterate over `DATA` skipping header
+    3. Separate `features` from `species` in each row
+    4. Append to `result`:
         a. if `species` is "setosa" append instance of a class `Setosa`
         b. if `species` is "versicolor" append instance of a class `Versicolor`
         c. if `species` is "virginica" append instance of a class `Virginica`
-    6. Initialize instances with `features` using `*features` notation
-    7. Run doctests - all must succeed
+    5. Initialize instances with `features` using `*features` notation
+    6. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Stwórz `result: list[Iris]`
-    3. Iterując po `DATA` pomiń nagłówek
-    4. Odseparuj `features` od `species` w każdym wierszu
-    5. Dodaj do `result`:
+    1. Stwórz `result: list[Iris]`
+    2. Iterując po `DATA` pomiń nagłówek
+    3. Odseparuj `features` od `species` w każdym wierszu
+    4. Dodaj do `result`:
         a. jeżeli `species` to "setosa" to dodaj instancję klasy `Setosa`
         b. jeżeli `species` to "versicolor" to dodaj instancję klasy `Versicolor`
         c. jeżeli `species` to "virginica" to dodaj instancję klasy `Virginica`
-    6. Instancje inicjalizuj danymi z `features` używając notacji `*features`
-    7. Uruchom doctesty - wszystkie muszą się powieść
+    5. Instancje inicjalizuj danymi z `features` używając notacji `*features`
+    6. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
     * `globals()[classname]`
@@ -43,8 +41,6 @@ Tests:
      Setosa(4.7, 3.2, 1.3, 0.2)]
 """
 
-
-# Given
 from dataclasses import dataclass
 
 

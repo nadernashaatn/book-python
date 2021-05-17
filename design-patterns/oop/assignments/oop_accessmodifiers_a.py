@@ -5,18 +5,16 @@
 * Time: 8 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Modify class `Iris` to add attributes:
+    1. Modify class `Iris` to add attributes:
         a. Protected attributes: sepal_length, sepal_width, petal_length, petal_width
         b. Public attribute: species
-    3. Run doctests - all must succeed
+    2. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Zmodyfikuj klasę `Iris` by dodać atrybuty:
+    1. Zmodyfikuj klasę `Iris` by dodać atrybuty:
         a. Chronione atrybuty: sepal_length, sepal_width, petal_length, petal_width
         b. Publiczne atrybuty: species`
-    3. Uruchom doctesty - wszystkie muszą się powieść
+    2. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -46,8 +44,6 @@ Tests:
      {'species': 'versicolor'}]
 """
 
-
-# Given
 class Iris:
     pass
 

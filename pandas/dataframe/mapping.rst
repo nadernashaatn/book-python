@@ -139,7 +139,7 @@ Source: https://stackoverflow.com/questions/19798153/difference-between-map-appl
 
 
 Cleaning User Input
--------------------------------------------------------------------------------
+-------------------
 * 80% of machine learning and data science is cleaning data
 
 Is This the Same Address?

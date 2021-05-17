@@ -6,22 +6,20 @@
 * Time: 5 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Define class `Stats`
-    3. Define method `mean()` in `Stats` class
-    4. Method takes `data: list[float]` as an argument
-    5. Method returns arithmetic mean of the `data`
-    6. Returned value must me rounded to one decimal places
-    7. Run doctests - all must succeed
+    1. Define class `Stats`
+    2. Define method `mean()` in `Stats` class
+    3. Method takes `data: list[float]` as an argument
+    4. Method returns arithmetic mean of the `data`
+    5. Returned value must me rounded to one decimal places
+    6. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Zdefiniuj klasę `Stats`
-    3. Zdefiniuj metodę `mean()` w klasie `Stats`
-    4. Metoda przyjmuje `data: list[float]` jako argument
-    5. Metoda zwraca średnią arytmetyczną z `data`
-    6. Zwracana wartość ma być zaokrąglona do jednego miejsca po przecinku
-    7. Uruchom doctesty - wszystkie muszą się powieść
+    1. Zdefiniuj klasę `Stats`
+    2. Zdefiniuj metodę `mean()` w klasie `Stats`
+    3. Metoda przyjmuje `data: list[float]` jako argument
+    4. Metoda zwraca średnią arytmetyczną z `data`
+    5. Zwracana wartość ma być zaokrąglona do jednego miejsca po przecinku
+    6. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
     * `round()`

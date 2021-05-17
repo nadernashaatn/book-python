@@ -14,7 +14,7 @@ Polish:
     3. Fix all errors
     4. Run `pycodestyle` on directory with all of your scripts
     5. Fix all errors
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    6. Uruchom doctesty - wszystkie muszą się powieść
 """
 
 

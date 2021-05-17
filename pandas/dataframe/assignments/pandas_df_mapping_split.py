@@ -5,18 +5,16 @@
 * Time: 13 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Read data from `DATA` as `df: pd.DataFrame`
-    3. Parse data in `date` column as `datetime` object
-    4. Split column `date` with into two separate: date and time columns
-    X. Run doctests - all must succeed
+    1. Read data from `DATA` as `df: pd.DataFrame`
+    2. Parse data in `date` column as `datetime` object
+    3. Split column `date` with into two separate: date and time columns
+    4. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Wczytaj dane z `DATA` jako `df: pd.DataFrame`
-    3. Sparsuj dane w kolumnie `date` jako obiekty `datetime`
-    4. Podziel kolumnę z `date` na dwie osobne: datę i czas
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    1. Wczytaj dane z `DATA` jako `df: pd.DataFrame`
+    2. Sparsuj dane w kolumnie `date` jako obiekty `datetime`
+    3. Podziel kolumnę z `date` na dwie osobne: datę i czas
+    4. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
     * `pd.Series.dt.date`
@@ -47,8 +45,6 @@ Tests:
     [830 rows x 9 columns]
 """
 
-
-# Given
 import pandas as pd
 
 

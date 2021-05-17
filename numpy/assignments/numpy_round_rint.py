@@ -5,16 +5,14 @@
 * Time: 3 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Round values to integers
-    3. Convert data type to `np.int8`
-    4. Run doctests - all must succeed
+    1. Round values to integers
+    2. Convert data type to `np.int8`
+    3. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Zaokrąglij wartości do pełnych liczb całkowitych
-    3. Przekonwertuj typ danych do `np.int8`
-    4. Uruchom doctesty - wszystkie muszą się powieść
+    1. Zaokrąglij wartości do pełnych liczb całkowitych
+    2. Przekonwertuj typ danych do `np.int8`
+    3. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -26,8 +24,6 @@ Tests:
           dtype=int8)
 """
 
-
-# Given
 import numpy as np
 
 

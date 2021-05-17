@@ -5,20 +5,18 @@
 * Time: 13 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Define class `Range` with parameters: `start`, `stop`, `step`
-    3. Write own implementation of a built-in `range(start, stop, step)` function
-    4. Assume, that user will never give only one argument; always it will be either two or three arguments
-    5. Use Iterator protocol
-    6. Run doctests - all must succeed
+    1. Define class `Range` with parameters: `start`, `stop`, `step`
+    2. Write own implementation of a built-in `range(start, stop, step)` function
+    3. Assume, that user will never give only one argument; always it will be either two or three arguments
+    4. Use Iterator protocol
+    5. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Zdefiniuj klasę `Range` z parametrami: `start`, `stop`, `step`
-    3. Zaimplementuj własne rozwiązanie wbudowanej funkcji `range(start, stop, step)`
-    4. Przyjmij, że użytkownik nigdy nie poda tylko jednego argumentu; zawsze będą to dwa lub trzy argumenty
-    5. Użyj protokołu Iterator
-    6. Uruchom doctesty - wszystkie muszą się powieść
+    1. Zdefiniuj klasę `Range` z parametrami: `start`, `stop`, `step`
+    2. Zaimplementuj własne rozwiązanie wbudowanej funkcji `range(start, stop, step)`
+    3. Przyjmij, że użytkownik nigdy nie poda tylko jednego argumentu; zawsze będą to dwa lub trzy argumenty
+    4. Użyj protokołu Iterator
+    5. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -38,8 +36,6 @@ Tests:
     >>> list(Range(0, 5))
     [0, 1, 2, 3, 4]
 """
-
-# Given
 from dataclasses import dataclass
 
 

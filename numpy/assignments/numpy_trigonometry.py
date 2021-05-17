@@ -8,13 +8,13 @@ English:
     1. Define function `trigonometry(angle_deg: int|float) -> dict`
     2. Return angle in radians and trigonometric function values (sin, cos, tg, ctg)
     3. Ctg for angle 180 and Tan for 90 degrees has infinite value, return `np.inf`
-    X. Run doctests - all must succeed
+    4. Run doctests - all must succeed
 
 Polish:
     1. Zdefiniuj funkcję `trigonometry(angle_deg: int|float) -> dict`
     2. Zwróć kąt w radianach oraz wartości funkcji trygonometrycznych (sin, cos, tg, ctg)
     3. Ctg dla angle 180 oraz Tan dla 0 i 90 stopni ma wartość nieskończoną, zwróć `np.inf`
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    4. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -40,8 +40,6 @@ Tests:
      'ctg': 18.2195...}
 """
 
-
-# Given
 import numpy as np
 
 

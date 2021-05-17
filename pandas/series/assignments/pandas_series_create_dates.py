@@ -9,14 +9,14 @@ English:
     2. Armstrong set foot on the Moon on 1969-07-21
     3. Create `result: pd.Series` with days between Gagarin's launch and Armstrong's first step
     4. How many days passed?
-    X. Run doctests - all must succeed
+    5. Run doctests - all must succeed
 
 Polish:
     1. Gagarin poleciał w kosmos w 1961-04-12
     2. Armstrong postawił stopę na Księżycu w 1969-07-21
     3. Stwórz `result: pd.Series` z dniami pomiędzy startem Gagarina a pierwszym krokiem Armstronga
     4. Jak wiele dni upłynęło?
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    5. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -41,8 +41,6 @@ Tests:
     Length: 3023, dtype: datetime64[ns]
 """
 
-
-# Given
 import pandas as pd
 
 

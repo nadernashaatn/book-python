@@ -5,18 +5,16 @@
 * Time: 3 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Given are one-dimensional: `a: np.ndarray`, `b: np.ndarray`
-    3. Concatenate them as `result: np.ndarray`
-    4. Reshape `result` into two rows and three columns
-    5. Run doctests - all must succeed
+    1. Given are one-dimensional: `a: np.ndarray`, `b: np.ndarray`
+    2. Concatenate them as `result: np.ndarray`
+    3. Reshape `result` into two rows and three columns
+    4. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Dane są jednowymiarowe: `a: np.ndarray`, `b: np.ndarray`
-    3. Połącz je ze sobą jako `result: np.ndarray`
-    4. Przekształć `result` w dwa wiersze na trzy kolumny
-    5. Uruchom doctesty - wszystkie muszą się powieść
+    1. Dane są jednowymiarowe: `a: np.ndarray`, `b: np.ndarray`
+    2. Połącz je ze sobą jako `result: np.ndarray`
+    3. Przekształć `result` w dwa wiersze na trzy kolumny
+    4. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -28,8 +26,6 @@ Tests:
            [4, 5, 6]])
 """
 
-
-# Given
 import numpy as np
 
 a = np.array([1, 2, 3])

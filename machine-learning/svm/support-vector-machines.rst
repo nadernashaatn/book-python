@@ -424,7 +424,7 @@ English:
 
 Polish:
     1. Naucz algorytm rozpoznawania danych wykorzystując algorytm Support Vector Machines.
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    2. Uruchom doctesty - wszystkie muszą się powieść
 
 Given:
     .. code-block:: python

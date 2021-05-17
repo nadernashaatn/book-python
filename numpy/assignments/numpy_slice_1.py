@@ -5,14 +5,12 @@
 * Time: 3 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Print inner 2x2 elements
-    3. Run doctests - all must succeed
+    1. Print inner 2x2 elements
+    2. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Wybierz wewnętrzne 2x2 elementy
-    3. Uruchom doctesty - wszystkie muszą się powieść
+    1. Wybierz wewnętrzne 2x2 elementy
+    2. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -24,8 +22,6 @@ Tests:
            [5, 2]])
 """
 
-
-# Given
 import numpy as np
 
 

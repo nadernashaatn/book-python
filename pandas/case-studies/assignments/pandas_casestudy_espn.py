@@ -5,14 +5,12 @@
 * Time: 21 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Create `result: pd.DataFrame` for input data
-    X. Run doctests - all must succeed
+    1. Create `result: pd.DataFrame` for input data
+    2. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Stwórz `result: pd.DataFrame` dla danych wejściowych
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    1. Stwórz `result: pd.DataFrame` dla danych wejściowych
+    2. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
     * Use selection with `alt` key in your IDE
@@ -42,8 +40,6 @@ Tests:
     [30 rows x 14 columns]
 """
 
-
-# Given
 
 import pandas as pd
 

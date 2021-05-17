@@ -32,8 +32,6 @@ Tests:
      'September 12, 1962']
 """
 
-
-# Given
 import re
 
 

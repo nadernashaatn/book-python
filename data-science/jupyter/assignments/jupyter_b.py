@@ -10,7 +10,7 @@ English:
 
 Polish:
     1. Poprzedni skrypt przekonwertuj na slajdy i uruchom prezentację w przeglądarce
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    2. Uruchom doctesty - wszystkie muszą się powieść
 """
 
 

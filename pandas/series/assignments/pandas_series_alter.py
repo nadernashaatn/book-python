@@ -5,20 +5,18 @@
 * Time: 5 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. From input data create `s: pd.Series`
-    3. Drop values at index 2, 4, 6
-    4. Drop duplicates
-    5. Reindex series (without old copy)
-    X. Run doctests - all must succeed
+    1. From input data create `s: pd.Series`
+    2. Drop values at index 2, 4, 6
+    3. Drop duplicates
+    4. Reindex series (without old copy)
+    5. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Z danych wejściowych stwórz `s: pd.Series`
-    3. Usuń wartości na indeksach 2, 4, 6
-    4. Usuń duplikujące się wartości
-    5. Zresetuj indeks (bez kopii starego)
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    1. Z danych wejściowych stwórz `s: pd.Series`
+    2. Usuń wartości na indeksach 2, 4, 6
+    3. Usuń duplikujące się wartości
+    4. Zresetuj indeks (bez kopii starego)
+    5. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -32,8 +30,6 @@ Tests:
     dtype: float64
 """
 
-
-# Given
 import pandas as pd
 
 DATA = [1, None, 5, None, 1, 2, 1]

@@ -9,11 +9,10 @@ English:
     X. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Wczytaj dane z `DATA` jako `df: pd.DataFrame`
-    3. Przefiltruj `inplace` kolumnę 'petal_length' i pozostaw wartości powyżej 2.0
-    4. Wyświetl 5 pierwszych wierszy
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    1. Wczytaj dane z `DATA` jako `df: pd.DataFrame`
+    2. Przefiltruj `inplace` kolumnę 'petal_length' i pozostaw wartości powyżej 2.0
+    3. Wyświetl 5 pierwszych wierszy
+    4. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -31,8 +30,6 @@ Tests:
     4           5.6          2.5           3.9          1.1  versicolor
     6           5.5          2.6           4.4          1.2  versicolor
 """
-
-# Given
 import pandas as pd
 
 

@@ -13,7 +13,7 @@ English:
         b. first value in the series (without using `.head()`),
         c. last value in the series (without using `.tail()`),
         d. middle value in the series.
-    X. Run doctests - all must succeed
+    5. Run doctests - all must succeed
 
 Polish:
     1. Ustaw ziarno losowości na zero
@@ -24,7 +24,7 @@ Polish:
         b. pierwszą wartość w serii (nie używając `.head()`),
         c. ostatnią wartość w serii (nie używając `.tail()`),
         d. środkowa wartość serii.
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    5. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
     * `np.random.seed(0)`
@@ -42,8 +42,6 @@ Tests:
      'middle': -0.8954665611936756}
 """
 
-
-# Given
 import pandas as pd
 import numpy as np
 np.random.seed(0)

@@ -5,16 +5,14 @@
 * Time: 3 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Separate header and records
-    3. Use asterisk `*` notation
-    4. Run doctests - all must succeed
+    1. Separate header and records
+    2. Use asterisk `*` notation
+    3. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Odseparuj nagłówek od danych
-    3. Skorzystaj z konstrukcji z gwiazdką `*`
-    4. Uruchom doctesty - wszystkie muszą się powieść
+    1. Odseparuj nagłówek od danych
+    2. Skorzystaj z konstrukcji z gwiazdką `*`
+    3. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -41,8 +39,6 @@ Tests:
 
 """
 
-
-# Given
 DATA = [('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
         (5.8, 2.7, 5.1, 1.9, 'virginica'),
         (5.1, 3.5, 1.4, 0.2, 'setosa'),

@@ -5,22 +5,20 @@
 * Time: 5 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Reshape `result` to 3x4
-    3. Fill last column with zeros (0)
-    4. Transpose `result`
-    5. Convert `result` to float
-    6. Fill first row with `np.nan`
-    X. Run doctests - all must succeed
+    1. Reshape `result` to 3x4
+    2. Fill last column with zeros (0)
+    3. Transpose `result`
+    4. Convert `result` to float
+    5. Fill first row with `np.nan`
+    6. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Zmień kształt na 3x4
-    3. Wypełnij ostatnią kolumnę zerami (0)
-    4. Transponuj `result`
-    5. Przekonwertuj `result` do float
-    6. Wypełnij pierwszy wiersz `np.nan`
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    1. Zmień kształt na 3x4
+    2. Wypełnij ostatnią kolumnę zerami (0)
+    3. Transponuj `result`
+    4. Przekonwertuj `result` do float
+    5. Wypełnij pierwszy wiersz `np.nan`
+    6. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -34,8 +32,6 @@ Tests:
            [ 0.,  0.,  0.]])
 """
 
-
-# Given
 import numpy as np
 
 DATA = np.array([[44, 47, 64, 67],

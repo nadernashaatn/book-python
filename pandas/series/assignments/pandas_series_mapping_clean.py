@@ -6,23 +6,20 @@
 * Time: 21 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Convert `DATA` (see input section) to `pd.Series`
-    3. Write function to clean up data
-    4. Function takes one `str` argument
-    5. Function returns cleaned text
-    6. Apply function to all elements of `pd.Series`
-    7. Run doctests - all must succeed
+    1. Convert `DATA` to `pd.Series`
+    2. Write function to clean up data
+    3. Function takes one `str` argument
+    4. Function returns cleaned text
+    5. Apply function to all elements of `pd.Series`
+    6. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Przekonwertuj `DATA` (patrz sekcja input) do `pd.Series`
-    3. Napisz funkcję czyszczącą dane
-    4. Funkcja przyjmuje jeden argument typu `str`
-    5. Funkcja zwraca oczyszczony tekst
-    6. Zaaplikuj funkcję na wszystkich elementach `pd.Series`
-    7. Uruchom doctesty - wszystkie muszą się powieść
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    1. Przekonwertuj `DATA` do `pd.Series`
+    2. Napisz funkcję czyszczącą dane
+    3. Funkcja przyjmuje jeden argument typu `str`
+    4. Funkcja zwraca oczyszczony tekst
+    5. Zaaplikuj funkcję na wszystkich elementach `pd.Series`
+    6. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -49,8 +46,6 @@ Tests:
 TODO: Translate input data to English
 """
 
-
-# Given
 import pandas as pd
 
 

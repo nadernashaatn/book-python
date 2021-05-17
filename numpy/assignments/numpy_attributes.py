@@ -5,26 +5,24 @@
 * Time: 5 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Define `result: dict` with:
+    1. Define `result: dict` with:
         a. number of dimensions;
         b. number of elements;
         c. data type;
         d. element size;
         e. shape;
         f. strides.
-    X. Run doctests - all must succeed
+    2. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Zdefiniuj `result: dict` z:
+    1. Zdefiniuj `result: dict` z:
         a. liczbę wymiarów,
         b. liczbę elementów,
         c. typ danych,
         d. rozmiar elementu,
         e. kształt,
         f. przeskoki (strides).
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    2. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -41,8 +39,6 @@ Tests:
      'strides': (24, 8)}
 """
 
-
-# Given
 import numpy as np
 
 DATA = np.array([[-1.1, 0.0, 1.1],

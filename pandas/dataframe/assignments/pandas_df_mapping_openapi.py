@@ -5,22 +5,20 @@
 * Time: 5 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Read data from `DATA` as `df: pd.DataFrame`
-    3. Use `requests` library
-    4. Transpose data
-    5. If cell is a `dict`, then extract value for `summary`
-    6. If cell is empty, leave `pd.NA`
-    X. Run doctests - all must succeed
+    1. Read data from `DATA` as `df: pd.DataFrame`
+    2. Use `requests` library
+    3. Transpose data
+    4. If cell is a `dict`, then extract value for `summary`
+    5. If cell is empty, leave `pd.NA`
+    6. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Wczytaj dane z `DATA` jako `df: pd.DataFrame`
-    3. Użyj biblioteki `requests`
-    4. Transponuj dane
-    5. Jeżeli komórka jest `dict`, to wyciągnij wartość dla `summary`
-    6. Jeżeli komórka jest pusta, pozostaw `pd.NA`
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    1. Wczytaj dane z `DATA` jako `df: pd.DataFrame`
+    2. Użyj biblioteki `requests`
+    3. Transponuj dane
+    4. Jeżeli komórka jest `dict`, to wyciągnij wartość dla `summary`
+    5. Jeżeli komórka jest pusta, pozostaw `pd.NA`
+    6. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -40,8 +38,6 @@ Tests:
      '/user', '/user/createWithList', '/user/login', '/user/logout', '/user/{username}']
 """
 
-
-# Given
 import pandas as pd
 import requests
 

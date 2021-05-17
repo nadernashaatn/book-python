@@ -5,18 +5,16 @@
 * Time: 5 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Define `resp` with result of `requests.get()` for `DATA`
-    3. Define `data` with conversion of `resp` from JSON to Python dict by calling `.json()` on `resp`
-    5. Define `result: pd.DataFrame` from value for key `paths` in `data` dict
-    X. Run doctests - all must succeed
+    1. Define `resp` with result of `requests.get()` for `DATA`
+    2. Define `data` with conversion of `resp` from JSON to Python dict by calling `.json()` on `resp`
+    3. Define `result: pd.DataFrame` from value for key `paths` in `data` dict
+    4. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Zdefiniuj `resp` z resultatem `requests.get()` dla `DATA`
-    3. Zdefiniuj `data` z przekształceniem `resp` z JSON do Python dict wywołując `.json()` na `resp`
-    4. Zdefiniuj `result: pd.DataFrame` dla wartości z klucza `paths` w słowniku `data`
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    1. Zdefiniuj `resp` z resultatem `requests.get()` dla `DATA`
+    2. Zdefiniuj `data` z przekształceniem `resp` z JSON do Python dict wywołując `.json()` na `resp`
+    3. Zdefiniuj `result: pd.DataFrame` dla wartości z klucza `paths` w słowniku `data`
+    4. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
     * `pd.DataFrame(data)`
@@ -36,8 +34,6 @@ Tests:
      '/user', '/user/createWithList', '/user/login', '/user/logout', '/user/{username}']
 """
 
-
-# Given
 import pandas as pd
 import requests
 

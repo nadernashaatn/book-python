@@ -10,7 +10,7 @@ English:
     3. `a` must contains random integers from 0 to 1024 inclusive
     4. Create `result: np.ndarray` with elements selected from `a` which are power of two
     5. Sort `result` in descending order
-    X. Run doctests - all must succeed
+    6. Run doctests - all must succeed
 
 Polish:
     1. Ustaw ziarno losowości na 0
@@ -18,7 +18,7 @@ Polish:
     3. `a` musi zawierać losowe liczby całkowite z zakresu od 0 do 1024 włącznie
     4. Stwórz `result: np.ndarray` z elementami wybranymi z `a`, które są potęgami dwójki
     5. Posortuj `result` w kolejności malejącej
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    6. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
     * `np.isin(a, b)`
@@ -36,8 +36,6 @@ Tests:
               8,    4,    2,    2,    2,    2,    2])
 """
 
-
-# Given
 import numpy as np
 np.random.seed(0)
 

@@ -6,15 +6,13 @@
 
 English:
     1. Write unittest for the dragon from :ref:`Dragon Alpha`
-    X. Run doctests - all must succeed
+    2. Run doctests - all must succeed
 
 Polish:
     1. Napisz testy jednostkowe dla Smoka z :ref:`Dragon Alpha`
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    2. Uruchom doctesty - wszystkie muszą się powieść
 """
 
-
-# Given
 from unittest import TestCase
 
 BORDER_X_MAX = 1024

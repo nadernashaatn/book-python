@@ -3,7 +3,7 @@ Variables
 
 
 Built-in types
--------------------------------------------------------------------------------
+--------------
 .. code-block:: python
 
     name: str = 'Jan Twardowski'
@@ -12,7 +12,7 @@ Built-in types
 
 
 Custom types
--------------------------------------------------------------------------------
+------------
 .. code-block:: python
 
     class MyClass:

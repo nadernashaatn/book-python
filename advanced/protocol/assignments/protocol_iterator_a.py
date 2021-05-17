@@ -5,18 +5,16 @@
 * Time: 13 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Modify classes to implement iterator protocol
-    3. Iterator should return instances of `Mission`
-    4. All tests must pass
-    5. Run doctests - all must succeed
+    1. Modify classes to implement iterator protocol
+    2. Iterator should return instances of `Mission`
+    3. All tests must pass
+    4. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Zmodyfikuj klasy aby zaimplementować protokół iterator
-    3. Iterator powinien zwracać instancje `Mission`
-    4. Wszystkie testy muszą przejść
-    5. Uruchom doctesty - wszystkie muszą się powieść
+    1. Zmodyfikuj klasy aby zaimplementować protokół iterator
+    2. Iterator powinien zwracać instancje `Mission`
+    3. Wszystkie testy muszą przejść
+    4. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -46,8 +44,6 @@ Tests:
     Mission(year=2035, name='Ares 3')
 """
 
-
-# Given
 from dataclasses import dataclass
 
 

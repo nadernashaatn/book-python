@@ -5,24 +5,22 @@
 * Time: 5 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Define class `Point` with `x`, `y`, `z` attributes
-    3. Define property `position` in class `Point`
-    4. Setting `position`:
+    1. Define class `Point` with `x`, `y`, `z` attributes
+    2. Define property `position` in class `Point`
+    3. Setting `position`:
         a. If argument is not list, tuple, set raise Type Error
         b. If argument has length other than 3, raise Value
         b. Else sets `x`, `y`, `z` attributes from sequence
-    5. Run doctests - all must succeed
+    4. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Zdefiniuj klasę `Point` z atrybutami `x`, `y`, `z`
-    3. Zdefiniuj property `position` w klasie `Point`
-    4. Ustawianie `position`:
+    1. Zdefiniuj klasę `Point` z atrybutami `x`, `y`, `z`
+    2. Zdefiniuj property `position` w klasie `Point`
+    3. Ustawianie `position`:
         a. Jeżeli argument nie jest list, tuple, set podnieś TypeError
         b. Jeżeli argument nie ma długości 3, podnieś ValueError
         b. W przeciwnym wypadku ustaw kolejne atrybuty `x`, `y`, `z` z sekwencji
-    5. Uruchom doctesty - wszystkie muszą się powieść
+    4. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -44,8 +42,6 @@ Tests:
     TypeError
 """
 
-
-# Given
 class Point:
     def __init__(self, x, y, z):
         self.x = x

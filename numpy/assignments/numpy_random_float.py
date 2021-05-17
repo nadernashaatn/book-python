@@ -7,12 +7,12 @@
 English:
     1. Set random seed to zero
     2. Define `result: np.ndarray` of 10 random floats
-    X. Run doctests - all must succeed
+    3. Run doctests - all must succeed
 
 Polish:
     1. Ustaw ziarno losowości na zero
     2. Zdefiniuj `result: np.ndarray` z 10 losowymi liczbami zmiennoprzecinkowymi
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    3. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -24,8 +24,6 @@ Tests:
            0.64589411, 0.43758721, 0.891773  , 0.96366276, 0.38344152])
 """
 
-
-# Given
 import numpy as np
 np.random.seed(0)
 

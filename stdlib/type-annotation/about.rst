@@ -37,7 +37,7 @@ Glossary
 
 
 Data types
--------------------------------------------------------------------------------
+----------
 .. code-block:: python
 
     name: str = 'Jan Twardowski'
@@ -47,7 +47,7 @@ Data types
 
 
 Final
--------------------------------------------------------------------------------
+-----
 * Since Python 3.8: :pep:`591` -- Adding a final qualifier to typing
 
 .. code-block:: python

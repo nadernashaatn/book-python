@@ -55,8 +55,6 @@ Tests:
      {'return': <class 'int'>}
 """
 
-
-# Given
 from abc import ABCMeta, abstractmethod
 
 

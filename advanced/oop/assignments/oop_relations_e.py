@@ -5,16 +5,14 @@
 * Time: 21 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Convert `DATA` to format with one column per each attrbute
+    1. Convert `DATA` to format with one column per each attrbute
        for example: `street1`, `street2`, `city1`, `city2`, etc.
-    3. Run doctests - all must succeed
+    2. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Przekonweruj `DATA` do formatu z jedną kolumną dla każdego atrybutu,
+    1. Przekonweruj `DATA` do formatu z jedną kolumną dla każdego atrybutu,
        np. `street1`, `street2`, `city1`, `city2`, itd.
-    3. Uruchom doctesty - wszystkie muszą się powieść
+    2. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -30,8 +28,6 @@ Tests:
      {'firstname': 'Alex', 'lastname': 'Vogel', 'street1': 'Linder Hoehe', 'city1': 'Köln', 'post_code1': 51147, 'region1': 'North Rhine-Westphalia', 'country1': 'Germany'}]
 """
 
-
-# Given
 import json
 
 DATA = """[

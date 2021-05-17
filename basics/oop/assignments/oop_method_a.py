@@ -6,20 +6,18 @@
 * Time: 3 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Define class `Calculator`
-    3. Define method `add` in class `Calculator`
-    4. Method `add` take `a` and `b` as arguments
-    5. Method returns sum of `a` and `b`
-    6. Run doctests - all must succeed
+    1. Define class `Calculator`
+    2. Define method `add` in class `Calculator`
+    3. Method `add` take `a` and `b` as arguments
+    4. Method returns sum of `a` and `b`
+    5. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Zdefiniuj klasę `Calculator`
-    3. Zdefiniuj metodę `add` w klasie `Calculator`
-    4. Metoda `add` przyjmuje `a` i `b` jako argumenty
-    5. Metoda zwraca sumę `a` i `b`
-    6. Uruchom doctesty - wszystkie muszą się powieść
+    1. Zdefiniuj klasę `Calculator`
+    2. Zdefiniuj metodę `add` w klasie `Calculator`
+    3. Metoda `add` przyjmuje `a` i `b` jako argumenty
+    4. Metoda zwraca sumę `a` i `b`
+    5. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0

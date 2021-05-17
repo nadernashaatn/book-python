@@ -20,15 +20,13 @@ Polish:
     7. Pokoloruj nazwę (label) dla `cos` na kolor zielony
     8. Na obu wykresach pokaż grid
     9. Narysuj drugi obrazek z nałożonymi na jeden plot wykresami obu funkcji
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    10. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
     * `np.sin()`
     * `np.cos()`
 """
 
-
-# Given
 import matplotlib.pyplot as plt
 import numpy as np
 

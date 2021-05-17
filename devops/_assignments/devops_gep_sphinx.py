@@ -20,12 +20,10 @@ Polish:
         a. książka adresowa jako `literalinclude` w nagłówku drugiego poziomu "Książka Adresowa"
         b. prosty skrypt jako `code-block` w nagłówku drugiego poziomu "Pozostałe przykłady"
         c. które podejście jest lepsze?
-    7. Tekst lorem ipsum oznacz jako cytowanie cycerona wykorzystując bibtext
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    9. Tekst lorem ipsum oznacz jako cytowanie cycerona wykorzystując bibtext
+    10. Uruchom doctesty - wszystkie muszą się powieść
 """
 
-
-# Given
 DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/csv/iris.csv'
 
 

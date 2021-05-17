@@ -5,16 +5,14 @@
 * Time: 5 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Iterate over data splitting `*features` from `label`
-    3. Define `result: list[str]` with species names ending with "ca" or "osa"
-    4. Run doctests - all must succeed
+    1. Iterate over data splitting `*features` from `label`
+    2. Define `result: list[str]` with species names ending with "ca" or "osa"
+    3. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Iteruj po danych rozdzielając `*features` od `label`
-    3. Zdefiniuj `result: list[str]` z nazwami gatunków kończącymi się na "ca" lub "osa"
-    4. Uruchom doctesty - wszystkie muszą się powieść
+    1. Iteruj po danych rozdzielając `*features` od `label`
+    2. Zdefiniuj `result: list[str]` z nazwami gatunków kończącymi się na "ca" lub "osa"
+    3. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
     * `str.endswith()`
@@ -31,8 +29,6 @@ Tests:
     ['virginica', 'setosa', 'virginica', 'setosa']
 """
 
-
-# Given
 DATA = [('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
         (5.8, 2.7, 5.1, 1.9, 'virginica'),
         (5.1, 3.5, 1.4, 0.2, 'setosa'),

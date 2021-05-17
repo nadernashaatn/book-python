@@ -5,20 +5,18 @@
 * Time: 3 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Given `DATA: np.ndarray` (see below)
-    3. Convert to `int` and save result as `result_int`
-    4. Convert to `bool` and save result as `result_bool`
-    5. What happened in each of those steps?
-    X. Run doctests - all must succeed
+    1. Given `DATA: np.ndarray` (see below)
+    2. Convert to `int` and save result as `result_int`
+    3. Convert to `bool` and save result as `result_bool`
+    4. What happened in each of those steps?
+    5. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Dany `DATA: np.ndarray` (patrz sekcja input)
-    3. Przekonwertuj do typu `int` i wynik zapisz jako `result_int`
-    4. Przekonwertuj do typu `bool` i wynik zapisz jako `result_bool`
-    5. Co się stało w każdym z tych kroków?
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    1. Dany `DATA: np.ndarray` (patrz sekcja input)
+    2. Przekonwertuj do typu `int` i wynik zapisz jako `result_int`
+    3. Przekonwertuj do typu `bool` i wynik zapisz jako `result_bool`
+    4. Co się stało w każdym z tych kroków?
+    5. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -35,8 +33,6 @@ Tests:
            [ True,  True,  True]])
 """
 
-
-# Given
 import numpy as np
 
 

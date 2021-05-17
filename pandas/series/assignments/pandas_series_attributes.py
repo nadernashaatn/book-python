@@ -5,22 +5,20 @@
 * Time: 5 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Define `result: dict` with:
+    1. Define `result: dict` with:
         a. number of dimensions;
         b. number of elements;
         c. data type;
         e. shape.
-    X. Run doctests - all must succeed
+    2. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Zdefiniuj `result: dict` z:
+    1. Zdefiniuj `result: dict` z:
         a. liczbę wymiarów,
         b. liczbę elementów,
         c. typ danych,
         e. kształt.
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    2. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -34,8 +32,6 @@ Tests:
      'shape': (3,)}
 """
 
-
-# Given
 import pandas as pd
 
 DATA = pd.Series(['a', 'b', 'c'])

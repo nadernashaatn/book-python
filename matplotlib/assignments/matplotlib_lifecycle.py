@@ -14,11 +14,9 @@ Polish:
     3. Species ma być w osi `y`
     4. Na osi `x` ma być `sepal_length`
     5. Czerwony marker opisuje średnią długość `sepal_length` dla wszystkich gatunków
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    6. Uruchom doctesty - wszystkie muszą się powieść
 """
 
-
-# Given
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt

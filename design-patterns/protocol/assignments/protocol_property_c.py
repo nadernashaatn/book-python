@@ -5,18 +5,16 @@
 * Time: 5 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Define class `Point` with `x`, `y`, `z` attributes
-    3. Define property `position` in class `Point`
-    4. Deleting `position` sets all attributes to 0 (`x=0`, `y=0`, `z=0`)
-    5. Run doctests - all must succeed
+    1. Define class `Point` with `x`, `y`, `z` attributes
+    2. Define property `position` in class `Point`
+    3. Deleting `position` sets all attributes to 0 (`x=0`, `y=0`, `z=0`)
+    4. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Zdefiniuj klasę `Point` z atrybutami `x`, `y`, `z`
-    3. Zdefiniuj property `position` w klasie `Point`
-    4. Usunięcie `position` ustawia wszystkie atrybuty na 0 (`x=0`, `y=0`, `z=0`)
-    5. Uruchom doctesty - wszystkie muszą się powieść
+    1. Zdefiniuj klasę `Point` z atrybutami `x`, `y`, `z`
+    2. Zdefiniuj property `position` w klasie `Point`
+    3. Usunięcie `position` ustawia wszystkie atrybuty na 0 (`x=0`, `y=0`, `z=0`)
+    4. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -29,8 +27,6 @@ Tests:
     (0, 0, 0)
 """
 
-
-# Given
 from dataclasses import dataclass
 
 

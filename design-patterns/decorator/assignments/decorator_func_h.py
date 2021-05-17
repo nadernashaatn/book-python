@@ -5,7 +5,6 @@
 * Time: 21 min
 
 English:
-    1. Use code from "Given" section (see below)
     1. Modify decorator `typecheck`
     2. Decorator checks types of all arguments (`*args` oraz `**kwargs`)
     3. Decorator checks return type
@@ -16,7 +15,6 @@ English:
     5. Run doctests - all must succeed
 
 Polish:
-    1. Użyj kodu z sekcji "Given" (patrz poniżej)
     1. Zmodyfikuj dekorator `typecheck`
     2. Dekorator sprawdza typy wszystkich argumentów (`*args` oraz `**kwargs`)
     3. Dekorator sprawdza typ zwracany
@@ -75,8 +73,6 @@ Tests:
     TypeError: "b" is <class 'float'>, but <class 'int'> was expected
 """
 
-
-# Given
 def typecheck(func):
     def merge(*args, **kwargs):
         """Function merges *args, and **kwargs into single dict"""

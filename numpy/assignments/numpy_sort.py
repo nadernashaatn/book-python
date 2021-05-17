@@ -5,16 +5,14 @@
 * Time: 3 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Define `result_sort` with sorted `DATA` by columns
-    3. Define `result_flip` with flipped `DATA` by rows
-    X. Run doctests - all must succeed
+    1. Define `result_sort` with sorted `DATA` by columns
+    2. Define `result_flip` with flipped `DATA` by rows
+    3. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Zdefiniuj `result_sort` z posortowanym `DATA` po kolumnach
-    3. Zdefiniuj `result_flip` z flipniętym `DATA` po wierszach
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    1. Zdefiniuj `result_sort` z posortowanym `DATA` po kolumnach
+    2. Zdefiniuj `result_flip` z flipniętym `DATA` po wierszach
+    3. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
     * `.sort()` returns `None`
@@ -36,8 +34,6 @@ Tests:
            [44, 47, 64, 67]])
 """
 
-
-# Given
 import numpy as np
 
 

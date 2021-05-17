@@ -5,20 +5,18 @@
 * Time: 5 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Read data from `DATA` as `result: pd.DataFrame`
-    3. Use XSLT transformation
-    4. Make sure that columns and indexes are named properly
-    5. Calculate average cost of flower
-    X. Run doctests - all must succeed
+    1. Read data from `DATA` as `result: pd.DataFrame`
+    2. Use XSLT transformation
+    3. Make sure that columns and indexes are named properly
+    4. Calculate average cost of flower
+    5. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Wczytaj dane z `DATA` jako `result: pd.DataFrame`
-    3. Użyj transformaty XSLT
-    4. Upewnij się, że nazwy kolumn i indeks są dobrze ustawione
-    5. Wylicz średni koszt kwiatów
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    1. Wczytaj dane z `DATA` jako `result: pd.DataFrame`
+    2. Użyj transformaty XSLT
+    3. Upewnij się, że nazwy kolumn i indeks są dobrze ustawione
+    4. Wylicz średni koszt kwiatów
+    5. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
     * `pip install --upgrade lxml`
@@ -38,8 +36,6 @@ Tests:
     3         Cowslip        Caltha palustris  $9.90
 """
 
-
-# Given
 import pandas as pd
 from io import StringIO
 from lxml.etree import XML, XSLT, parse

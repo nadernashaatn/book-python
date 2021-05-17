@@ -5,19 +5,17 @@
 * Time: 8 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Define `result: list[dict]`:
-    3. Convert `DATA` from `list[tuple]` to `list[dict]`
+    1. Define `result: list[dict]`
+    2. Convert `DATA` from `list[tuple]` to `list[dict]`
         a. key - name from the header
         b. value - numerical value or species name
     4. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Zdefiniuj `result: list[dict]`:
+    1. Zdefiniuj `result: list[dict]`
+    2. Przekonwertuj `DATA` z `list[tuple]` do `list[dict]`
         a. klucz - nazwa z nagłówka
         b. wartość - wartość numeryczna lub nazwa gatunku
-    3. Przekonwertuj `DATA` z `list[tuple]` do `list[dict]`
     4. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
@@ -41,8 +39,6 @@ Tests:
      {'Sepal length': 4.7, 'Sepal width': 3.2, 'Petal length': 1.3, 'Petal width': 0.2, 'Species': 'setosa'}]
 """
 
-
-# Given
 DATA = [('Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Species'),
         (5.8, 2.7, 5.1, 1.9, 'virginica'),
         (5.1, 3.5, 1.4, 0.2, 'setosa'),

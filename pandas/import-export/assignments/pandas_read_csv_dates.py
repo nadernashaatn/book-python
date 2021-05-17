@@ -5,16 +5,14 @@
 * Time: 3 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Read data from `DATA` to `result: pd.DataFrame`
-    3. Parse dates in "Mission Date" column
-    X. Run doctests - all must succeed
+    1. Read data from `DATA` to `result: pd.DataFrame`
+    2. Parse dates in "Mission Date" column
+    3. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Wczytaj dane z `DATA` do `result: pd.DataFrame`
-    3. Sparsuj daty w kolumnie "Mission Date"
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    1. Wczytaj dane z `DATA` do `result: pd.DataFrame`
+    2. Sparsuj daty w kolumnie "Mission Date"
+    3. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
     * `parse_dates`
@@ -35,8 +33,6 @@ Tests:
     4   5       Alex       Vogel   1968-12-25
 """
 
-
-# Given
 import pandas as pd
 
 

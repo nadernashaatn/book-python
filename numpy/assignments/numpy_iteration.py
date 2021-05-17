@@ -5,16 +5,14 @@
 * Time: 5 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Use `for` to iterate over `DATA`
-    3. Define `result: list[int]` with even numbers from `DATA`
-    X. Run doctests - all must succeed
+    1. Use `for` to iterate over `DATA`
+    2. Define `result: list[int]` with even numbers from `DATA`
+    3. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Używając `for` iteruj po `DATA`
-    3. Zdefiniuj `result: list[int]` z liczbami parzystymi z `DATA`
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    1. Używając `for` iteruj po `DATA`
+    2. Zdefiniuj `result: list[int]` z liczbami parzystymi z `DATA`
+    3. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
     * `number % 2 == 0`
@@ -28,8 +26,6 @@ Tests:
     [2, 4, 6, 8]
 """
 
-
-# Given
 import numpy as np
 
 

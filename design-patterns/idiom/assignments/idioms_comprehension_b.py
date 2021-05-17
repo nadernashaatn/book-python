@@ -5,22 +5,20 @@
 * Time: 3 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Use dict comprehension
-    3. Convert `MONTH` into dict:
+    1. Use dict comprehension
+    2. Convert `MONTH` into dict:
         a. Keys: month number
         b. Values: month name
-    4. Month number must be two letter string (zero padded) - `f'{number:02}'`
-    5. Run doctests - all must succeed
+    3. Month number must be two letter string (zero padded) - `f'{number:02}'`
+    4. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Użyj rozwinięcia słownikowego
-    3. Przekonwertuj `MONTH` w słownik:
+    1. Użyj rozwinięcia słownikowego
+    2. Przekonwertuj `MONTH` w słownik:
         a. klucz: numer miesiąca
         b. wartość: nazwa miesiąca
-    4. Numer miesiąca ma być dwuznakowym stringiem (wypełnij zerem) - `f'{number:02}'`
-    5. Uruchom doctesty - wszystkie muszą się powieść
+    3. Numer miesiąca ma być dwuznakowym stringiem (wypełnij zerem) - `f'{number:02}'`
+    4. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -52,8 +50,6 @@ Tests:
      '12': 'December'}
 """
 
-
-# Given
 MONTHS = ['January', 'February', 'March', 'April',
           'May', 'June', 'July', 'August',
           'September', 'October', 'November', 'December']

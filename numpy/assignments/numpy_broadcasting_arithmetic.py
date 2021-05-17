@@ -5,22 +5,20 @@
 * Time: 3 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. For given: `a: np.ndarray`, `b: np.ndarray`, `c: np.ndarray`
-    3. Calculate square root of each element in `a` and `b`
-    4. Calculate second power (square) of each element in `c`
-    5. Add elements from `a` to `b`
-    6. Multiply the result by `c`
-    7. Run doctests - all must succeed
+    1. For given: `a: np.ndarray`, `b: np.ndarray`, `c: np.ndarray`
+    2. Calculate square root of each element in `a` and `b`
+    3. Calculate second power (square) of each element in `c`
+    4. Add elements from `a` to `b`
+    5. Multiply the result by `c`
+    6. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Dla danych: `a: np.ndarray`, `b: np.ndarray`, `c: np.ndarray`
-    3. Oblicz pierwiastek kwadratowy każdego z elementu w `a` i `b`
-    4. Oblicz drugą potęgę (kwadrat) każdego z elementu w `c`
-    5. Dodaj elementy z `a` do `b`
-    6. Przemnóż wynik przez `c`
-    7. Uruchom doctesty - wszystkie muszą się powieść
+    1. Dla danych: `a: np.ndarray`, `b: np.ndarray`, `c: np.ndarray`
+    2. Oblicz pierwiastek kwadratowy każdego z elementu w `a` i `b`
+    3. Oblicz drugą potęgę (kwadrat) każdego z elementu w `c`
+    4. Dodaj elementy z `a` do `b`
+    5. Przemnóż wynik przez `c`
+    6. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -33,8 +31,6 @@ Tests:
            [45.254834  ,  0.        ]])
 """
 
-
-# Given
 import numpy as np
 
 

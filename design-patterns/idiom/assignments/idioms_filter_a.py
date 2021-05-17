@@ -33,8 +33,6 @@ Tests:
     11502.0
 """
 
-
-# Given
 def odd(x):
     return x % 2
 

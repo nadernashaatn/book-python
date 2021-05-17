@@ -7,12 +7,12 @@
 English:
     1. Set random seed to zero
     2. Create `result: pd.Series` with 10 random digits (`int` from `0` to `9`)
-    X. Run doctests - all must succeed
+    3. Run doctests - all must succeed
 
 Polish:
     1. Ustaw ziarno losowości na zero
     2. Stwórz `result: pd.Series` z 10 losowymi cyframi  (`int` from `0` to `9`)
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    3. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -33,8 +33,6 @@ Tests:
     dtype: int64
 """
 
-
-# Given
 import numpy as np
 import pandas as pd
 np.random.seed(0)

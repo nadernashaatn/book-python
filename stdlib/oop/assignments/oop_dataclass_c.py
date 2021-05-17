@@ -5,36 +5,34 @@
 * Time: 21 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. You received input data in JSON format from the API
+    1. You received input data in JSON format from the API
         a. `str` fields: firstname, lastname, role, username, password, email,
         b. `datetime` fields: date_of_birth, last_login,
         c. `bool` fields: is_active, is_staff, is_superuser,
         d. `list[dict]` field: user_permissions
-    3. Using `dataclass` model data as class `User`
+    2. Using `dataclass` model data as class `User`
         a. Note, that fields order is important for tests to pass
-    4. Parse fields with dates and store as `datetime` objects
-    5. Parse fields with `true` and `false` values and store as `bool` objects
-    6. Do not create additional classes to represent `permission` filed, leave it as `list[dict]`
+    3. Parse fields with dates and store as `datetime` objects
+    4. Parse fields with `true` and `false` values and store as `bool` objects
+    5. Do not create additional classes to represent `permission` filed, leave it as `list[dict]`
     6. Iterate over records and create instances of this class
     7. Collect all instances to `result: list[User]`
     8. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Otrzymałeś z API dane wejściowe w formacie JSON
+    1. Otrzymałeś z API dane wejściowe w formacie JSON
         a. pola `str`: firstname, lastname, role, username, password, email,
         b. pola `datetime`: date_of_birth, last_login,
         c. pola `bool`: is_active, is_staff, is_superuser,
         d. pola `list[dict]`: user_permissions
-    3. Wykorzystując `dataclass` zamodeluj dane za pomocą klasy `User`
+    2. Wykorzystując `dataclass` zamodeluj dane za pomocą klasy `User`
         a. Zwróć uwagę, że kolejność pól ma znaczenie aby testy przechodziły
-    4. Sparsuj pola zwierające daty i zapisz je jako obiekty `datetime`
-    5. Sparsuj pola zawierające `true` lub `false` i zapamiętaj ich wartości jako obiekty `bool`
-    6. Nie twórz dodatkowych klas do reprezentacji pola `permission`, niech zostanie jako `list[dict]`
-    7. Iterując po rekordach twórz instancje tej klasy
-    8. Zbierz wszystkie instancje do `result: list[User]`
-    9. Uruchom doctesty - wszystkie muszą się powieść
+    3. Sparsuj pola zwierające daty i zapisz je jako obiekty `datetime`
+    4. Sparsuj pola zawierające `true` lub `false` i zapamiętaj ich wartości jako obiekty `bool`
+    5. Nie twórz dodatkowych klas do reprezentacji pola `permission`, niech zostanie jako `list[dict]`
+    6. Iterując po rekordach twórz instancje tej klasy
+    7. Zbierz wszystkie instancje do `result: list[User]`
+    8. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -48,8 +46,6 @@ Tests:
      User(firstname='Mark', lastname='Watney', role='botanist', username='mwatney', password='pbkdf2_sha256$120000$bxS4dNiCeTrY1n$Y8NiCeTrYRMa5bNJhTFjNiCeTrYp5swZni2RQbs=', email='', date_of_birth=datetime.date(1994, 10, 12), last_login=None, is_active=True, is_staff=True, is_superuser=False, user_permissions=[{'communication': ['add', 'modify', 'view']}, {'science': ['add', 'modify', 'view']}])]
 """
 
-
-# Given
 import json
 from dataclasses import dataclass
 from datetime import date, datetime, timezone
@@ -73,7 +69,6 @@ def _clean_time(text: str) -> Union[datetime,date,None]:
         pass
 
 
-# Solution
 @dataclass
 class User:
     firstname: str

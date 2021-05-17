@@ -5,18 +5,16 @@
 * Time: 5 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Define class `Point` with methods:
+    1. Define class `Point` with methods:
         a. `__new__()` returning new `Point` class instances
         b. `__init__()` taking `x` and `y` and stores them as attributes
-    4. Run doctests - all must succeed
+    2. Run doctests - all must succeed
 
 Polish:
-    1. Użyj kodu z sekcji "Given" (patrz poniżej)
-    2. Zdefiniuj klasę `Point` z metodami:
+    1. Zdefiniuj klasę `Point` z metodami:
         a. `__new__()` zwraca nową instancję klasy `Point`
         b. `__init__()` przyjmuje `x` i `y` i zapisuje je jako atrybuty
-    3. Uruchom doctesty - wszystkie muszą się powieść
+    2. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0

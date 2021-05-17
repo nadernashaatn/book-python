@@ -5,14 +5,12 @@
 * Time: 21 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Define function converting roman numerals to integer
-    X. Run doctests - all must succeed
+    1. Define function converting roman numerals to integer
+    2. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Zdefiniuj funkcję przeliczającą liczbę rzymską na całkowitą
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    1. Zdefiniuj funkcję przeliczającą liczbę rzymską na całkowitą
+    2. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -32,8 +30,6 @@ Tests:
     'XIV'
 """
 
-
-# Given
 CONVERSION = {
     1: 'I',
     2: 'II',

@@ -23,7 +23,7 @@ English:
         e. `bugfix/ID-1337-fixing-old-bug`
         f. `hotfix/ID-1337-bug-on-production`
         g. `pull-request/42`
-    X. Run doctests - all must succeed
+    5. Run doctests - all must succeed
 
 Polish:
     1. Użyj wyrażeń regularnych do walidacji nazwy gałęzi w Git
@@ -44,7 +44,7 @@ Polish:
         e. `bugfix/ID-1337-fixing-old-bug`
         f. `hotfix/ID-1337-bug-on-production`
         g. `pull-request/42`
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    5. Uruchom doctesty - wszystkie muszą się powieść
 """
 
 import re

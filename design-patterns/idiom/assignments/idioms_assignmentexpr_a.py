@@ -5,22 +5,20 @@
 * Time: 13 min
 
 English:
-    1. Use code from "Given" section (see below)
-    2. Split `DATA` by lines and then by colon `:`
-    3. Extract system accounts (users with UID [third field] is less than 1000)
-    4. Return list of system account logins
-    5. Implement solution using list comprehension and assignment expression
-    6. Mind the `root` user who has `uid == 0` (whether is not filtered-out in if statement)
-    7. Run doctests - all must succeed
+    1. Split `DATA` by lines and then by colon `:`
+    2. Extract system accounts (users with UID [third field] is less than 1000)
+    3. Return list of system account logins
+    4. Implement solution using list comprehension and assignment expression
+    5. Mind the `root` user who has `uid == 0` (whether is not filtered-out in if statement)
+    6. Run doctests - all must succeed
 
 Polish:
-    1. Użyj kodu z sekcji "Given" (patrz poniżej)
-    2. Podziel `DATA` po liniach a następnie po dwukropku `:`
-    3. Wyciągnij konta systemowe (użytkownicy z UID [trzecie pole] mniejszym niż 1000)
-    4. Zwróć listę loginów użytkowników systemowych
-    5. Zaimplementuj rozwiązanie wykorzystując list comprehension i assignment expression
-    6. Zwróć uwagę na użytkownika `root`, który ma `uid == 0` (czy nie jest odfiltrowany w instrukcji if)
-    7. Uruchom doctesty - wszystkie muszą się powieść
+    1. Podziel `DATA` po liniach a następnie po dwukropku `:`
+    2. Wyciągnij konta systemowe (użytkownicy z UID [trzecie pole] mniejszym niż 1000)
+    3. Zwróć listę loginów użytkowników systemowych
+    4. Zaimplementuj rozwiązanie wykorzystując list comprehension i assignment expression
+    5. Zwróć uwagę na użytkownika `root`, który ma `uid == 0` (czy nie jest odfiltrowany w instrukcji if)
+    6. Uruchom doctesty - wszystkie muszą się powieść
 
 Hint:
     * `str.splitlines()`
@@ -39,8 +37,6 @@ Tests:
     ['root', 'bin', 'daemon', 'adm', 'shutdown', 'halt', 'nobody', 'sshd']
 """
 
-
-# Given
 DATA = """root:x:0:0:root:/root:/bin/bash
 bin:x:1:1:bin:/bin:/sbin/nologin
 daemon:x:2:2:daemon:/sbin:/sbin/nologin

@@ -5,20 +5,18 @@
 * Time: 13 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Define class `File` with parameter: `filename: str`
-    3. `File` must implement Context Manager protocol
-    4. `File` buffers lines added using `File.append(text: str)` method
-    5. On `with` block exit `File` class creates, opens and write buffer to file
-    6. Run doctests - all must succeed
+    1. Define class `File` with parameter: `filename: str`
+    2. `File` must implement Context Manager protocol
+    3. `File` buffers lines added using `File.append(text: str)` method
+    4. On `with` block exit `File` class creates, opens and write buffer to file
+    5. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Stwórz klasę `File` z parametrem: `filename: str`
-    3. `File` ma implementować protokół Context Manager
-    4. `File` buforuje linie dodawane za pomocą metody `File.append(text: str)`
-    5. Na wyjściu z bloku `with` klasa `File` tworzy, otwiera i zapisuje bufor do pliku
-    6. Uruchom doctesty - wszystkie muszą się powieść
+    1. Stwórz klasę `File` z parametrem: `filename: str`
+    2. `File` ma implementować protokół Context Manager
+    3. `File` buforuje linie dodawane za pomocą metody `File.append(text: str)`
+    4. Na wyjściu z bloku `with` klasa `File` tworzy, otwiera i zapisuje bufor do pliku
+    5. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
     * Append newline character (`\n`) before adding to buffer

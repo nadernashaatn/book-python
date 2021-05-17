@@ -5,14 +5,12 @@
 * Time: 3 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Read data from `DATA` as `result: pd.DataFrame`
-    X. Run doctests - all must succeed
+    1. Read data from `DATA` as `result: pd.DataFrame`
+    2. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Wczytaj dane z DATA jako result: pd.DataFrame
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    1. Wczytaj dane z DATA jako result: pd.DataFrame
+    2. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -28,8 +26,6 @@ Tests:
     20          6.3         3.3          6.0         2.5   virginica
 """
 
-
-# Given
 import pandas as pd
 
 DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/json/iris.json'

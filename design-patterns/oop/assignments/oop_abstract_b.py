@@ -27,8 +27,6 @@ Tests:
     >>> assert IrisAbstract.len.__isabstractmethod__
 """
 
-
-# Given
 from abc import ABCMeta, abstractmethod
 
 

@@ -44,8 +44,6 @@ Tests:
     Freq: D, Length: 16, dtype: float64
 """
 
-
-# Given
 import pandas as pd
 import numpy as np
 np.random.seed(0)

@@ -137,4 +137,4 @@ English:
 
 Polish:
     1. Przeprowadź analizę PCA dla zbioru Indian Pima
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    2. Uruchom doctesty - wszystkie muszą się powieść

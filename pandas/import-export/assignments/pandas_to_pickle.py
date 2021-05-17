@@ -5,20 +5,18 @@
 * Time: 3 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Read data from `DATA` as `result: pd.DataFrame`
-    3. Select 146 head rows, and last 11 from it
-    4. Export data from column `Event` to file the `FILE`
-    5. Data has to be in JSON format
-    X. Run doctests - all must succeed
+    1. Read data from `DATA` as `result: pd.DataFrame`
+    2. Select 146 head rows, and last 11 from it
+    3. Export data from column `Event` to file the `FILE`
+    4. Data has to be in JSON format
+    5. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Wczytaj dane z `DATA` jako `result: pd.DataFrame`
-    3. Wybierz pierwszych 146 wierszy, a z nich ostatnie 11
-    4. Wyeksportuj dane z kolumny `Event` do pliku `FILE`
-    5. Dane mają być w formacie JSON
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    1. Wczytaj dane z `DATA` jako `result: pd.DataFrame`
+    2. Wybierz pierwszych 146 wierszy, a z nich ostatnie 11
+    3. Wyeksportuj dane z kolumny `Event` do pliku `FILE`
+    4. Dane mają być w formacie JSON
+    5. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -47,8 +45,6 @@ Tests:
     >>> remove(FILE)
 """
 
-
-# Given
 import pandas as pd
 
 DATA = 'https://raw.githubusercontent.com/AstroMatt/book-python/master/_data/html/apollo11.html'

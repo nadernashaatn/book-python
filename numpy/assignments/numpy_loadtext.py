@@ -5,22 +5,20 @@
 * Time: 5 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Load text from `URL`
-    3. From the first line select Iris species names and save as str to `species: np.ndarray`
-    4. For other lines:
+    1. Load text from `URL`
+    2. From the first line select Iris species names and save as str to `species: np.ndarray`
+    3. For other lines:
         a. Read columns with data and save as float to `features: np.ndarray`
         b. Read last column with species numbers and save as `int` to `labels: np.ndarray`
-    5. Run doctests - all must succeed
+    4. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Wczytaj tekst z `URL`
-    3. Z pierwszej linii wybierz nazwy gatunków Irysów i zapisz rezultat jako str do `species: np.ndarray`
-    4. W pozostałych linii:
+    1. Wczytaj tekst z `URL`
+    2. Z pierwszej linii wybierz nazwy gatunków Irysów i zapisz rezultat jako str do `species: np.ndarray`
+    3. W pozostałych linii:
         a Wczytaj kolumny z danymi i zapisz jako float do `features: np.ndarray`
         b Wczytaj ostatnią kolumnę z numerami gatunków i zapisz jako `int` do `labels: np.ndarray`
-    5. Uruchom doctesty - wszystkie muszą się powieść
+    4. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -53,8 +51,6 @@ Tests:
            0, 0, 2, 0, 2, 1, 1, 1, 0, 1, 1, 2, 0, 1, 1, 0, 2, 2, 2])
 """
 
-
-# Given
 import numpy as np
 
 

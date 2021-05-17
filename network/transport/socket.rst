@@ -143,7 +143,7 @@ Polish:
         a. datę UTC przyjścia pakietu,
         b. IP i PORT przesłany przez klienta.
 
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    8. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
     * ``threading.Timer(frequency: int, fn: Callable).start()``
@@ -181,7 +181,7 @@ Polish:
         e. ``stderr: str``,
         f. ``exit_code: int``
 
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    7. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
     * ``random.randint()``

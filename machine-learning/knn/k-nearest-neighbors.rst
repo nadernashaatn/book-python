@@ -172,7 +172,7 @@ English:
 
 Polish:
     1. Dla Pima Indians Diabetes wykonaj analizę algorytmem KNN z biblioteki ``sklearn``.
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    2. Uruchom doctesty - wszystkie muszą się powieść
 
 Płeć
 ^^^^
@@ -215,7 +215,7 @@ Polish:
         c. tylko z normalizacją?
         d. tylko skalowaniem?
 
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    6. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
     * ``preprocessing.LabelEncoder()``

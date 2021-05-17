@@ -5,16 +5,14 @@
 * Time: 5 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Create decorator function `typecheck`
-    3. Decorator checks return type only if `check_return` is `True`
-    4. Run doctests - all must succeed
+    1. Create decorator function `typecheck`
+    2. Decorator checks return type only if `check_return` is `True`
+    3. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Stwórz dekorator funkcję `typecheck`
-    3. Dekorator sprawdza typ zwracany tylko gdy `check_return` jest `True`
-    4. Uruchom doctesty - wszystkie muszą się powieść
+    1. Stwórz dekorator funkcję `typecheck`
+    2. Dekorator sprawdza typ zwracany tylko gdy `check_return` jest `True`
+    3. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
     * `echo.__annotations__`
@@ -61,8 +59,6 @@ Tests:
     TypeError: "b" is <class 'float'>, but <class 'int'> was expected
 """
 
-
-# Given
 def decorator(func):
     def validate(argname, argval):
         argtype = type(argval)

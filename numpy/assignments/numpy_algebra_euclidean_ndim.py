@@ -6,22 +6,20 @@
 * Time: 8 min
 
 English:
-    1. Use code from "Input" section (see below)
-    2. Given are two points `a: Sequence[int]` and `b: Sequence[int]`
-    3. Coordinates are in cartesian system
-    4. Points `a` and `b` are in n-dimensional space
-    5. Points `a` and `b` must be in the same space
-    6. Calculate distance between points using Euclidean algorithm
-    X. Run doctests - all must succeed
+    1. Given are two points `a: Sequence[int]` and `b: Sequence[int]`
+    2. Coordinates are in cartesian system
+    3. Points `a` and `b` are in n-dimensional space
+    4. Points `a` and `b` must be in the same space
+    5. Calculate distance between points using Euclidean algorithm
+    6. Run doctests - all must succeed
 
 Polish:
-    1. Użyj kodu z sekcji "Input" (patrz poniżej)
-    2. Dane są dwa punkty `a: Sequence[int]` i `b: Sequence[int]`
-    3. Koordynaty są w systemie kartezjańskim
-    4. Punkty `a` i `b` są w n-wymiarowej przestrzeni
-    5. Punkty `b` i `b` muszą być w tej samej przestrzeni
-    6. Oblicz odległość między nimi wykorzystując algorytm Euklidesa
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    1. Dane są dwa punkty `a: Sequence[int]` i `b: Sequence[int]`
+    2. Koordynaty są w systemie kartezjańskim
+    3. Punkty `a` i `b` są w n-wymiarowej przestrzeni
+    4. Punkty `b` i `b` muszą być w tej samej przestrzeni
+    5. Oblicz odległość między nimi wykorzystując algorytm Euklidesa
+    6. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
     * `for n1,n2 in zip(a,b)`
@@ -46,8 +44,6 @@ Tests:
     1.7320508075688772
 """
 
-
-# Given
 from math import sqrt
 
 

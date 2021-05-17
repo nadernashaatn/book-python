@@ -5,22 +5,20 @@
 * Time: 21 min
 
 English:
-    1. Use code from "Given" section (see below)
-    2. How to write relations to CSV file (contact has many addresses)?
-    3. Convert `DATA` to `resul: list[dict[str,str]]`
-    4. Non-functional requirements:
+    1. How to write relations to CSV file (contact has many addresses)?
+    2. Convert `DATA` to `resul: list[dict[str,str]]`
+    3. Non-functional requirements:
         a. Use `,` to separate fields
         b. Use `;` to separate columns
-    5. Run doctests - all must succeed
+    4. Run doctests - all must succeed
 
 Polish:
-    1. Użyj kodu z sekcji "Given" (patrz poniżej)
-    2. Jak zapisać w CSV dane relacyjne (kontakt ma wiele adresów)?
-    3. Przekonwertuj `DATA` do `resul: list[dict[str,str]]`
-    4. Wymagania niefunkcjonalne:
+    1. Jak zapisać w CSV dane relacyjne (kontakt ma wiele adresów)?
+    2. Przekonwertuj `DATA` do `resul: list[dict[str,str]]`
+    3. Wymagania niefunkcjonalne:
         b. Użyj `,` do oddzielenia pól
         b. Użyj `;` do oddzielenia kolumn
-    5. Uruchom doctesty - wszystkie muszą się powieść
+    4. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -32,8 +30,6 @@ Tests:
      {'firstname': 'Melissa', 'lastname': 'Lewis', 'missions': ''}]
 """
 
-
-# Given
 class Astronaut:
     def __init__(self, firstname, lastname, missions=()):
         self.firstname = firstname

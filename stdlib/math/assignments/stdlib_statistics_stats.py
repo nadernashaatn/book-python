@@ -45,8 +45,6 @@ Tests:
     {'mean': 1.2333333333333334, 'stdev': 0.7741662181555931, 'median': 1.4, 'variance': 0.5993333333333334}
 """
 
-
-# Given
 from statistics import mean, stdev, variance, median
 
 

@@ -45,8 +45,6 @@ Tests:
     True
 """
 
-
-# Given
 import re
 
 

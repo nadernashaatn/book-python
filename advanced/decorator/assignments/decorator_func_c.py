@@ -5,22 +5,20 @@
 * Time: 5 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Create decorator `check`
-    3. Decorator calls function, only when `echo.disabled` is `False`
-    4. Note that decorators overwrite pointers and in `wrapper`
+    1. Create decorator `check`
+    2. Decorator calls function, only when `echo.disabled` is `False`
+    3. Note that decorators overwrite pointers and in `wrapper`
        you must check if `wrapper.disabled` is `False`
-    5. Else raise an exception `PermissionError`
-    6. Run doctests - all must succeed
+    4. Else raise an exception `PermissionError`
+    5. Run doctests - all must succeed
 
 Polish:
-    1. Użyj kodu z sekcji "Given" (patrz poniżej)
-    2. Stwórz dekorator `check`
-    3. Dekorator wywołuje funkcję, tylko gdy `echo.disabled` jest `False`
-    4. Zwróć uwagę, że dekoratory nadpisują wskaźniki i we `wrapper`
+    1. Stwórz dekorator `check`
+    2. Dekorator wywołuje funkcję, tylko gdy `echo.disabled` jest `False`
+    3. Zwróć uwagę, że dekoratory nadpisują wskaźniki i we `wrapper`
        musisz sprawdzić czy `wrapper.disabled` jest `False`
-    5. W przeciwnym przypadku podnieś wyjątek `PermissionError`
-    6. Uruchom doctesty - wszystkie muszą się powieść
+    4. W przeciwnym przypadku podnieś wyjątek `PermissionError`
+    5. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -46,8 +44,6 @@ Tests:
     >>> assert hasattr(echo, 'disabled')
 """
 
-
-# Given
 def check(func):
     def wrapper(*args, **kwargs):
         return func(*args, **kwargs)

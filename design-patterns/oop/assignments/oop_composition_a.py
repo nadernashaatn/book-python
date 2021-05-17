@@ -5,18 +5,16 @@
 * Time: 3 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Create class `MarsMission` from classes `Habitat`, `Rocket`, `Astronaut`
-    3. Use multilevel inheritance
-    4. Assignment demonstrates syntax, so do not add any attributes and methods
-    5. Run doctests - all must succeed
+    1. Create class `MarsMission` from classes `Habitat`, `Rocket`, `Astronaut`
+    2. Use multilevel inheritance
+    3. Assignment demonstrates syntax, so do not add any attributes and methods
+    4. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Stwórz klasę `MarsMission` z klas `Habitat`, `Rocket`, `Astronaut`
-    3. Użyj wielopoziomowego dziedziczenia
-    4. Zadanie demonstruje składnię, nie dodawaj żadnych atrybutów i metod
-    5. Uruchom doctesty - wszystkie muszą się powieść
+    1. Stwórz klasę `MarsMission` z klas `Habitat`, `Rocket`, `Astronaut`
+    2. Użyj wielopoziomowego dziedziczenia
+    3. Zadanie demonstruje składnię, nie dodawaj żadnych atrybutów i metod
+    4. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0

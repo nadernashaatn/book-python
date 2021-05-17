@@ -6,18 +6,16 @@
 * Time: 13 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. In `DATA` we have two classes
-    3. Model data using classes and relations
-    4. Create instances dynamically based on `DATA`
-    5. Run doctests - all must succeed
+    1. In `DATA` we have two classes
+    2. Model data using classes and relations
+    3. Create instances dynamically based on `DATA`
+    4. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. W `DATA` mamy dwie klasy
-    3. Zamodeluj problem wykorzystując klasy i relacje między nimi
-    4. Twórz instancje dynamicznie na podstawie `DATA`
-    5. Uruchom doctesty - wszystkie muszą się powieść
+    1. W `DATA` mamy dwie klasy
+    2. Zamodeluj problem wykorzystując klasy i relacje między nimi
+    3. Twórz instancje dynamicznie na podstawie `DATA`
+    4. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -55,8 +53,6 @@ Tests:
                addresses=[Address(street='Linder Hoehe', city='Köln', postcode=51147, region='North Rhine-Westphalia', country='Germany')])]
 """
 
-
-# Given
 from dataclasses import dataclass
 from typing import Optional, Union
 

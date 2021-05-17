@@ -5,24 +5,22 @@
 * Time: 13 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Refactor class `Hero` to use composition
-    3. Name mixin classes: `HasHealth` and `HasPosition`
-    4. Note, that order of inheritance is important
+    1. Refactor class `Hero` to use composition
+    2. Name mixin classes: `HasHealth` and `HasPosition`
+    3. Note, that order of inheritance is important
         a. Try to inherit from `HasPosition`, `HasHealth`
         b. Then `HasHealth`, `HasPosition`
         c. What changes?
-    5. Run doctests - all must succeed
+    4. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Zrefaktoruj klasę `Hero` aby użyć kompozycji
-    3. Nazwij klasy domieszkowe: `HasHealth` i `HasPosition`
-    4. Zwróć uwagę, że kolejność dziedziczenia ma znaczenie
+    1. Zrefaktoruj klasę `Hero` aby użyć kompozycji
+    2. Nazwij klasy domieszkowe: `HasHealth` i `HasPosition`
+    3. Zwróć uwagę, że kolejność dziedziczenia ma znaczenie
         a. Spróbuj dziedziczyć po `HasPosition`, `HasHealth`
         b. A później `HasHealth`, `HasPosition`
         c. Co się zmieniło?
-    5. Uruchom doctesty - wszystkie muszą się powieść
+    4. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -64,8 +62,6 @@ Tests:
     (1, 2)
 """
 
-
-# Given
 from dataclasses import dataclass
 from random import randint
 

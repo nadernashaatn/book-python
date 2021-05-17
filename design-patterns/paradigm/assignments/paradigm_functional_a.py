@@ -13,11 +13,9 @@ Polish:
     2. Używając funkcji `filter()` usuń z niej wszystkie liczby parzyste
     3. Używając wyrażenia `lambda` i funkcji `map()` podnieś wszystkie elementy tak otrzymanej listy do sześcianu
     4. Odpowiednio używając funkcji `sum()`  i `len()` oblicz średnią arytmetyczną z elementów tak otrzymanej listy.
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    5. Uruchom doctesty - wszystkie muszą się powieść
 """
 
-
-# Given
 NUMBERS = range(1, 34)
 
 

@@ -5,18 +5,16 @@
 * Time: 5 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Create class `MarsMission` from classes `Habitat`, `Rocket`, `Astronaut`
-    3. Use composition
-    4. Assignment demonstrates syntax, so do not add any attributes and methods (only type annotations)
-    5. Run doctests - all must succeed
+    1. Create class `MarsMission` from classes `Habitat`, `Rocket`, `Astronaut`
+    2. Use composition
+    3. Assignment demonstrates syntax, so do not add any attributes and methods (only type annotations)
+    4. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Stwórz klasę `MarsMission` z klas `Habitat`, `Rocket`, `Astronaut`
-    3. Użyj kompozycji
-    4. Zadanie demonstruje składnię, nie dodawaj żadnych atrybutów i metod (tylko anotacje typów)
-    5. Uruchom doctesty - wszystkie muszą się powieść
+    1. Stwórz klasę `MarsMission` z klas `Habitat`, `Rocket`, `Astronaut`
+    2. Użyj kompozycji
+    3. Zadanie demonstruje składnię, nie dodawaj żadnych atrybutów i metod (tylko anotacje typów)
+    4. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0

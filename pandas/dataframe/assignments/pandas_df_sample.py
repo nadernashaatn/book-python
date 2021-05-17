@@ -9,12 +9,11 @@ English:
     X. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Wczytaj dane z `DATA` jako `df: pd.DataFrame`
-    3. Ustaw wszystkie wiersze w losowej kolejności
-    4. Zresetuj index nie pozostawiając kopii zapasowej starego
-    5. Zdefiniuj `result` z ostatnimi 10% wierszy
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    1. Wczytaj dane z `DATA` jako `df: pd.DataFrame`
+    2. Ustaw wszystkie wiersze w losowej kolejności
+    3. Zresetuj index nie pozostawiając kopii zapasowej starego
+    4. Zdefiniuj `result` z ostatnimi 10% wierszy
+    5. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -41,8 +40,6 @@ Tests:
     [567 rows x 6 columns]
 """
 
-
-# Given
 import pandas as pd
 import numpy as np
 np.random.seed(0)

@@ -5,26 +5,24 @@
 * Time: 13 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. To class `CSVMixin` add methods:
+    1. To class `CSVMixin` add methods:
         a. `to_csv(self) -> str`
         b. `from_csv(self, text: str) -> Union['Astronaut', 'Cosmonaut']`
-    3. `CSVMixin.to_csv()` should return attribute values separated with coma
-    4. `CSVMixin.from_csv()` should return instance of a class on which it was called
-    5. Use `@classmethod` decorator in proper place
-    6. All tests must pass
-    7. Run doctests - all must succeed
+    2. `CSVMixin.to_csv()` should return attribute values separated with coma
+    3. `CSVMixin.from_csv()` should return instance of a class on which it was called
+    4. Use `@classmethod` decorator in proper place
+    5. All tests must pass
+    6. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Do klasy `CSVMixin` dodaj metody:
+    1. Do klasy `CSVMixin` dodaj metody:
         a. `to_csv(self) -> str`
         b. `from_csv(self, text: str) -> Union['Astronaut', 'Cosmonaut']`
-    3. `CSVMixin.to_csv()` powinna zwracać wartości atrybutów klasy rozdzielone po przecinku
-    4. `CSVMixin.from_csv()` powinna zwracać instancje klasy na której została wywołana
-    5. Użyj dekoratora `@classmethod` w odpowiednim miejscu
-    6. Wszystkie testy muszą przejść
-    7. Uruchom doctesty - wszystkie muszą się powieść
+    2. `CSVMixin.to_csv()` powinna zwracać wartości atrybutów klasy rozdzielone po przecinku
+    3. `CSVMixin.from_csv()` powinna zwracać instancje klasy na której została wywołana
+    4. Użyj dekoratora `@classmethod` w odpowiednim miejscu
+    5. Wszystkie testy muszą przejść
+    6. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
     * `CSVMixin.to_csv()` should add newline `\n` at the end of line
@@ -68,8 +66,6 @@ Tests:
     >>> remove('_temporary.txt')
 """
 
-
-# Given
 from typing import Union
 
 

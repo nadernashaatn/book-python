@@ -18,7 +18,7 @@ Polish:
     3. Połącz dane wykorzystując `pd.concat`
     4. Przygotuj plik `CSV` z danymi dotyczącymi spacerów kosmicznych
     5. Zapisz dane do pliku
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    6. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -32,8 +32,6 @@ Tests:
 TODO: Doctests
 """
 
-
-# Given
 import pandas as pd
 
 

@@ -5,28 +5,26 @@
 * Time: 21 min
 
 English:
-    1. Use data from "Given" section (see below)
-    2. Read data from `DATA` as `df: pd.DataFrame`
-    3. Select `Luminance` stylesheet
-    4. Parse column with dates
-    5. Select desired date and location, then resample by hour
-    6. Display chart (line) with activity hours in "Sleeping Quarters upper" location
-    7. Active is when `Luminance` is not zero
-    8. Easy: for day 2019-09-28
-    9. Advanced: for each day, as subplots
-    X. Run doctests - all must succeed
+    1. Read data from `DATA` as `df: pd.DataFrame`
+    2. Select `Luminance` stylesheet
+    3. Parse column with dates
+    4. Select desired date and location, then resample by hour
+    5. Display chart (line) with activity hours in "Sleeping Quarters upper" location
+    6. Active is when `Luminance` is not zero
+    7. Easy: for day 2019-09-28
+    8. Advanced: for each day, as subplots
+    9. Run doctests - all must succeed
 
 Polish:
-    1. Użyj danych z sekcji "Given" (patrz poniżej)
-    2. Wczytaj dane z `DATA` jako `df: pd.DataFrame`
-    3. Wybierz arkusz `Luminance`
-    4. Sparsuj kolumny z datami
-    5. Wybierz pożądaną datę i lokację, następnie próbkuj co godzinę
-    6. Aktywność jest gdy `Luminance` jest różna od zera
-    7. Wyświetl wykres (line) z godzinami aktywności w dla lokacji "Sleeping Quarters upper"
-    8. Łatwe: dla dnia 2019-09-28
-    9. Zaawansowane: dla wszystkich dni, jako subplot
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    1. Wczytaj dane z `DATA` jako `df: pd.DataFrame`
+    2. Wybierz arkusz `Luminance`
+    3. Sparsuj kolumny z datami
+    4. Wybierz pożądaną datę i lokację, następnie próbkuj co godzinę
+    5. Aktywność jest gdy `Luminance` jest różna od zera
+    6. Wyświetl wykres (line) z godzinami aktywności w dla lokacji "Sleeping Quarters upper"
+    7. Łatwe: dla dnia 2019-09-28
+    8. Zaawansowane: dla wszystkich dni, jako subplot
+    9. Uruchom doctesty - wszystkie muszą się powieść
 
 Hints:
     * `pd.Series.apply(np.sign)` :ref:`Numpy signum`
@@ -56,8 +54,6 @@ Tests:
     Freq: H, Name: value, Length: 24, dtype: int64
 """
 
-
-# Given
 import numpy as np
 import pandas as pd
 

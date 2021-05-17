@@ -9,15 +9,14 @@ English:
     X. Run doctests - all must succeed
 
 Polish:
-    1. Użyj kodu z sekcji "Given" (patrz poniżej)
-    2. Iteruj po liniach w `DATA`
-    3. Odrzuć puste linie i komentarze
-    4. Podziel linię po dwukropku
-    5. Stwórz klasę `Account`, która zwraca instancje klas `UserAccount` lub `SystemAccount` w zależności od wartości pola UID
-    6. User ID (UID) to trzecie pole, np. `root:x:0:0:root:/root:/bin/bash` to UID jest równy `0`
-    7. Konta systemowe (`SystemAccount`) to takie, które w polu UID mają wartość poniżej `1000`
-    8. Konta użytkowników (`UserAccount`) to takie, które w polu UID mają wartość `1000` lub więcej
-    9. Uruchom doctesty - wszystkie muszą się powieść
+    1. Iteruj po liniach w `DATA`
+    2. Odrzuć puste linie i komentarze
+    3. Podziel linię po dwukropku
+    4. Stwórz klasę `Account`, która zwraca instancje klas `UserAccount` lub `SystemAccount` w zależności od wartości pola UID
+    5. User ID (UID) to trzecie pole, np. `root:x:0:0:root:/root:/bin/bash` to UID jest równy `0`
+    6. Konta systemowe (`SystemAccount`) to takie, które w polu UID mają wartość poniżej `1000`
+    7. Konta użytkowników (`UserAccount`) to takie, które w polu UID mają wartość `1000` lub więcej
+    8. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -37,8 +36,6 @@ Tests:
      UserAccount(username='lewis')]
 """
 
-
-# Given
 DATA = """root:x:0:0:root:/root:/bin/bash
 bin:x:1:1:bin:/bin:/sbin/nologin
 daemon:x:2:2:daemon:/sbin:/sbin/nologin

@@ -13,7 +13,7 @@ English:
         b. square: `[` i `]`
         c. curly `{` i `}`
         d. angle `<` i `>`
-    X. Run doctests - all must succeed
+    5. Run doctests - all must succeed
 
 Polish:
     1. Stwórz funkcję, która sprawdzi czy nawiasy są zbalansowane
@@ -24,7 +24,7 @@ Polish:
         b. kwadratowe: `[` i `]`
         c. klamrowe `{` i `}`
         d. trójkątne `<` i `>`
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    5. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -60,8 +60,6 @@ Tests:
     False
 """
 
-
-# Given
 BRACKET_OPEN = ('(', '{', '[', '<')
 BRACKET_CLOSE = (')', '}', ']', '>')
 PAIRS = dict(zip(BRACKET_OPEN, BRACKET_CLOSE))

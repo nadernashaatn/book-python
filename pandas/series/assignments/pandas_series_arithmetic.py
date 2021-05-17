@@ -11,7 +11,7 @@ English:
     4. Create `s: pd.Series` from `data` and `index`
     5. Multiply `s` by 10
     6. Multiply `s` by `s`
-    X. Run doctests - all must succeed
+    7. Run doctests - all must succeed
 
 Polish:
     1. Ustaw random ziarno losowości na zero
@@ -20,7 +20,7 @@ Polish:
     4. Stwórz `s: pd.Series` z `data` oraz `index`
     5. Pomnóż `s` przez 10
     6. Pomnóż `s` przez  wartości `s`
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    7. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -36,8 +36,6 @@ Tests:
     dtype: int64
 """
 
-
-# Given
 import pandas as pd
 import numpy as np
 np.random.seed(0)

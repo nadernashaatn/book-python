@@ -10,7 +10,7 @@ English:
     3. Generate `b: np.ndarray` with sequential powers of 2 and exponential from 0 to 6 (inclusive)
     4. Check which elements from `a` are present in `b`
     5. Result assign to `result`
-    X. Run doctests - all must succeed
+    6. Run doctests - all must succeed
 
 Polish:
     1. Ustaw ziarno losowości na zero
@@ -18,7 +18,7 @@ Polish:
     3. Wygeneruj `b: np.ndarray` z kolejnymi potęgami liczby 2, wykładnik od 0 do 6 (włącznie)
     4. Sprawdź, które elementy z `a` są obecne w `b`
     5. Wynik przypisz do `result`
-    X. Uruchom doctesty - wszystkie muszą się powieść
+    6. Uruchom doctesty - wszystkie muszą się powieść
 
 Tests:
     >>> import sys; sys.tracebacklimit = 0
@@ -34,8 +34,6 @@ Tests:
             True, False, False, False, False])
 """
 
-
-# Given
 import numpy as np
 np.random.seed(0)
 
